@@ -1,0 +1,39 @@
+
+\usepackage{listings}
+\usepackage{color}
+\definecolor{darkgreen}{rgb}{0,0.5,0}
+\definecolor{darkred}{rgb}{0.5,0,0}
+
+\lstloadlanguages{Haskell}
+\lstnewenvironment{code}
+    {\lstset{}%
+      \csname lst@SetFirstLabel\endcsname}
+    {\csname lst@SaveFirstLabel\endcsname}
+    \lstset{
+      language=Haskell,
+      basicstyle=\footnotesize\ttfamily,
+      flexiblecolumns=false,
+      basewidth={0.5em,0.45em},
+      keywordstyle=\color{blue},
+      commentstyle=\color{darkgreen},
+      % Ugh, it keywords map/sort/zipWith.  Should do this for
+      % consistency or figure out how to DISABLE those other keywords:
+      %
+      % TLM: you can use deletekeywords={map,sort,zipWith} etc. Looking at the
+      %      listing definition they are all in the same style group, so
+      %      unsetting keywordstyle would also work.
+      % morekeywords={fold,foldSeg,permute,scan,scanl,reshape,generate,slice,backpermute},
+      deletekeywords={map,sort,zipWith,replicate,Num,Char,Bool,Array,Int,Double
+                     ,sqrt,not,filter,IO,Maybe,Either,quot,scanl,scanr,reverse,fst,id},
+      literate= {+}{{$+$}}1 {/}{{$/$}}1 {*}{{$*$}}1 % {=}{{$=$}}1
+                {>}{{$>$}}1 {<}{{$<$}}1
+               {\\}{{$\lambda$}}1
+               {\\\\}{{\char`\\\char`\\}}1
+               {->}{{$\rightarrow$}}2 {>=}{{$\geq$}}2 {<-}{{$\leftarrow$}}2
+               {<=}{{$\leq$}}2 {=>}{{$\Rightarrow$}}2 
+               {\ .}{{$\circ$}}2 {\ .\ }{{$\circ$}}2
+               {>>}{{>>}}2 {>>=}{{>>=}}2 {=<<}{{=<<}}2
+               {|}{{$\mid$}}1
+               {dotdotdot}{{$\ldots$}}3
+    }
+
