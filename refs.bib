@@ -5721,7 +5721,7 @@ doi={10.1109/ISPASS.2010.5452024},}
 }
 
 
-%% Adding for PLDI15:
+@Comment Adding for PLDI15:
 
 
 @inproceedings{par-constraint-survey,
@@ -5774,3 +5774,104 @@ doi={10.1109/ISPASS.2010.5452024},}
   year={2011},
   publisher={Cambridge Univ Press}
 }
+
+@Comment   Generators and Continuations:
+
+@article{Allison01011990,
+author = {Allison, L.}, 
+title = {Continuations Implement Generators and Streams},
+volume = {33}, 
+number = {5}, 
+pages = {460-465}, 
+year = {1990}, 
+doi = {10.1093/comjnl/33.5.460}, 
+abstract ={Continuations are used to program generators and a variation on stream functions. The generators allow backtracking or non-deterministic search. The streams process sequences of values in stages without the creation of intermediate data structures (lists). Both are programmed in a functional language without special extensions. This brings two useful problem solving models into pure functional programming.}, 
+URL = {http://comjnl.oxfordjournals.org/content/33/5/460.abstract}, 
+eprint = {http://comjnl.oxfordjournals.org/content/33/5/460.full.pdf+html}, 
+journal = {The Computer Journal} 
+}
+
+@inproceedings{Fischer:2009:PFL:1596550.1596556,
+ author = {Fischer, Sebastian and Kiselyov, Oleg and Shan, Chung-chieh},
+ title = {Purely Functional Lazy Non-deterministic Programming},
+ booktitle = {Proceedings of the 14th ACM SIGPLAN International Conference on Functional Programming},
+ series = {ICFP '09},
+ year = {2009},
+ isbn = {978-1-60558-332-7},
+ location = {Edinburgh, Scotland},
+ pages = {11--22},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/1596550.1596556},
+ doi = {10.1145/1596550.1596556},
+ acmid = {1596556},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {call-time choice, continuations, monads, side effects},
+}
+
+
+@misc{oleg-generators,
+  title	       = {Generators: the API for traversal and non-determinism},
+  author       = {Kiselyov, Oleg},
+  year	       = 2011,
+  howpublished = {\url{http://okmij.org/ftp/continuations/generators.html}}
+}
+
+@Comment Oleg says first use of generators:
+@Comment http://okmij.org/ftp/continuations/generators.html#origins
+@article{Shaw:1977:AVA:359763.359782,
+ author = {Shaw, Mary and Wulf, William A. and London, Ralph L.},
+ title = {Abstraction and Verification in Alphard: Defining and Specifying Iteration and Generators},
+ journal = {Commun. ACM},
+ issue_date = {Aug. 1977},
+ volume = {20},
+ number = {8},
+ month = aug,
+ year = {1977},
+ issn = {0001-0782},
+ pages = {553--564},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/359763.359782},
+ doi = {10.1145/359763.359782},
+ acmid = {359782},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {abstraction and representation, abstraction data types, assertions, control specialization, correctness, generators, invariants, iteration statements, modular decomposition, program specifications, programming languages, programming methodology, proofs of correctness, types, verification},
+} 
+
+@article{Liskov:1993:HC:155360.155367,
+ author = {Liskov, Barbara},
+ title = {A History of CLU},
+ journal = {SIGPLAN Not.},
+ issue_date = {March 1993},
+ volume = {28},
+ number = {3},
+ month = mar,
+ year = {1993},
+ issn = {0362-1340},
+ pages = {133--147},
+ numpages = {15},
+ url = {http://doi.acm.org/10.1145/155360.155367},
+ doi = {10.1145/155360.155367},
+ acmid = {155367},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@incollection{Griswold:1996:HIP:234286.1057830,
+ author = {Griswold, Ralph E. and Griswold, Madge T.},
+ chapter = {History of the Icon Programming Language},
+ title = {History of Programming languages---II},
+ editor = {Bergin,Jr., Thomas J. and Gibson,Jr., Richard G.},
+ year = {1996},
+ isbn = {0-201-89502-1},
+ pages = {599--624},
+ numpages = {26},
+ url = {http://doi.acm.org/10.1145/234286.1057830},
+ doi = {10.1145/234286.1057830},
+ acmid = {1057830},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+
