@@ -1709,20 +1709,6 @@ author = "Kevin L Briggman and Winfried Denk"
 }
 
 
-@article{cnc:Budimlic:2010,
-  author = 	 {Budimlic, Zoran and Burke, Michael and Cave, Vincent and Knobe, Kathleen and Lowney, Geoff and Newton, Ryan and Palsberg, Jens and Peixotto, David and Sarkar, Vivek and Schlimbach, Frank and Tasirlar, Sagnak},
-  title = 	 {The {CnC} Programming Model},
-  journal = 	 {Journal of Scientific Programming},
-  year = 	 {2010},
-  OPTkey = 	 {},
-  OPTvolume = 	 {},
-  OPTnumber = 	 {},
-  OPTpages = 	 {},
-  OPTmonth = 	 {},
-  OPTnote = 	 {},
-  OPTannote = 	 {}
-}
-
 @article{briggman-denk,
 title = "Towards neural circuit reconstruction with volume electron microscopy techniques",
 journal = "Current Opinion in Neurobiology",
@@ -5721,7 +5707,7 @@ doi={10.1109/ISPASS.2010.5452024},}
 }
 
 
-%% Adding for PLDI15:
+@Comment Adding for PLDI15:
 
 
 @inproceedings{par-constraint-survey,
@@ -5760,6 +5746,257 @@ doi={10.1109/ISPASS.2010.5452024},}
 }
 
 
+@inproceedings{haskell-imprecise-exceptions,
+  title={A semantics for imprecise exceptions},
+  author={Peyton Jones, Simon and Reid, Alastair and Henderson, Fergus and Hoare, Tony and Marlow, Simon},
+  booktitle={ACM SIGPLAN Notices},
+  volume={34},
+  number={5},
+  pages={25--36},
+  year={1999},
+  organization={ACM}
+}
+
+
+@article{outsidein,
+  title={OutsideIn (X) Modular type inference with local assumptions},
+  author={Vytiniotis, Dimitrios and Peyton Jones, Simon and Schrijvers, Tom and Sulzmann, Martin},
+  journal={Journal of Functional Programming},
+  volume={21},
+  number={4-5},
+  pages={333--412},
+  year={2011},
+  publisher={Cambridge Univ Press}
+}
+
+@Comment   Generators and Continuations:
+
+@article{Allison01011990,
+author = {Allison, L.}, 
+title = {Continuations Implement Generators and Streams},
+volume = {33}, 
+number = {5}, 
+pages = {460-465}, 
+year = {1990}, 
+doi = {10.1093/comjnl/33.5.460}, 
+abstract ={Continuations are used to program generators and a variation on stream functions. The generators allow backtracking or non-deterministic search. The streams process sequences of values in stages without the creation of intermediate data structures (lists). Both are programmed in a functional language without special extensions. This brings two useful problem solving models into pure functional programming.}, 
+URL = {http://comjnl.oxfordjournals.org/content/33/5/460.abstract}, 
+eprint = {http://comjnl.oxfordjournals.org/content/33/5/460.full.pdf+html}, 
+journal = {The Computer Journal} 
+}
+
+@inproceedings{Fischer:2009:PFL:1596550.1596556,
+ author = {Fischer, Sebastian and Kiselyov, Oleg and Shan, Chung-chieh},
+ title = {Purely Functional Lazy Non-deterministic Programming},
+ booktitle = {Proceedings of the 14th ACM SIGPLAN International Conference on Functional Programming},
+ series = {ICFP '09},
+ year = {2009},
+ isbn = {978-1-60558-332-7},
+ location = {Edinburgh, Scotland},
+ pages = {11--22},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/1596550.1596556},
+ doi = {10.1145/1596550.1596556},
+ acmid = {1596556},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {call-time choice, continuations, monads, side effects},
+}
+
+
+@misc{oleg-generators,
+  title	       = {Generators: the API for traversal and non-determinism},
+  author       = {Kiselyov, Oleg},
+  year	       = 2011,
+  howpublished = {\url{http://okmij.org/ftp/continuations/generators.html}}
+}
+
+@Comment Oleg says first use of generators:
+@Comment http://okmij.org/ftp/continuations/generators.html#origins
+@article{Shaw:1977:AVA:359763.359782,
+ author = {Shaw, Mary and Wulf, William A. and London, Ralph L.},
+ title = {Abstraction and Verification in Alphard: Defining and Specifying Iteration and Generators},
+ journal = {Commun. ACM},
+ issue_date = {Aug. 1977},
+ volume = {20},
+ number = {8},
+ month = aug,
+ year = {1977},
+ issn = {0001-0782},
+ pages = {553--564},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/359763.359782},
+ doi = {10.1145/359763.359782},
+ acmid = {359782},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {abstraction and representation, abstraction data types, assertions, control specialization, correctness, generators, invariants, iteration statements, modular decomposition, program specifications, programming languages, programming methodology, proofs of correctness, types, verification},
+} 
+
+@article{Liskov:1993:HC:155360.155367,
+ author = {Liskov, Barbara},
+ title = {A History of CLU},
+ journal = {SIGPLAN Not.},
+ issue_date = {March 1993},
+ volume = {28},
+ number = {3},
+ month = mar,
+ year = {1993},
+ issn = {0362-1340},
+ pages = {133--147},
+ numpages = {15},
+ url = {http://doi.acm.org/10.1145/155360.155367},
+ doi = {10.1145/155360.155367},
+ acmid = {155367},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@incollection{Griswold:1996:HIP:234286.1057830,
+ author = {Griswold, Ralph E. and Griswold, Madge T.},
+ chapter = {History of the Icon Programming Language},
+ title = {History of Programming languages---II},
+ editor = {Bergin,Jr., Thomas J. and Gibson,Jr., Richard G.},
+ year = {1996},
+ isbn = {0-201-89502-1},
+ pages = {599--624},
+ numpages = {26},
+ url = {http://doi.acm.org/10.1145/234286.1057830},
+ doi = {10.1145/234286.1057830},
+ acmid = {1057830},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+
+@INPROCEEDINGS{par-register-alloc, 
+author={Zobel, A.}, 
+booktitle={Computer Languages, 1992., Proceedings of the 1992 International Conference on}, 
+title={Program structure as basis for parallelizing global register allocation}, 
+year={1992}, 
+month={Apr}, 
+pages={262-271}, 
+keywords={parallel programming;performance evaluation;resource allocation;C kernels;benchmark;clique separators;interval graph;parallel global register allocation;register conflict graph;Computer science;Merging;Particle separators;Polynomials;Registers;Tree graphs}, 
+doi={10.1109/ICCL.1992.185490},}
+
+
+@inproceedings{might-gpu-cfa,
+  title={EigenCFA: accelerating flow analysis with GPUs},
+  author={Prabhu, Tarun and Ramalingam, Shreyas and Might, Matthew and Hall, Mary},
+  booktitle={ACM SIGPLAN Notices},
+  volume={46},
+  number={1},
+  pages={511--522},
+  year={2011},
+  organization={ACM}
+}
+
+@article{hm-x,
+  title={Type inference with constrained types},
+  author={Odersky, Martin and Sulzmann, Martin and Wehr, Martin},
+  journal={Theory and practice of object systems},
+  volume={5},
+  number={LAMP-ARTICLE-1999-001},
+  pages={35},
+  year={1999}
+}
+
+
+@inproceedings{thf06,
+  author    = {Sam Tobin-Hochstadt and Matthias Felleisen},
+  title     = {Interlanguage migration: from scripts to programs.},
+  booktitle = oopsla,
+  publisher = {(Companion (Dynamic Languages Symposium)},
+  year      = {2006},
+  pages     = {964-974},
+}
+
+@inproceedings{popl08,
+  author    = {Sam Tobin-Hochstadt and Matthias Felleisen},
+  title     = "The design and implementation of {Typed} {Scheme}",
+  booktitle = popl,
+  year      = {2008},
+  pages     = "395--406"
+}
+
+@inproceedings{thf:icfp10,
+  author    = {Sam Tobin-Hochstadt and Matthias Felleisen},
+  title     = "Logical Types for Untyped Languages",
+  booktitle = icfp,
+  year      = {2010},
+}
+
+@techreport{plt-tr1,
+  title="Reference: Racket",
+  author="Matthew Flatt and PLT",
+  institution="PLT Design, Inc.", 
+  year="2010", 
+  type="Technical Report",
+  note="\url{http://racket-lang.org/tr1/}"
+  }
+
+@inproceedings{padl12,
+ author = "Vincent St-Amour and Sam Tobin-Hochstadt and Matthew Flatt and Matthias Felleisen",
+ title = "Typing the numeric tower",
+ year = "2012",
+ booktitle = padl, 
+ pages = {289--303}
+}
+
+@article{lti-journal,
+ author = {Benjamin C. Pierce and David N. Turner},
+ title = {Local {T}ype {I}nference},
+ journal = {ACM Trans. Program. Lang. Syst.},
+ volume = {22},
+ number = {1},
+ year = {2000},
+ pages = {1--44},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@inproceedings{strickland-esop-09,
+  author = {T. Stephen Strickland and Sam Tobin-Hochstadt and and Matthias Felleisen},
+  title = {Practical Variable-Arity Polymorphism},
+  booktitle = esop,
+  year = 2009,
+  month = mar,
+  location = {York, UK},
+  pages="32--46"
+}
+
+@InProceedings{siek06,
+ author = {Jeremy G. Siek and Walid Taha},
+ title = {Gradual typing for Functional Languages},
+ booktitle = {Scheme and Functional Programming Workshop, University of Chicago, Technical Report TR-2006-06},
+ year = 2006,
+ month = {September},
+ pages = {81--92},
+}
+
+@inproceedings{nixos,
+  title={NixOS: A purely functional Linux distribution},
+  author={Dolstra, Eelco and L{\"o}h, Andres},
+  booktitle={ACM Sigplan Notices},
+  volume={43},
+  number={9},
+  pages={367--378},
+  year={2008},
+  organization={ACM}
+}
+
+
+@article{brady2013idris,
+  title={Idris, a general-purpose dependently typed programming language: Design and implementation},
+  author={Brady, Edwin},
+  journal={Journal of Functional Programming},
+  volume={23},
+  number={05},
+  pages={552--593},
+  year={2013},
+  publisher={Cambridge Univ Press}
+}
+
 @article{hamadi2009manysat,
   title={ManySAT: a Parallel SAT Solver.},
   author={Hamadi, Youssef and Jabbour, Said and Sais, Lakhdar},
@@ -5778,3 +6015,101 @@ doi={10.1109/ISPASS.2010.5452024},}
   year={2012},
   publisher={Springer}
 }
+
+@inproceedings{typed-racket,
+ author = {Tobin-Hochstadt, Sam and Felleisen, Matthias},
+ title = {The Design and Implementation of Typed Scheme},
+ booktitle = {Proceedings of the 35th Annual ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+ series = {POPL '08},
+ year = {2008},
+ isbn = {978-1-59593-689-9},
+ location = {San Francisco, California, USA},
+ pages = {395--406},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/1328438.1328486},
+ doi = {10.1145/1328438.1328486},
+ acmid = {1328486},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {scheme, type systems},
+}
+
+@inproceedings{hm-type-inference,
+  title={Principal type-schemes for functional programs},
+  author={Damas, Luis and Milner, Robin},
+  booktitle={Proceedings of the 9th ACM SIGPLAN-SIGACT symposium on Principles of programming languages},
+  pages={207--212},
+  year={1982},
+  organization={ACM}
+}
+
+@inproceedings{push-arrays,
+  title={Expressive array constructs in an embedded GPU kernel programming language},
+  author={Claessen, Koen and Sheeran, Mary and Svensson, Bo Joel},
+  booktitle={Proceedings of the 7th workshop on Declarative aspects and applications of multicore programming},
+  pages={21--30},
+  year={2012},
+  organization={ACM}
+}
+
+@article{cplex,
+  title={V12. 1: User’s Manual for CPLEX},
+  author={CPLEX, IBM ILOG},
+  journal={International Business Machines Corporation},
+  volume={46},
+  number={53},
+  pages={157},
+  year={2009}
+}
+
+@article{det-par-search,
+  title={Deterministic parallel backtrack search},
+  author={Herley, Kieran T and Pietracaprina, Andrea and Pucci, Geppino},
+  journal={Theoretical Computer Science},
+  volume={270},
+  number={1},
+  pages={309--324},
+  year={2002},
+  publisher={Elsevier}
+}
+
+
+@article{practical-theory-linq,
+ author = {Cheney, James and Lindley, Sam and Wadler, Philip},
+ title = {A Practical Theory of Language-integrated Query},
+ journal = {SIGPLAN Not.},
+ issue_date = {September 2013},
+ volume = {48},
+ number = {9},
+ month = sep,
+ year = {2013},
+ issn = {0362-1340},
+ pages = {403--416},
+ numpages = {14},
+ url = {http://doi.acm.org/10.1145/2544174.2500586},
+ doi = {10.1145/2544174.2500586},
+ acmid = {2500586},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {antiquotation, f\#, lambda calculus, linq, quotation, sql},
+} 
+
+
+@inproceedings{duke-fhpc,
+ author = {Duke, David J. and Hosseini, Fouzhan and Carr, Hamish},
+ title = {Parallel Computation of Multifield Topology: Experience of Haskell in a Computational Science Application},
+ booktitle = {Proceedings of the 3rd ACM SIGPLAN Workshop on Functional High-performance Computing},
+ series = {FHPC '14},
+ year = {2014},
+ isbn = {978-1-4503-3040-4},
+ location = {Gothenburg, Sweden},
+ pages = {11--21},
+ numpages = {11},
+ url = {http://doi.acm.org/10.1145/2636228.2636237},
+ doi = {10.1145/2636228.2636237},
+ acmid = {2636237},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {computational topology, haskell, joint contour net, performance},
+} 
+
