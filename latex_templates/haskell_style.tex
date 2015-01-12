@@ -104,11 +104,13 @@
 }
 
 \lstnewenvironment{code}
-    {\lstset{style=Haskell}%
+    {\lstset{style=haskell}%
       \csname lst@SetFirstLabel\endcsname}
     {\csname lst@SaveFirstLabel\endcsname}
     {}
 
+% Default all listings to Haskell style
+\lstset{style=haskell}
 
 \newcommand{\inl}[1]{\lstinline[style=inline];#1;}
 
