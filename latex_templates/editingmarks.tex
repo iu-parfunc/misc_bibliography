@@ -31,8 +31,9 @@
    }{} 
 
 \else
-   \newcommand{\textred}[1]{#1}
-%   \newcommand{\textred}[1]{{\color{comment-red}{#1}}}
+%   \newcommand{\textred}[1]{#1}
+% Keep it on so we catch stuff to fix:
+   \newcommand{\textred}[1]{{\color{comment-red}{#1}}}
    \newcommand{\pgwrapper}[2]{}
 %   \newcommand{\note}[1]{}
    \newcommand{\note}[1]{{\begin{itemize}\item \textcolor{blue}{#1} \end{itemize}}}
