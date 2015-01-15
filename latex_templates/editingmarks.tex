@@ -1,5 +1,5 @@
 
-\usepackage{color}
+\usepackage[usenames,dvipsnames]{xcolor}
 
 \newcommand{\rn}[1]{\pgwrapper{RRN}{#1}}  % Ryan
 \newcommand{\tlm}[1]{\pgwrapper{TLM}{#1}} % Trevor
@@ -31,8 +31,9 @@
    }{} 
 
 \else
-   \newcommand{\textred}[1]{#1}
-%   \newcommand{\textred}[1]{{\color{comment-red}{#1}}}
+%   \newcommand{\textred}[1]{#1}
+% Keep it on so we catch stuff to fix:
+   \newcommand{\textred}[1]{{\color{comment-red}{#1}}}
    \newcommand{\pgwrapper}[2]{}
 %   \newcommand{\note}[1]{}
    \newcommand{\note}[1]{{\begin{itemize}\item \textcolor{blue}{#1} \end{itemize}}}
