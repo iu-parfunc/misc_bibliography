@@ -6307,3 +6307,226 @@ language={English}
   year={2013},
   publisher={PeerJ Inc.}
 }
+
+
+@article{Berger2002,
+abstract = {Programmers hoping to achieve performance improvements often use custom memory allocators. This in-depth study examines eight applications that use custom allocators. Surprisingly, for six of these applications, a state-of-the-art general-purpose allocator (the Lea allocator) performs as well as or better than the custom allocators. The two exceptions use regions, which deliver higher performance (improvements of up to 44\%). Regions also reduce programmer burden and eliminate a source of memory leaks. However, we show that the inability of programmers to free individual objects within regions can lead to a substantial increase in memory consumption. Worse, this limitation precludes the use of regions for common programming idioms, reducing their usefulness.$\backslash$nWe present a generalization of general-purpose and region-based allocators that we call reaps. Reaps are a combination of regions and heaps, providing a full range of region semantics with the addition of individual object deletion. We show that our implementation of reaps provides high performance, outperforming other allocators with region-like semantics. We then use a case study to demonstrate the space advantages and software engineering benefits of reaps in practice. Our results indicate that programmers needing fast regions should use reaps, and that most programmers considering custom allocators should instead use the Lea allocator.},
+author = {Berger, Emery D. and Zorn, Benjamin G. and McKinley, Kathryn S.},
+doi = {10.1145/583854.582421},
+file = {:home/ezyang/Dropbox/Mendeley/Berger, Zorn, McKinley - Reconsidering custom memory allocation.pdf:pdf},
+isbn = {1-58113-471-1},
+issn = {03621340},
+journal = {ACM SIGPLAN Notices},
+pages = {1},
+title = {{Reconsidering custom memory allocation}},
+volume = {37},
+year = {2002}
+}
+@article{Blelloch2012,
+annote = {Interesting because it's a way of talking about blocks while retaining a high level description. You might say CNFs are providing an API for directly interfacing with the blocks described in this abstraction. Analogy is not perfect and it's unclear how much technical machinery is transferable.},
+author = {Blelloch, Guy E and Harper, Robert},
+file = {:home/ezyang/Dropbox/Mendeley/Blelloch, Harper - Cache and I O Efficient Functional Algorithms.pdf:pdf},
+isbn = {9781450318327},
+keywords = {cost semantics,i,o algorithms},
+pages = {1--11},
+title = {{Cache and I / O Efficient Functional Algorithms}},
+year = {2012}
+}
+@article{Bonachea2004,
+abstract = {MPI support is nearly ubiquitous on high performance sytems today,$\backslash$nand is generally highly tuned for performance. It would thus seem$\backslash$nto offer a convenient \&quot;portable network assembly language \&quot;$\backslash$nto developers of parallel programming languages who wish to target$\backslash$ndifferent network architectures. Unfortunately, neither the traditional$\backslash$nMPI 1.1 API, nor the newer MPI 2.0 extensions for one-sided communication$\backslash$nprovide an adequate compilation target for global address space languages,$\backslash$nand this is likely to be the case for many other parallel languages$\backslash$nas well. Simulating one-sided communication under the MPI 1.1 API$\backslash$nis too expensive, while the MPI 2.0 one-sided API imposes a number$\backslash$nof restrictions that would need to be incorporated at the language$\backslash$nlevel, as is it unlikely that a compiler could effectively hide them.},
+annote = {From the Unified C pubs page; hoping for some commentary about data transfer but didn't really see any.},
+author = {Bonachea, Dan and Duell, Jason},
+doi = {10.1504/IJHPCN.2004.007569},
+file = {:home/ezyang/Dropbox/Mendeley/Bonachea, Duell - Problems with using MPI 1.1 and 2.0 as compilation targets for parallel language implementations.pdf:pdf},
+issn = {1740-0562},
+journal = {International Journal of High Performance Computing and Networking},
+keywords = {31,and continue to in-,and titanium,dress space,global ad-,into porting our software,mpi one-sided,one-sided communication,parallel languages,rma,substantial amounts of effort,vest,we have invested},
+pages = {91},
+title = {{Problems with using MPI 1.1 and 2.0 as compilation targets for parallel language implementations}},
+volume = {1},
+year = {2004}
+}
+@article{Chase1989,
+annote = {Uniform address space across everything},
+author = {Chase, J. and Amador, F. and Lazowska, E. and Levy, H. and Littlefield, R.},
+doi = {10.1145/74851.74865},
+file = {:home/ezyang/Dropbox/Mendeley//Chase et al. - The Amber system parallel programming on a network of multiprocessors.pdf:pdf},
+isbn = {0897913388},
+issn = {01635980},
+journal = {ACM SIGOPS Operating Systems Review},
+number = {December 1989},
+pages = {147--158},
+title = {{The Amber system: parallel programming on a network of multiprocessors}},
+volume = {23},
+year = {1989}
+}
+@misc{Chase1992,
+annote = {Argues that there should just be a single 64-bit address space.},
+author = {Chase, Jeffrey S. and Levy, Henry M. and Lazowska, Edward D. and Baker-Harvey, Miche},
+booktitle = {ACM SIGPLAN Notices},
+doi = {10.1145/141937.141969},
+file = {:home/ezyang/Dropbox/Mendeley/Chase et al. - Lightweight shared objects in a 64-bit operating system.pdf:pdf},
+isbn = {0201533723},
+issn = {03621340},
+pages = {397--413},
+title = {{Lightweight shared objects in a 64-bit operating system}},
+volume = {27},
+year = {1992}
+}
+@article{Chaumette2004,
+annote = {Yet another fast serialization paper. They don't try to make everything contiguous, so it seems to have a large object assumption},
+author = {Chaumette, Serge and Grange, Pascal and M\'{e}trot, Beno\^{\i}t and Vign\'{e}ras, Pierre},
+file = {:home/ezyang/Dropbox/Mendeley/Chaumette et al. - Implementing a High Performance Object Transfer Mechanism over JikesRVM.pdf:pdf},
+title = {{Implementing a High Performance Object Transfer Mechanism over JikesRVM}},
+year = {2004}
+}
+@article{Chilimbi1999,
+annote = {This is the ccmorph paper.},
+author = {Chilimbi, TM and Hill, MD and Larus, JR},
+file = {:home/ezyang/Dropbox/Mendeley/Chilimbi, Hill, Larus - Cache-conscious structure layout.pdf:pdf},
+journal = {ACM SIGPLAN Notices},
+title = {{Cache-conscious structure layout}},
+url = {http://dl.acm.org/citation.cfm?id=301633},
+year = {1999}
+}
+@misc{Chilimbi1999a,
+abstract = {Processor and memory technology trends show a continual increase in the cost of accessing main memory. Machine designers have tried to mitigate the effect of this trend through a variety of techniques that attempt to reduce or tolerate memory latency. These techniques, unfortunately, have only been partially successful for pointer- manipulating programs. Recent research has demonstrated that these programs can benefit greatly from the complementary approach of reorganizing pointer data structures to improve cache locality. This paper describes how a generational garbage collector can be used to achieve a cache-conscious data layout, in which objects with high temporal affinity are placed next to each other, so they are likely to reside in the same cache block. The paper demonstrates the feasibility of collecting low overhead, real-time profiling information about data access patterns for object-oriented languages, and describes a new copying algorithm that utilizes this information to produce a cache-conscious object layout. Preliminary results indicate that this technique reduces cache miss rates by 21-42$\backslash$\%, and improves program performance by 14-37$\backslash$\%.},
+author = {Chilimbi, Trishul M. and Larus, James R.},
+booktitle = {ACM SIGPLAN Notices},
+doi = {10.1145/301589.286865},
+file = {:home/ezyang/Dropbox/Mendeley/Chilimbi, Larus - Using generational garbage collection to implement cache-conscious data placement.pdf:pdf},
+isbn = {1-58113-114-3},
+issn = {03621340},
+pages = {37--48},
+title = {{Using generational garbage collection to implement cache-conscious data placement}},
+volume = {34},
+year = {1999}
+}
+@inproceedings{Courtrai2000,
+author = {Courtrai, Luc and Maheo, Yves and Raimbault, Frederic},
+booktitle = {Myrinet User Group Conference (MUG)},
+file = {:home/ezyang/Dropbox/Mendeley/Courtrai, Maheo, Raimbault - Expresso a Library for Fast Java Objects Transfer.pdf:pdf},
+title = {{Expresso: a Library for Fast Java Objects Transfer}},
+year = {2000}
+}
+@article{GeneNovark2006,
+abstract = {Modern architectures require data locality to achieve performance. However, garbage-collected languages like Java limit the ability of programmers to influence object locality, and so impose a significant performance penalty. We present custom object layout, an approach that allows programmers to control object layout in garbage-collected languages. Custom object layout cooperates with copying garbage collection. At collection time, the garbage collector invokes programmer-supplied methods that direct object placement. Custom object layout is particularly effective at improving the locality of classes with well-known traversal patterns, such as dictionary data structures. We show that using custom object layout can reduce cache misses by 50\%-77\% and thus improves the query performance of dictionary data structures by 20\%.},
+author = {{Gene Novark}, T D S},
+file = {:home/ezyang/Dropbox/Mendeley/Gene Novark - Custom Object Layout for Garbage-Collected Languages.pdf:pdf},
+journal = {Techreport},
+title = {{Custom Object Layout for Garbage-Collected Languages}},
+url = {papers://2cd573f8-44b1-4938-8484-cf0e6dcd735b/Paper/p39},
+year = {2006}
+}
+@inproceedings{Hallenberg2002,
+author = {Hallenberg, Niels and Elsman, Martin and Tofte, Mads},
+booktitle = {PLDI},
+doi = {10.1145/543552.512547},
+file = {:home/ezyang/Dropbox/Mendeley/Hallenberg, Elsman, Tofte - Combining region inference and garbage collection.pdf:pdf},
+isbn = {1581134630},
+issn = {03621340},
+keywords = {garbage collection,region inference,standard ml},
+month = may,
+number = {5},
+pages = {141},
+title = {{Combining region inference and garbage collection}},
+url = {http://portal.acm.org/citation.cfm?doid=543552.512547},
+volume = {37},
+year = {2002}
+}
+@article{Kemper1995,
+abstract = {Four different approaches to optimizing the access to main memory
+resident persistent objects-techniques which are commonly referred to as
+pointer swizzling-are classified and evaluated. To speed up the access
+along inter-object references, the persistent pointers are transformed
+(swizzled) into main memory pointers (addresses). The pointer swizzling
+techniques allow the displacement of objects from the buffer before the
+end of an application, and the authors contrast them with the
+performance of an object manager using no pointer swizzling. The results
+of the quantitative evaluation prove that there is no one superior
+strategy for all application profiles. An adaptable system that uses the
+full range of pointer swizzling strategies is presented},
+author = {Kemper, Alfons and Kossmann, Donald},
+doi = {10.1007/BF01231646},
+file = {:home/ezyang/Dropbox/Mendeley/Kemper, Kossmann - Adaptable pointer swizzling strategies in object bases design, realization, and quantitative analysis.pdf:pdf},
+isbn = {0-8186-3570-3},
+issn = {10668888},
+journal = {The VLDB Journal},
+keywords = {Pointer swizzling,object-oriented database systems,performance evaluation},
+pages = {519--566},
+title = {{Adaptable pointer swizzling strategies in object bases: design, realization, and quantitative analysis}},
+volume = {4},
+year = {1995}
+}
+@article{Lattner2005,
+abstract = {This paper describes Automatic Pool Allocation, a transformation framework that segregates distinct instances of heap-based data structures into seperate memory pools and allows heuristics to be used to partially control the internal layout of those data structures. The primary goal of this work is performance improvement, not automatic memory management, and the paper makes several new contributions. The key contribution is a new compiler algorithm for partitioning heap objects in imperative programs based on a context-sensitive pointer analysis, including a novel strategy for correct handling of indirect (and potentially unsafe) function calls. The transformation does not require type safe programs and works for the full generality of C and C++. Second, the paper describes several optimizations that exploit data structure partitioning to further improve program performance. Third, the paper evaluates how memory hierarchy behavior and overall program performance are impacted by the new transformations. Using a number of benchmarks and a few applications, we find that compilation times are extremely low, and overall running times for heap intensive programs speed up by 10-25\% in many cases, about 2x in two cases, and more than 10x in two small benchmarks. Overall, we believe this work provides a new framework for optimizing pointer intensive programs by segregating and controlling the layout of heap-based data structures.},
+annote = {Looks very apt. Also a good seed for pulling in the region inference literature. (MLKit being the obvious one)},
+author = {Lattner, Chris and Adve, Vikram},
+doi = {10.1145/1065010.1065027},
+file = {:home/ezyang/Dropbox/Mendeley/Lattner, Adve - Automatic pool allocation improving performance by controlling data structure layout in the heap.pdf:pdf},
+isbn = {1595930566},
+issn = {0362-1340},
+journal = {ACM SIGPLAN Notices},
+keywords = {analysis,cache,data layout,pool allocation,recursive data structure,static},
+pages = {129--142},
+title = {{Automatic pool allocation: improving performance by controlling data structure layout in the heap}},
+volume = {40},
+year = {2005}
+}
+@article{Maassen2001,
+abstract = {Java offers interesting opportunities for parallel computing. In particular, Java Remote Method Invocation (RMI) provides a flexible kind of remote procedure call (RPC) that supports polymorphism. Sun's RMI implementation achieves this kind of flexibility at the cost of a major runtime overhead. The goal of this article is to show that RMI can be implemented efficiently, while still supporting polymorphism and allowing interoperability with Java Virtual Machines (JVMs). We study a new approach for implementing RMI, using a compiler-based Java system called Manta. Manta uses a native (static) compiler instead of a just-in-time compiler. To implement RMI efficiently, Manta exploits compile-time type information for generating specialized serializers. Also, it uses an efficient RMI protocol and fast low-level communication protocols.A difficult problem with this approach is how to support polymorphism and interoperability. One of the consequences of polymorphism is that an RMI implementation must be able to download remote classes into an application during runtime. Manta solves this problem by using a dynamic bytecode compiler, which is capable of compiling and linking bytecode into a running application. To allow interoperability with JVMs, Manta also implements the Sun RMI protocol (i.e., the standard RMI protocol), in addition to its own protocol.We evaluate the performance of Manta using benchmarks and applications that run on a 32-node Myrinet cluster. The time for a null-RMI (without parameters or a return value) of Manta is 35 times lower than for the Sun JDK 1.2, and only slightly higher than for a C-based RPC protocol. This high performance is accomplished by pushing almost all of the runtime overhead of RMI to compile time. We study the performance differences between the Manta and the Sun RMI protocols in detail. The poor performance of the Sun RMI protocol is in part due to an inefficient implementation of the protocol. To allow a fair comparison, we compiled the applications and the Sun RMI protocol with the native Manta compiler. The results show that Manta's null-RMI latency is still eight times lower than for the compiled Sun RMI protocol and that Manta's efficient RMI protocol results in 1.8 to 3.4 times higher speedups for four out of six applications.},
+annote = {Serialization for parallel computing example},
+author = {Maassen, Jason and {Van Nieuwpoort}, Rob and Veldema, Ronald and Bal, Henri and Kielmann, Thilo and Jacobs, Ceriel and Hofman, Rutger},
+doi = {10.1145/506315.506317},
+file = {:home/ezyang/Dropbox/Mendeley//Maassen et al. - Efficient Java RMI for parallel programming.pdf:pdf},
+issn = {01640925},
+journal = {ACM Transactions on Programming Languages and Systems},
+number = {6},
+pages = {747--775},
+title = {{Efficient Java RMI for parallel programming}},
+volume = {23},
+year = {2001}
+}
+@article{Reames2013,
+abstract = {Garbage collection is widely used and has largely been a boon for$\backslash$nprogrammer productivity. However, traditional garbage collection is approaching$\backslash$nboth practical and theoretical performance limits. In practice, the maximum heap$\backslash$nsize and heap structure of large applications are influenced as much by garbage$\backslash$ncollector behavior as by resource availability.$\backslash$nWe present an alternate approach to garbage collection wherein the programmer$\backslash$nprovides untrusted deallocation hints. Usage of deallocation hints is similar to$\backslash$ntrusted manual deallocation, but the consequence of an inaccurate hint is lost$\backslash$nperformance not correctness. Our hinted collector algorithm uses these hints to$\backslash$nidentify a subset of unreachable objects with both better parallel asymptotic$\backslash$ncomplexity and practical performance. On some benchmarks, our prototype$\backslash$ncollector implementation achieves 10-20\% pause time reductions. We close with a$\backslash$ndiscussion of the design trade-offs inherent in our approach and lessons to be$\backslash$nlearned from our collector.},
+annote = {Haven't read the details closely enough to evaluate their particular implementation, but it's a good idea. Mostly related to the idea where we get to skip GC.},
+author = {Reames, Philip and Necula, George},
+doi = {10.1145/2464157.2464158},
+file = {:home/ezyang/Dropbox/Mendeley/Reames, Necula - Towards hinted collection annotations for decreasing garbage collector pause times.pdf:pdf},
+isbn = {9781450321006},
+journal = {Proceedings of the 2013 international symposium \ldots},
+keywords = {deallocation hint,hinted collection,mark and sweep,memory manage-,ment,parallel garbage collection},
+pages = {3--14},
+title = {{Towards hinted collection: annotations for decreasing garbage collector pause times}},
+url = {http://dl.acm.org/citation.cfm?id=2464158},
+year = {2013}
+}
+@article{Wilson1992,
+abstract = {Pointer swizzling at page fault time is a novel address translation mechanism that exploits conventional address translation hardware. It can support huge address spaces efficiently without long hardware addresses; such large address spaces are attractive for persistent object stores, distributed shared memories, and shared address space operating systems. This swizzling scheme can be used to provide data compatibility across machines with different word sizes, and even to provide binary code compatibility across machines with different hardware address sizes. Pointers are translated (`swizzled') from a long format to a shorter hardware-supported format at page fault time. No extra hardware is required, and no continual software overhead is incurred by presence checks or indirection of pointers. This pagewise technique exploits temporal and spatial locality in much the same way as a normal virtual memory; this gives it many desirable performance characteristics, especially given the trend toward larger main memories. It is easy to implement using common compilers and operating systems},
+author = {Wilson, P.R. and Kakkad, S.V.},
+doi = {10.1109/IWOOOS.1992.252959},
+file = {:home/ezyang/Dropbox/Mendeley/Wilson, Kakkad - Pointer swizzling at page fault time efficiently and compatibly supporting huge address spaces on standard hardware.pdf:pdf},
+isbn = {0-8186-3015-9},
+journal = {[1992] Proceedings of the Second International Workshop on Object Orientation in Operating Systems},
+title = {{Pointer swizzling at page fault time: efficiently and compatibly supporting huge address spaces on standard hardware}},
+year = {1992}
+}
+
+
+@inproceedings{Hallenberg2002,
+author = {Hallenberg, Niels and Elsman, Martin and Tofte, Mads},
+booktitle = {PLDI},
+doi = {10.1145/543552.512547},
+file = {:home/ezyang/Dropbox/Mendeley/Hallenberg, Elsman, Tofte - Combining region inference and garbage collection.pdf:pdf},
+isbn = {1581134630},
+issn = {03621340},
+keywords = {garbage collection,region inference,standard ml},
+mendeley-groups = {Regions/Linearity,Resource Limits},
+month = may,
+number = {5},
+pages = {141},
+title = {{Combining region inference and garbage collection}},
+url = {http://portal.acm.org/citation.cfm?doid=543552.512547},
+volume = {37},
+year = {2002}
+}
