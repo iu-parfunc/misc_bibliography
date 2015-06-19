@@ -349,7 +349,7 @@ address = {New York, NY, USA}
 @article{MonadicRegions,
  author = {Fluet, Matthew and Morrisett, Greg},
  title = {Monadic regions},
- journal = {J. Funct. Program.},
+ journal = {Journal of Functional Programming},
  volume = {16},
  issue = {4-5},
  month = {July},
@@ -658,7 +658,7 @@ key = {{$\!\!$}} ,
 @article{HuetZipper,
  author = {Huet, G\'{e}rard},
  title = {The Zipper},
- journal = {J. Funct. Program.},
+ journal = {Journal of Functional Programming},
  volume = {7},
  issue = {5},
  month = {September},
@@ -1538,7 +1538,7 @@ author = "Kevin L Briggman and Winfried Denk"
 @article{Thiemann:2002:TRH:968417.968423,
  author = {Thiemann, Peter},
  title = {A typed representation for {HTML} and {XML} documents in {Haskell}},
- journal = {J. Funct. Program.},
+ journal = {Journal of Functional Programming},
  volume = {12},
  issue = {5},
  month = {July},
@@ -2265,7 +2265,7 @@ author = "Kevin L Briggman and Winfried Denk"
 @article{Thiemann:2002:TRH:968417.968423,
  author = {Thiemann, Peter},
  title = {A typed representation for {HTML} and {XML} documents in {Haskell}},
- journal = {J. Funct. Program.},
+ journal = {Journal of Functional Programming},
  volume = {12},
  issue = {5},
  month = {July},
@@ -2480,7 +2480,7 @@ author = "Kevin L Briggman and Winfried Denk"
 @article{conal-pan,
  author = {Elliott, Conal and Finne, Sigbj{\o}rn and De Moor, Oege},
  title = {Compiling embedded languages},
- journal = {J. Funct. Program.},
+ journal = {Journal of Functional Programming},
  volume = {13},
  issue = {3},
  month = {May},
@@ -2518,7 +2518,7 @@ author = "Kevin L Briggman and Winfried Denk"
 @article{claessen-poor-mans-concurrency,
  author = {Claessen, Koen},
  title = {A poor man's concurrency monad},
- journal = {J. Funct. Program.},
+ journal = {Journal of Functional Programming},
  volume = {9},
  issue = {3},
  month = {May},
@@ -6350,7 +6350,8 @@ title = {{The Amber system: parallel programming on a network of multiprocessors
 volume = {23},
 year = {1989}
 }
-@misc{Chase1992,
+
+@inproceedings{Chase1992,
 annote = {Argues that there should just be a single 64-bit address space.},
 author = {Chase, Jeffrey S. and Levy, Henry M. and Lazowska, Edward D. and Baker-Harvey, Miche},
 booktitle = {ACM SIGPLAN Notices},
@@ -6363,6 +6364,7 @@ title = {{Lightweight shared objects in a 64-bit operating system}},
 volume = {27},
 year = {1992}
 }
+
 @article{Chaumette2004,
 annote = {Yet another fast serialization paper. They don't try to make everything contiguous, so it seems to have a large object assumption},
 author = {Chaumette, Serge and Grange, Pascal and M\'{e}trot, Beno\^{\i}t and Vign\'{e}ras, Pierre},
@@ -6370,6 +6372,7 @@ file = {:home/ezyang/Dropbox/Mendeley/Chaumette et al. - Implementing a High Per
 title = {{Implementing a High Performance Object Transfer Mechanism over JikesRVM}},
 year = {2004}
 }
+
 @article{Chilimbi1999,
 annote = {This is the ccmorph paper.},
 author = {Chilimbi, TM and Hill, MD and Larus, JR},
@@ -6379,7 +6382,8 @@ title = {{Cache-conscious structure layout}},
 url = {http://dl.acm.org/citation.cfm?id=301633},
 year = {1999}
 }
-@misc{Chilimbi1999a,
+
+@inproceedings{Chilimbi1999a,
 abstract = {Processor and memory technology trends show a continual increase in the cost of accessing main memory. Machine designers have tried to mitigate the effect of this trend through a variety of techniques that attempt to reduce or tolerate memory latency. These techniques, unfortunately, have only been partially successful for pointer- manipulating programs. Recent research has demonstrated that these programs can benefit greatly from the complementary approach of reorganizing pointer data structures to improve cache locality. This paper describes how a generational garbage collector can be used to achieve a cache-conscious data layout, in which objects with high temporal affinity are placed next to each other, so they are likely to reside in the same cache block. The paper demonstrates the feasibility of collecting low overhead, real-time profiling information about data access patterns for object-oriented languages, and describes a new copying algorithm that utilizes this information to produce a cache-conscious object layout. Preliminary results indicate that this technique reduces cache miss rates by 21-42$\backslash$\%, and improves program performance by 14-37$\backslash$\%.},
 author = {Chilimbi, Trishul M. and Larus, James R.},
 booktitle = {ACM SIGPLAN Notices},
@@ -6392,6 +6396,7 @@ title = {{Using generational garbage collection to implement cache-conscious dat
 volume = {34},
 year = {1999}
 }
+
 @inproceedings{Courtrai2000,
 author = {Courtrai, Luc and Maheo, Yves and Raimbault, Frederic},
 booktitle = {Myrinet User Group Conference (MUG)},
@@ -6514,11 +6519,10 @@ url = {http://dl.acm.org/citation.cfm?id=1243418.1243424},
 year = {2007}
 }
 
-
-@techreport{MicrosoftCorporation2014,
+@misc{MicrosoftCorporation2014,
 author = {{Microsoft Corporation}},
-file = {:home/ezyang/Dropbox/Mendeley/Microsoft Corporation - Word (. doc) Binary File Format.pdf:pdf},
 title = {{Word (. doc) Binary File Format}},
+howpublished = {\url{https://msdn.microsoft.com/en-us/library/office/cc313153(v=office.12).aspx}},
 year = {2014}
 }
 
@@ -6538,7 +6542,7 @@ year = {1995}
 author = {{Microsoft Corporation}},
 booktitle = {Microsoft Developer Network},
 title = {{Bitmap Storage}},
-url = {https://msdn.microsoft.com/en-us/library/dd183391.aspx},
+howpublished = {\url{https://msdn.microsoft.com/en-us/library/dd183391.aspx}},
 year = {2015}
 }
 
@@ -6551,11 +6555,12 @@ year = {2015}
 }
 
 
-@article{Shekita1996,
+@book{Shekita1996,
 abstract = {This paper describes Cricket, a new database storage system that is intended to be used as a platform for design environments and persistent programming languages. Cricket uses the memory management primitives of the Mach operating system to provide the abstraction of a shared, transactional single-level store that can be directly accessed by user applications. In this paper, we present the design and motivation for Cricket. We also present some initial performance results which show that, for its intended applications, Cricket can provide better performance than a general-purpose database storage system.},
 author = {Shekita, Eugene and Zwilling, Michael},
 file = {:home/ezyang/Dropbox/Mendeley/Shekita, Zwilling - Cricket A Mapped, Persistent Object Store.pdf:pdf},
 title = {{Cricket: A Mapped, Persistent Object Store}},
+publisher={Center for Parallel Optimization, Computer Sciences Department, University of Wisconsin},
 year = {1996}
 }
 
@@ -6589,7 +6594,7 @@ year = {2002}
 @article{Loogen:2005:PFP:1067405.1067409,
  author = {Loogen, Rita and Ortega-mall{\'e}n, Yolanda and Pe\~{n}a-mar\'{\i}, Ricardo},
  title = {Parallel Functional Programming in {E}den},
- journal = {J. Funct. Program.},
+ journal = {Journal of Functional Programming},
  issue_date = {May 2005},
  volume = {15},
  number = {3},
@@ -6654,7 +6659,7 @@ year = {2012}
 @INPROCEEDINGS{Launchbury93anatural,
     author = {John Launchbury},
     title = {A Natural Semantics for Lazy Evaluation},
-    booktitle = {},
+    booktitle={Proceedings of the 20th ACM SIGPLAN-SIGACT symposium on Principles of programming languages},
     year = {1993},
     pages = {144--154},
     publisher = {ACM Press}
