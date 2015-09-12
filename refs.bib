@@ -286,17 +286,13 @@ address = {New York, NY, USA}
 @article{IStructures,
  author = {Arvind and Nikhil, Rishiyur S. and Pingali, Keshav K.},
  title = {I-structures: {D}ata structures for parallel computing},
- journal = {ACM Trans. Program. Lang. Syst.},
+ journal = {TOPLAS},
  issue_date = {Oct. 1989},
  volume = {11},
  issue = {4},
- month = {October},
  year = {1989},
- issn = {0164-0925},
  pages = {598--632},
  numpages = {35},
- url = {http://doi.acm.org/10.1145/69558.69562},
- doi = {http://doi.acm.org/10.1145/69558.69562},
  acmid = {69562},
  publisher = {ACM},
  address = {New York, NY, USA},
@@ -521,8 +517,7 @@ address = {New York, NY, USA}
 @inproceedings{monad-par,
  author = {Marlow, Simon and Newton, Ryan and Peyton Jones, Simon},
  title = {A monad for deterministic parallelism},
- booktitle = {Proceedings of the 4th ACM symposium on {H}askell},
- series = {Haskell '11},
+ booktitle = {Haskell '11},
  year = {2011},
  pages = {71--82},
  publisher = {ACM},
@@ -4788,7 +4783,7 @@ ISSN={ },}
 @inproceedings{lvish-pldi,
   title={Taming the parallel effect zoo: Extensible deterministic parallelism with {LVish}},
   author={Kuper, Lindsey and Todd, Aaron and Tobin-Hochstadt, Sam and Newton, Ryan R},
-  booktitle={Proceedings of the 35th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+  booktitle={PLDI},
   pages={2},
   year={2014},
   organization={ACM}
@@ -4832,15 +4827,12 @@ ISSN={ },}
  keywords = {Haskell parallel runtime},
 }
 
-@article{dpj,
+@inproceedings{dpj,
   title={A type and effect system for deterministic parallel {J}ava},
   author={Bocchino Jr, Robert L and Adve, Vikram S and Dig, Danny and Adve, Sarita V and Heumann, Stephen and Komuravelli, Rakesh and Overbey, Jeffrey and Simmons, Patrick and Sung, Hyojin and Vakilian, Mohsen},
-  journal={ACM Sigplan Notices},
-  volume={44},
-  number={10},
+  booktitle={OOPSLA},
   pages={97--116},
   year={2009},
-  publisher={ACM}
 }
 
 
@@ -4865,7 +4857,7 @@ ISSN={ },}
 @inproceedings{lvish-fhpc,
   title={{LVars}: Lattice-based data structures for deterministic parallelism},
   author={Kuper, Lindsey and Newton, Ryan R},
-  booktitle={Proceedings of the 2nd ACM SIGPLAN workshop on Functional high-performance computing (FHPC'13)},
+  booktitle={FHPC},
   pages={71--84},
   year={2013},
   organization={ACM}
@@ -5071,7 +5063,7 @@ ISSN={ },}
 @inproceedings{concurrent-constraint,
   title={Concurrent constraint programming},
   author={Saraswat, Vijay A and Rinard, Martin},
-  booktitle={Proceedings of the 17th ACM SIGPLAN-SIGACT symposium on Principles of programming languages},
+  booktitle={POPL},
   pages={232--245},
   year={1989},
   organization={ACM}
@@ -5080,7 +5072,7 @@ ISSN={ },}
 @article{concurrent-constraint2,
   title={Design, implementation, and evaluation of the constraint language cc (FD)},
   author={Van Hentenryck, Pascal and Saraswat, Vijay and Deville, Yves},
-  journal={The Journal of Logic Programming},
+  journal={J. Logic Prog.},
   volume={37},
   number={1-3},
   pages={139--164},
@@ -5234,19 +5226,9 @@ ISSN={ },}
 @inproceedings{typed-racket-type-system,
  author = {Tobin-Hochstadt, Sam and Felleisen, Matthias},
  title = {Logical Types for Untyped Languages},
- booktitle = {Proceedings of the 15th ACM SIGPLAN International Conference on Functional Programming},
- series = {ICFP '10},
+ booktitle = {ICFP},
  year = {2010},
- isbn = {978-1-60558-794-3},
- location = {Baltimore, Maryland, USA},
  pages = {117--128},
- numpages = {12},
- url = {http://doi.acm.org/10.1145/1863543.1863561},
- doi = {10.1145/1863543.1863561},
- acmid = {1863561},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {logic, type systems, untyped languages},
 }
 
 @inproceedings{kendo,
@@ -5317,12 +5299,9 @@ ISSN={ },}
 @inproceedings{ST-monad,
   title={Lazy functional state threads},
   author={Launchbury, John and Peyton Jones, Simon L},
-  booktitle={ACM SIGPLAN Notices},
-  volume={29},
-  number={6},
+  booktitle={PLDI},
   pages={24--35},
   year={1994},
-  organization={ACM}
 }
 
 
@@ -5360,7 +5339,7 @@ ISSN={ },}
 @incollection{logic-prog-and-or-parallelism,
   title={And-or parallelism in full {Prolog} with paged {Binding Arrays}},
   author={Gupta, Gopal and Costa, Vitor Santos},
-  booktitle={PARLE'92 Parallel Architectures and Languages Europe},
+  booktitle={PARLE'92},
   pages={617--632},
   year={1992},
   publisher={Springer}
@@ -5643,7 +5622,7 @@ doi={10.1109/ISPASS.2010.5452024},}
 @inproceedings{par-constraint-survey,
   title={A preliminary review of literature on parallel constraint solving},
   author={Gent, Ian P and Jefferson, Chris and Miguel, Ian and Moore, NC and Nightingale, Peter and Prosser, Patrick and Unsworth, Chris},
-  booktitle={Proceedings PMCS 2011 Workshop on Parallel Methods for Constraint Solving},
+  booktitle={PMCS},
   year={2011},
   organization={Citeseer}
 }
@@ -5652,7 +5631,7 @@ doi={10.1109/ISPASS.2010.5452024},}
 @inproceedings{liquid-haskell-icfp,
   title={Refinement types for {Haskell}},
   author={Jhala, Ranjit},
-  booktitle={Proceedings of the ACM SIGPLAN 2014 workshop on Programming languages meets program verification},
+  booktitle={PLPV},
   pages={27--28},
   year={2014},
   organization={ACM}
@@ -5670,12 +5649,9 @@ doi={10.1109/ISPASS.2010.5452024},}
 @inproceedings{haskell-imprecise-exceptions,
   title={A semantics for imprecise exceptions},
   author={Peyton Jones, Simon and Reid, Alastair and Henderson, Fergus and Hoare, Tony and Marlow, Simon},
-  booktitle={ACM SIGPLAN Notices},
-  volume={34},
-  number={5},
+  booktitle={PLDI},
   pages={25--36},
   year={1999},
-  organization={ACM}
 }
 
 @article{outsidein,
@@ -5700,9 +5676,8 @@ pages = {460-465},
 year = {1990},
 doi = {10.1093/comjnl/33.5.460},
 abstract ={Continuations are used to program generators and a variation on stream functions. The generators allow backtracking or non-deterministic search. The streams process sequences of values in stages without the creation of intermediate data structures (lists). Both are programmed in a functional language without special extensions. This brings two useful problem solving models into pure functional programming.},
-URL = {http://comjnl.oxfordjournals.org/content/33/5/460.abstract},
 eprint = {http://comjnl.oxfordjournals.org/content/33/5/460.full.pdf+html},
-journal = {The Computer Journal}
+journal = {Comp. J}
 }
 
 @inproceedings{Fischer:2009:PFL:1596550.1596556,
@@ -5742,11 +5717,7 @@ journal = {The Computer Journal}
  number = {8},
  month = aug,
  year = {1977},
- issn = {0001-0782},
  pages = {553--564},
- numpages = {12},
- url = {http://doi.acm.org/10.1145/359763.359782},
- doi = {10.1145/359763.359782},
  acmid = {359782},
  publisher = {ACM},
  address = {New York, NY, USA},
@@ -5765,8 +5736,6 @@ journal = {The Computer Journal}
  issn = {0362-1340},
  pages = {133--147},
  numpages = {15},
- url = {http://doi.acm.org/10.1145/155360.155367},
- doi = {10.1145/155360.155367},
  acmid = {155367},
  publisher = {ACM},
  address = {New York, NY, USA},
@@ -5778,12 +5747,8 @@ journal = {The Computer Journal}
  title = {History of Programming languages---II},
  editor = {Bergin,Jr., Thomas J. and Gibson,Jr., Richard G.},
  year = {1996},
- isbn = {0-201-89502-1},
  pages = {599--624},
  numpages = {26},
- url = {http://doi.acm.org/10.1145/234286.1057830},
- doi = {10.1145/234286.1057830},
- acmid = {1057830},
  publisher = {ACM},
  address = {New York, NY, USA},
 }
@@ -5791,7 +5756,7 @@ journal = {The Computer Journal}
 
 @INPROCEEDINGS{par-register-alloc,
 author={Zobel, A.},
-booktitle={Computer Languages, 1992., Proceedings of the 1992 International Conference on},
+booktitle={Computer Languages},
 title={Program structure as basis for parallelizing global register allocation},
 year={1992},
 month={Apr},
@@ -5803,12 +5768,9 @@ doi={10.1109/ICCL.1992.185490},}
 @inproceedings{might-gpu-cfa,
   title={{EigenCFA: Accelerating flow analysis with GPUs}},
   author={Prabhu, Tarun and Ramalingam, Shreyas and Might, Matthew and Hall, Mary},
-  booktitle={ACM SIGPLAN Notices},
-  volume={46},
-  number={1},
+  booktitle={POPL},
   pages={511--522},
   year={2011},
-  organization={ACM}
 }
 
 @article{hm-x,
@@ -5825,8 +5787,7 @@ doi={10.1109/ICCL.1992.185490},}
 @inproceedings{thf06,
   author    = {Sam Tobin-Hochstadt and Matthias Felleisen},
   title     = {Interlanguage migration: From scripts to programs.},
-  booktitle = oopsla,
-  publisher = {(Companion (Dynamic Languages Symposium)},
+  booktitle = {OOPSLA},
   year      = {2006},
   pages     = {964-974},
 }
@@ -5834,7 +5795,7 @@ doi={10.1109/ICCL.1992.185490},}
 @inproceedings{popl08,
   author    = {Sam Tobin-Hochstadt and Matthias Felleisen},
   title     = "The design and implementation of {Typed} {Scheme}",
-  booktitle = popl,
+  booktitle = {POPL},
   year      = {2008},
   pages     = "395--406"
 }
@@ -5859,7 +5820,7 @@ doi={10.1109/ICCL.1992.185490},}
  author = "Vincent St-Amour and Sam Tobin-Hochstadt and Matthew Flatt and Matthias Felleisen",
  title = "Typing the numeric tower",
  year = "2012",
- booktitle = padl,
+ booktitle = {PADL},
  pages = {289--303}
 }
 
@@ -5878,9 +5839,8 @@ doi={10.1109/ICCL.1992.185490},}
 @inproceedings{strickland-esop-09,
   author = {T. Stephen Strickland and Sam Tobin-Hochstadt and and Matthias Felleisen},
   title = {Practical Variable-Arity Polymorphism},
-  booktitle = esop,
+  booktitle = {ESOP},
   year = 2009,
-  month = mar,
   location = {York, UK},
   pages="32--46"
 }
@@ -5888,9 +5848,8 @@ doi={10.1109/ICCL.1992.185490},}
 @InProceedings{siek06,
  author = {Jeremy G. Siek and Walid Taha},
  title = {Gradual typing for Functional Languages},
- booktitle = {Scheme and Functional Programming Workshop, University of Chicago, Technical Report TR-2006-06},
+ booktitle = {Scheme and FP},
  year = 2006,
- month = {September},
  pages = {81--92},
 }
 
@@ -5909,7 +5868,7 @@ doi={10.1109/ICCL.1992.185490},}
 @article{brady2013idris,
   title={Idris, a general-purpose dependently typed programming language: Design and implementation},
   author={Brady, Edwin},
-  journal={Journal of Functional Programming},
+  journal={JFP},
   volume={23},
   number={05},
   pages={552--593},
@@ -5939,37 +5898,27 @@ doi={10.1109/ICCL.1992.185490},}
 @inproceedings{typed-racket,
  author = {Tobin-Hochstadt, Sam and Felleisen, Matthias},
  title = {The Design and Implementation of Typed Scheme},
- booktitle = {Proceedings of the 35th Annual ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
- series = {POPL '08},
+ booktitle = {POPL},
  year = {2008},
- isbn = {978-1-59593-689-9},
  location = {San Francisco, California, USA},
  pages = {395--406},
  numpages = {12},
- url = {http://doi.acm.org/10.1145/1328438.1328486},
- doi = {10.1145/1328438.1328486},
- acmid = {1328486},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {scheme, type systems},
 }
 
 @inproceedings{hm-type-inference,
   title={Principal type-schemes for functional programs},
   author={Damas, Luis and Milner, Robin},
-  booktitle={Proceedings of the 9th ACM SIGPLAN-SIGACT symposium on Principles of programming languages},
+  booktitle={POPL},
   pages={207--212},
   year={1982},
-  organization={ACM}
 }
 
 @inproceedings{push-arrays,
   title={Expressive array constructs in an embedded {GPU} kernel programming language},
   author={Claessen, Koen and Sheeran, Mary and Svensson, Bo Joel},
-  booktitle={Proceedings of the 7th workshop on Declarative aspects and applications of multicore programming},
+  booktitle={DAMP},
   pages={21--30},
   year={2012},
-  organization={ACM}
 }
 
 @article{cplex,
@@ -5985,7 +5934,7 @@ doi={10.1109/ICCL.1992.185490},}
 @article{det-par-search,
   title={Deterministic parallel backtrack search},
   author={Herley, Kieran T and Pietracaprina, Andrea and Pucci, Geppino},
-  journal={Theoretical Computer Science},
+  journal={TCS},
   volume={270},
   number={1},
   pages={309--324},
