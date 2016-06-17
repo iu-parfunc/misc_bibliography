@@ -1,9 +1,18 @@
 
 \usepackage[usenames,dvipsnames]{xcolor}
 
+% [2016.05.26] This can just be a growing list from paper to paper:
 \newcommand{\rn}[1]{\pgwrapper{RRN}{#1}}  % Ryan
 \newcommand{\tlm}[1]{\pgwrapper{TLM}{#1}} % Trevor
-% TODO: Add co-authers here
+\newcommand{\bjs}[1]{\pgwrapper{BJS}{#1}} % Bo Joel Svenson
+\newcommand{\chc}[1]{\pgwrapper{CHC}{#1}} % Chao-Hong Chen
+\newcommand{\vc}[1]{\pgwrapper{VC}{#1}} % Vikraman Choudhury
+\newcommand{\bc}[1]{\pgwrapper{BC}{#1}} % Buddhika Chamith
+\newcommand{\mv}[1]{\pgwrapper{MV}{#1}} % Michael Vollmer
+\newcommand{\osa}[1]{\pgwrapper{OSA}{#1}} % Omer Agacan
+\newcommand{\mm}[1]{\pgwrapper{MM}{#1}} % Madan Musuvathi
+
+% Add co-authors here or in a downstream file.
 
 \InputIfFileExists{activateeditingmarks}{
 }{
@@ -13,7 +22,8 @@
 \definecolor{comment-red}{rgb}{0.8,0,0}
 \ifx\noeditingmarks\undefined
    \newcommand{\textred}[1]{{\color{comment-red}{#1}}}
-   \newcommand{\pgwrapper}[2]{\textred{#1: #2}}
+   \newcommand{\auditme}[1]{{\color{dark-green}{#1}}}
+   \newcommand{\pgwrapper}[2]{\textred{(#1: #2)}}
    \newcommand{\note}[1]{{\begin{itemize}\item \textcolor{blue}{#1} \end{itemize}}}
    \newcommand{\new}[1]{{\color{blue}{#1}}}
    \newcommand{\const}[1]{\textred{#1}}
@@ -23,29 +33,32 @@
    %% RRN: Dim the background for Ryan's eyes:
    %% Hack: do this ONLY on Ryan's machine.
    %%  I don't know a way based on user or host name, so...
-   %%  instead I just signal on a file, activategreybg.tex which I 
+   %%  instead I just signal on a file, activategreybg.tex which I
    %%  don't then checkin.
    \InputIfFileExists{activategreybg}{
        \definecolor{comment-red}{rgb}{0.5,0,0}
        \pagecolor{mygrey}
-   }{} 
+   }{}
 
 \else
 %   \newcommand{\textred}[1]{#1}
 % Keep it on so we catch stuff to fix:
    \newcommand{\textred}[1]{{\color{comment-red}{#1}}}
+   \newcommand{\auditme}[1]{#1}
+%   \newcommand{\auditme}[1]{\textred{#1}}
    \newcommand{\pgwrapper}[2]{}
 %   \newcommand{\note}[1]{}
-   \newcommand{\note}[1]{{\begin{itemize}\item \textcolor{blue}{#1} \end{itemize}}}
+   \newcommand{\note}[1]{{\begin{itemize}\item {\textcolor{blue}{#1}} \end{itemize}}}
    \newcommand{\new}[1]{#1}
 %   \newcommand{\new}[1]{\textcolor{blue}{#1}}
    \newcommand{\const}[1]{#1}
-   \newcommand{\TODO}[1]{}
 \fi
 
+% Just an alias because sometimes we use this:
+\newcommand{\todo}[1]{\note{#1}}
+\newcommand{\Red}[1]{\textred{#1}}
+
+% These probable should be elsewhere:
 \newcommand{\ie}{{i.e.,}}
 \newcommand{\eg}{{e.g.,}}
-%\newcommand{\ie}{\textit{i.e.}}
-%\newcommand{\eg}{\textit{e.g.}}
 \newcommand{\etal}{\textit{et al.}}
-
