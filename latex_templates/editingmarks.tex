@@ -20,12 +20,13 @@
 }
 
 \definecolor{comment-red}{rgb}{0.8,0,0}
+\definecolor{very-dark-green}{rgb}{0.0,0.3,0}
 \ifx\noeditingmarks\undefined
    \newcommand{\textred}[1]{{\color{comment-red}{#1}}}
    \newcommand{\auditme}[1]{{\color{dark-green}{#1}}}
    \newcommand{\pgwrapper}[2]{\textred{(#1: #2)}}
    \newcommand{\note}[1]{{\begin{itemize}\item \textcolor{blue}{#1} \end{itemize}}}
-   \newcommand{\new}[1]{{\color{blue}{#1}}}
+   \newcommand{\new}[1]{{\color{very-dark-green}{#1}}}
    \newcommand{\const}[1]{\textred{#1}}
    %\definecolor{mygrey}{rgb}{0.6,0.6,0.6}
    \definecolor{mygrey}{rgb}{0.7,0.7,0.7}
