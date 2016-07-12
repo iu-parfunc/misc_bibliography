@@ -286,13 +286,17 @@ address = {New York, NY, USA}
 @article{IStructures,
  author = {Arvind and Nikhil, Rishiyur S. and Pingali, Keshav K.},
  title = {I-structures: {D}ata structures for parallel computing},
- journal = {TOPLAS},
+ journal = {ACM Trans. Program. Lang. Syst.},
  issue_date = {Oct. 1989},
  volume = {11},
  issue = {4},
+ month = {October},
  year = {1989},
+ issn = {0164-0925},
  pages = {598--632},
  numpages = {35},
+ url = {http://doi.acm.org/10.1145/69558.69562},
+ doi = {http://doi.acm.org/10.1145/69558.69562},
  acmid = {69562},
  publisher = {ACM},
  address = {New York, NY, USA},
@@ -345,7 +349,7 @@ address = {New York, NY, USA}
 @article{MonadicRegions,
  author = {Fluet, Matthew and Morrisett, Greg},
  title = {Monadic regions},
- journal = {Journal of Functional Programming},
+ journal = {J. Funct. Program.},
  volume = {16},
  issue = {4-5},
  month = {July},
@@ -517,7 +521,8 @@ address = {New York, NY, USA}
 @inproceedings{monad-par,
  author = {Marlow, Simon and Newton, Ryan and Peyton Jones, Simon},
  title = {A monad for deterministic parallelism},
- booktitle = {Haskell '11},
+ booktitle = {Proceedings of the 4th ACM symposium on {H}askell},
+ series = {Haskell '11},
  year = {2011},
  pages = {71--82},
  publisher = {ACM},
@@ -653,7 +658,7 @@ key = {{$\!\!$}} ,
 @article{HuetZipper,
  author = {Huet, G\'{e}rard},
  title = {The Zipper},
- journal = {Journal of Functional Programming},
+ journal = {J. Funct. Program.},
  volume = {7},
  issue = {5},
  month = {September},
@@ -1198,11 +1203,11 @@ author = "Kevin L Briggman and Winfried Denk"
 @inproceedings{accelerate-damp,
  author = {Chakravarty, Manuel M.T. and Keller, Gabriele and Lee, Sean and McDonell, Trevor L. and Grover, Vinod},
  title = {Accelerating {Haskell} array codes with multicore {GPUs}},
- booktitle = {Declarative Aspects of Multicore Programming},
+ booktitle = {DAMP: Declarative Aspects of Multicore Programming},
  year = {2011},
  publisher = {ACM},
-}
  pages = {3--14},
+}
  series = {DAMP '11},
  isbn = {978-1-4503-0486-3},
  location = {Austin, TX, USA},
@@ -1218,12 +1223,12 @@ author = "Kevin L Briggman and Winfried Denk"
  title = {Optimising Purely Functional {GPU} Programs},
  booktitle = {ICFP: International Conference on Functional Programming},
  publisher = {ACM},
+ pages = {49--60},
  year = {2013},
 }
  series = {ICFP '13},
  isbn = {978-1-4503-2326-0},
  location = {Boston, Massachusetts, USA},
- pages = {49--60},
  numpages = {12},
  url = {http://doi.acm.org/10.1145/2500365.2500595},
  doi = {10.1145/2500365.2500595},
@@ -1533,7 +1538,7 @@ author = "Kevin L Briggman and Winfried Denk"
 @article{Thiemann:2002:TRH:968417.968423,
  author = {Thiemann, Peter},
  title = {A typed representation for {HTML} and {XML} documents in {Haskell}},
- journal = {Journal of Functional Programming},
+ journal = {J. Funct. Program.},
  volume = {12},
  issue = {5},
  month = {July},
@@ -2260,7 +2265,7 @@ author = "Kevin L Briggman and Winfried Denk"
 @article{Thiemann:2002:TRH:968417.968423,
  author = {Thiemann, Peter},
  title = {A typed representation for {HTML} and {XML} documents in {Haskell}},
- journal = {Journal of Functional Programming},
+ journal = {J. Funct. Program.},
  volume = {12},
  issue = {5},
  month = {July},
@@ -2475,7 +2480,7 @@ author = "Kevin L Briggman and Winfried Denk"
 @article{conal-pan,
  author = {Elliott, Conal and Finne, Sigbj{\o}rn and De Moor, Oege},
  title = {Compiling embedded languages},
- journal = {Journal of Functional Programming},
+ journal = {J. Funct. Program.},
  volume = {13},
  issue = {3},
  month = {May},
@@ -2513,7 +2518,7 @@ author = "Kevin L Briggman and Winfried Denk"
 @article{claessen-poor-mans-concurrency,
  author = {Claessen, Koen},
  title = {A poor man's concurrency monad},
- journal = {Journal of Functional Programming},
+ journal = {J. Funct. Program.},
  volume = {9},
  issue = {3},
  month = {May},
@@ -4771,8 +4776,8 @@ ISSN={ },}
                Aaron Turon and
                Neelakantan R. Krishnaswami and
                Ryan R. Newton},
-  title     = {Freeze after writing: Quasi-deterministic parallel programming
-               with {LVars}},
+  title     = {Freeze after writing: quasi-deterministic parallel programming
+               with LVars},
   booktitle = {POPL},
   year      = {2014},
   pages     = {257-270},
@@ -4781,9 +4786,9 @@ ISSN={ },}
 }
 
 @inproceedings{lvish-pldi,
-  title={Taming the parallel effect zoo: Extensible deterministic parallelism with {LVish}},
+  title={Taming the parallel effect zoo: Extensible deterministic parallelism with LVish},
   author={Kuper, Lindsey and Todd, Aaron and Tobin-Hochstadt, Sam and Newton, Ryan R},
-  booktitle={PLDI},
+  booktitle={Proceedings of the 35th ACM SIGPLAN Conference on Programming Language Design and Implementation},
   pages={2},
   year={2014},
   organization={ACM}
@@ -4827,12 +4832,15 @@ ISSN={ },}
  keywords = {Haskell parallel runtime},
 }
 
-@inproceedings{dpj,
-  title={A type and effect system for deterministic parallel {J}ava},
+@article{dpj,
+  title={A type and effect system for deterministic parallel Java},
   author={Bocchino Jr, Robert L and Adve, Vikram S and Dig, Danny and Adve, Sarita V and Heumann, Stephen and Komuravelli, Rakesh and Overbey, Jeffrey and Simmons, Patrick and Sung, Hyojin and Vakilian, Mohsen},
-  booktitle={OOPSLA},
+  journal={ACM Sigplan Notices},
+  volume={44},
+  number={10},
   pages={97--116},
   year={2009},
+  publisher={ACM}
 }
 
 
@@ -4855,13 +4863,20 @@ ISSN={ },}
  keywords = {concurrent revisions, isolation, transaction},
 
 @inproceedings{lvish-fhpc,
-  title={{LVars}: Lattice-based data structures for deterministic parallelism},
+  title={LVars: lattice-based data structures for deterministic parallelism},
   author={Kuper, Lindsey and Newton, Ryan R},
-  booktitle={FHPC},
+  booktitle={Proceedings of the 2nd ACM SIGPLAN workshop on Functional high-performance computing (FHPC'13)},
   pages={71--84},
   year={2013},
   organization={ACM}
 }
+
+@misc{accelerate-icfp14,
+ title={Converting Data to Task-Parallelism by Rewrites: Purely Functional Programs across multiple GPUs and CPUs},
+ author={Ryan R Newton and Eric Holk and Trevor L. McDonell},
+ howpublished ={In submission to ICFP'14, draft at: \url{http://www.cs.indiana.edu/~rrnewton/papers/accelerate-multidev-draft.pdf}}
+}
+
 
 @inproceedings{building-up-ipsn,
  author = {Newton, Ryan and Arvind and Welsh, Matt},
@@ -5056,16 +5071,16 @@ ISSN={ },}
 @inproceedings{concurrent-constraint,
   title={Concurrent constraint programming},
   author={Saraswat, Vijay A and Rinard, Martin},
-  booktitle={POPL},
+  booktitle={Proceedings of the 17th ACM SIGPLAN-SIGACT symposium on Principles of programming languages},
   pages={232--245},
   year={1989},
   organization={ACM}
 }
 
 @article{concurrent-constraint2,
-  title={{Design, implementation, and evaluation of the constraint language cc (FD)}},
+  title={Design, implementation, and evaluation of the constraint language cc (FD)},
   author={Van Hentenryck, Pascal and Saraswat, Vijay and Deville, Yves},
-  journal={J. Logic Prog.},
+  journal={The Journal of Logic Programming},
   volume={37},
   number={1-3},
   pages={139--164},
@@ -5219,9 +5234,19 @@ ISSN={ },}
 @inproceedings{typed-racket-type-system,
  author = {Tobin-Hochstadt, Sam and Felleisen, Matthias},
  title = {Logical Types for Untyped Languages},
- booktitle = {ICFP},
+ booktitle = {Proceedings of the 15th ACM SIGPLAN International Conference on Functional Programming},
+ series = {ICFP '10},
  year = {2010},
+ isbn = {978-1-60558-794-3},
+ location = {Baltimore, Maryland, USA},
  pages = {117--128},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/1863543.1863561},
+ doi = {10.1145/1863543.1863561},
+ acmid = {1863561},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {logic, type systems, untyped languages},
 }
 
 @inproceedings{kendo,
@@ -5292,9 +5317,12 @@ ISSN={ },}
 @inproceedings{ST-monad,
   title={Lazy functional state threads},
   author={Launchbury, John and Peyton Jones, Simon L},
-  booktitle={PLDI},
+  booktitle={ACM SIGPLAN Notices},
+  volume={29},
+  number={6},
   pages={24--35},
   year={1994},
+  organization={ACM}
 }
 
 
@@ -5330,25 +5358,24 @@ ISSN={ },}
 }
 
 @incollection{logic-prog-and-or-parallelism,
-  title={And-or parallelism in full {Prolog} with paged {Binding Arrays}},
+  title={And-or parallelism in full Prolog with paged Binding Arrays},
   author={Gupta, Gopal and Costa, Vitor Santos},
-  booktitle={PARLE'92},
+  booktitle={PARLE'92 Parallel Architectures and Languages Europe},
   pages={617--632},
   year={1992},
+  publisher={Springer}
 }
 
 
 @book{par-prolog,
- title = {{Andorra I: A Parallel Prolog System That Transparently Exploits Both And-and Or-parallelism}},
- author = {Costa, V\'{\i}tor Santos and Warren, David H. D. and Yang, Rong},
+  title={Andorra I: a parallel Prolog system that transparently exploits both And-and or-parallelism},
+  author={Costa, Vitor Santos and Warren, David HD and Yang, Rong},
   volume={26},
   number={7},
   year={1991},
-  publisher={ACM},
-  series = {PPOPP '91},
-  year = {1991},
- pages = {83--93}
+  publisher={ACM}
 }
+
 
 @inproceedings{det-thread1,
   title={Efficient deterministic multithreading through schedule relaxation},
@@ -5492,17 +5519,6 @@ doi={10.1109/ISPASS.2010.5452024},}
   organization={ACM}
 }
 
-@article{pin,
-  title={Pin: building customized program analysis tools with dynamic instrumentation},
-  author={Luk, Chi-Keung and Cohn, Robert and Muth, Robert and Patil, Harish and Klauser, Artur and Lowney, Geoff and Wallace, Steven and Reddi, Vijay Janapa and Hazelwood, Kim},
-  journal={ACM Sigplan Notices},
-  volume={40},
-  number={6},
-  pages={190--200},
-  year={2005},
-  publisher={ACM}
-}
-
 @inproceedings{valgrind,
   title={Valgrind: a framework for heavyweight dynamic binary instrumentation},
   author={Nethercote, Nicholas and Seward, Julian},
@@ -5616,18 +5632,19 @@ doi={10.1109/ISPASS.2010.5452024},}
 @inproceedings{par-constraint-survey,
   title={A preliminary review of literature on parallel constraint solving},
   author={Gent, Ian P and Jefferson, Chris and Miguel, Ian and Moore, NC and Nightingale, Peter and Prosser, Patrick and Unsworth, Chris},
-  booktitle={PMCS},
+  booktitle={Proceedings PMCS 2011 Workshop on Parallel Methods for Constraint Solving},
   year={2011},
   organization={Citeseer}
 }
 
 
 @inproceedings{liquid-haskell-icfp,
-  title={Refinement types for {Haskell}},
+  title={Refinement types for Haskell},
   author={Jhala, Ranjit},
-  booktitle={PLPV},
+  booktitle={Proceedings of the ACM SIGPLAN 2014 workshop on Programming languages meets program verification},
   pages={27--28},
   year={2014},
+  organization={ACM}
 }
 
 @inproceedings{siek2006gradual,
@@ -5639,13 +5656,20 @@ doi={10.1109/ISPASS.2010.5452024},}
   year={2006}
 }
 
+
+
+
 @inproceedings{haskell-imprecise-exceptions,
   title={A semantics for imprecise exceptions},
   author={Peyton Jones, Simon and Reid, Alastair and Henderson, Fergus and Hoare, Tony and Marlow, Simon},
-  booktitle={PLDI},
+  booktitle={ACM SIGPLAN Notices},
+  volume={34},
+  number={5},
   pages={25--36},
   year={1999},
+  organization={ACM}
 }
+
 
 @article{outsidein,
   title={OutsideIn (X) Modular type inference with local assumptions},
@@ -5669,8 +5693,9 @@ pages = {460-465},
 year = {1990},
 doi = {10.1093/comjnl/33.5.460},
 abstract ={Continuations are used to program generators and a variation on stream functions. The generators allow backtracking or non-deterministic search. The streams process sequences of values in stages without the creation of intermediate data structures (lists). Both are programmed in a functional language without special extensions. This brings two useful problem solving models into pure functional programming.},
+URL = {http://comjnl.oxfordjournals.org/content/33/5/460.abstract},
 eprint = {http://comjnl.oxfordjournals.org/content/33/5/460.full.pdf+html},
-journal = {Comp. J}
+journal = {The Computer Journal}
 }
 
 @inproceedings{Fischer:2009:PFL:1596550.1596556,
@@ -5703,14 +5728,18 @@ journal = {Comp. J}
 @Comment http://okmij.org/ftp/continuations/generators.html#origins
 @article{Shaw:1977:AVA:359763.359782,
  author = {Shaw, Mary and Wulf, William A. and London, Ralph L.},
- title = {{Abstraction and Verification in Alphard: Defining and Specifying Iteration and Generators}},
+ title = {Abstraction and Verification in Alphard: Defining and Specifying Iteration and Generators},
  journal = {Commun. ACM},
  issue_date = {Aug. 1977},
  volume = {20},
  number = {8},
  month = aug,
  year = {1977},
+ issn = {0001-0782},
  pages = {553--564},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/359763.359782},
+ doi = {10.1145/359763.359782},
  acmid = {359782},
  publisher = {ACM},
  address = {New York, NY, USA},
@@ -5719,7 +5748,7 @@ journal = {Comp. J}
 
 @article{Liskov:1993:HC:155360.155367,
  author = {Liskov, Barbara},
- title = {{A History of CLU}},
+ title = {A History of CLU},
  journal = {SIGPLAN Not.},
  issue_date = {March 1993},
  volume = {28},
@@ -5729,6 +5758,8 @@ journal = {Comp. J}
  issn = {0362-1340},
  pages = {133--147},
  numpages = {15},
+ url = {http://doi.acm.org/10.1145/155360.155367},
+ doi = {10.1145/155360.155367},
  acmid = {155367},
  publisher = {ACM},
  address = {New York, NY, USA},
@@ -5737,11 +5768,15 @@ journal = {Comp. J}
 @incollection{Griswold:1996:HIP:234286.1057830,
  author = {Griswold, Ralph E. and Griswold, Madge T.},
  chapter = {History of the Icon Programming Language},
- title = {{History of Programming languages---II}},
+ title = {History of Programming languages---II},
  editor = {Bergin,Jr., Thomas J. and Gibson,Jr., Richard G.},
  year = {1996},
+ isbn = {0-201-89502-1},
  pages = {599--624},
  numpages = {26},
+ url = {http://doi.acm.org/10.1145/234286.1057830},
+ doi = {10.1145/234286.1057830},
+ acmid = {1057830},
  publisher = {ACM},
  address = {New York, NY, USA},
 }
@@ -5749,7 +5784,7 @@ journal = {Comp. J}
 
 @INPROCEEDINGS{par-register-alloc,
 author={Zobel, A.},
-booktitle={Computer Languages},
+booktitle={Computer Languages, 1992., Proceedings of the 1992 International Conference on},
 title={Program structure as basis for parallelizing global register allocation},
 year={1992},
 month={Apr},
@@ -5757,16 +5792,17 @@ pages={262-271},
 keywords={parallel programming;performance evaluation;resource allocation;C kernels;benchmark;clique separators;interval graph;parallel global register allocation;register conflict graph;Computer science;Merging;Particle separators;Polynomials;Registers;Tree graphs},
 doi={10.1109/ICCL.1992.185490},}
 
-@inproceedings{might-gpu-cfa,
- author = {Prabhu, Tarun and Ramalingam, Shreyas and Might, Matthew and Hall, Mary},
- title = {{EigenCFA: Accelerating Flow Analysis with GPUs}},
- series = {POPL '11},
- year = {2011},
- pages = {511--522},
- numpages = {12},
- keywords = {abstract interpretation, cps, eigencfa, flow analysis, gpu, lambda calculus, matrix, program analysis},
-}
 
+@inproceedings{might-gpu-cfa,
+  title={EigenCFA: accelerating flow analysis with GPUs},
+  author={Prabhu, Tarun and Ramalingam, Shreyas and Might, Matthew and Hall, Mary},
+  booktitle={ACM SIGPLAN Notices},
+  volume={46},
+  number={1},
+  pages={511--522},
+  year={2011},
+  organization={ACM}
+}
 
 @article{hm-x,
   title={Type inference with constrained types},
@@ -5781,8 +5817,9 @@ doi={10.1109/ICCL.1992.185490},}
 
 @inproceedings{thf06,
   author    = {Sam Tobin-Hochstadt and Matthias Felleisen},
-  title     = {Interlanguage migration: From scripts to programs.},
-  booktitle = {OOPSLA},
+  title     = {Interlanguage migration: from scripts to programs.},
+  booktitle = oopsla,
+  publisher = {(Companion (Dynamic Languages Symposium)},
   year      = {2006},
   pages     = {964-974},
 }
@@ -5790,7 +5827,7 @@ doi={10.1109/ICCL.1992.185490},}
 @inproceedings{popl08,
   author    = {Sam Tobin-Hochstadt and Matthias Felleisen},
   title     = "The design and implementation of {Typed} {Scheme}",
-  booktitle = {POPL},
+  booktitle = popl,
   year      = {2008},
   pages     = "395--406"
 }
@@ -5815,7 +5852,7 @@ doi={10.1109/ICCL.1992.185490},}
  author = "Vincent St-Amour and Sam Tobin-Hochstadt and Matthew Flatt and Matthias Felleisen",
  title = "Typing the numeric tower",
  year = "2012",
- booktitle = {PADL},
+ booktitle = padl,
  pages = {289--303}
 }
 
@@ -5834,8 +5871,9 @@ doi={10.1109/ICCL.1992.185490},}
 @inproceedings{strickland-esop-09,
   author = {T. Stephen Strickland and Sam Tobin-Hochstadt and and Matthias Felleisen},
   title = {Practical Variable-Arity Polymorphism},
-  booktitle = {ESOP},
+  booktitle = esop,
   year = 2009,
+  month = mar,
   location = {York, UK},
   pages="32--46"
 }
@@ -5843,13 +5881,14 @@ doi={10.1109/ICCL.1992.185490},}
 @InProceedings{siek06,
  author = {Jeremy G. Siek and Walid Taha},
  title = {Gradual typing for Functional Languages},
- booktitle = {Scheme and FP},
+ booktitle = {Scheme and Functional Programming Workshop, University of Chicago, Technical Report TR-2006-06},
  year = 2006,
+ month = {September},
  pages = {81--92},
 }
 
 @inproceedings{nixos,
-  title={{NixOS: A purely functional Linux distribution}},
+  title={NixOS: A purely functional Linux distribution},
   author={Dolstra, Eelco and L{\"o}h, Andres},
   booktitle={ACM Sigplan Notices},
   volume={43},
@@ -5860,10 +5899,18 @@ doi={10.1109/ICCL.1992.185490},}
 }
 
 
+@inproceedings{brady2013idris-plpv,
+  title={Idris: general purpose programming with dependent types.},
+  author={Brady, Edwin},
+  booktitle={PLPV},
+  pages={1--2},
+  year={2013}
+}
+
 @article{brady2013idris,
   title={Idris, a general-purpose dependently typed programming language: Design and implementation},
   author={Brady, Edwin},
-  journal={JFP},
+  journal={Journal of Functional Programming},
   volume={23},
   number={05},
   pages={552--593},
@@ -5872,7 +5919,7 @@ doi={10.1109/ICCL.1992.185490},}
 }
 
 @article{hamadi2009manysat,
-  title={ManySAT: {A Parallel SAT Solver.}},
+  title={ManySAT: a Parallel SAT Solver.},
   author={Hamadi, Youssef and Jabbour, Said and Sais, Lakhdar},
   journal={JSAT},
   volume={6},
@@ -5882,41 +5929,52 @@ doi={10.1109/ICCL.1992.185490},}
 }
 
 @incollection{hamadi2012control,
-  title={Control-based clause sharing in parallel {SAT} solving},
+  title={Control-based clause sharing in parallel SAT solving},
   author={Hamadi, Youssef and Jabbour, Said and Sais, Jabbour},
   booktitle={Autonomous Search},
   pages={245--267},
   year={2012},
+  publisher={Springer}
 }
 
 @inproceedings{typed-racket,
  author = {Tobin-Hochstadt, Sam and Felleisen, Matthias},
  title = {The Design and Implementation of Typed Scheme},
- booktitle = {POPL},
+ booktitle = {Proceedings of the 35th Annual ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+ series = {POPL '08},
  year = {2008},
+ isbn = {978-1-59593-689-9},
  location = {San Francisco, California, USA},
  pages = {395--406},
  numpages = {12},
+ url = {http://doi.acm.org/10.1145/1328438.1328486},
+ doi = {10.1145/1328438.1328486},
+ acmid = {1328486},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {scheme, type systems},
 }
 
 @inproceedings{hm-type-inference,
   title={Principal type-schemes for functional programs},
   author={Damas, Luis and Milner, Robin},
-  booktitle={POPL},
+  booktitle={Proceedings of the 9th ACM SIGPLAN-SIGACT symposium on Principles of programming languages},
   pages={207--212},
   year={1982},
+  organization={ACM}
 }
 
 @inproceedings{push-arrays,
-  title={Expressive array constructs in an embedded {GPU} kernel programming language},
+  title={Expressive array constructs in an embedded GPU kernel programming language},
   author={Claessen, Koen and Sheeran, Mary and Svensson, Bo Joel},
-  booktitle={DAMP},
+  booktitle={Proceedings of the 7th workshop on Declarative aspects and applications of multicore programming},
   pages={21--30},
   year={2012},
+  organization={ACM}
 }
 
 @article{cplex,
-  title={V12. 1: {User’s Manual for CPLEX}},
+  title={V12. 1: User’s Manual for CPLEX},
   author={CPLEX, IBM ILOG},
   journal={International Business Machines Corporation},
   volume={46},
@@ -5928,7 +5986,7 @@ doi={10.1109/ICCL.1992.185490},}
 @article{det-par-search,
   title={Deterministic parallel backtrack search},
   author={Herley, Kieran T and Pietracaprina, Andrea and Pucci, Geppino},
-  journal={TCS},
+  journal={Theoretical Computer Science},
   volume={270},
   number={1},
   pages={309--324},
@@ -5999,7 +6057,7 @@ doi={10.1109/ICCL.1992.185490},}
     url    = {http://www.cse.unsw.edu.au/~chak/haskell/term-conv/}
 }
 
-@InProceedings{petabricks,
+@InProceedings{ansel:pldi:2009,
   title     = "PetaBricks: A Language and Compiler for Algorithmic Choice",
   author    = "Jason Ansel and Cy Chan and Yee Lok Wong and Marek Olszewski and Qin Zhao and Alan Edelman and Saman Amarasinghe",
   booktitle = "ACM SIGPLAN Conference on Programming Language Design and Implementation",
@@ -6223,7 +6281,7 @@ language={English}
 
 
 @inproceedings{efficient-java-rmi,
-  title={A more efficient {RMI} for {J}ava},
+  title={A more efficient RMI for Java},
   author={Nester, Christian and Philippsen, Michael and Haumacher, Bernhard},
   booktitle={Proceedings of the ACM 1999 conference on Java Grande},
   pages={152--159},
@@ -6231,7 +6289,15 @@ language={English}
   organization={ACM}
 }
 
-
+@article{phybin,
+  title={PhyBin: binning trees by topology},
+  author={Newton, Ryan R and Newton, Irene LG},
+  journal={PeerJ},
+  volume={1},
+  pages={e187},
+  year={2013},
+  publisher={PeerJ Inc.}
+}
 
 
 @article{Berger2002,
@@ -6285,8 +6351,7 @@ title = {{The Amber system: parallel programming on a network of multiprocessors
 volume = {23},
 year = {1989}
 }
-
-@inproceedings{Chase1992,
+@misc{Chase1992,
 annote = {Argues that there should just be a single 64-bit address space.},
 author = {Chase, Jeffrey S. and Levy, Henry M. and Lazowska, Edward D. and Baker-Harvey, Miche},
 booktitle = {ACM SIGPLAN Notices},
@@ -6299,7 +6364,6 @@ title = {{Lightweight shared objects in a 64-bit operating system}},
 volume = {27},
 year = {1992}
 }
-
 @article{Chaumette2004,
 annote = {Yet another fast serialization paper. They don't try to make everything contiguous, so it seems to have a large object assumption},
 author = {Chaumette, Serge and Grange, Pascal and M\'{e}trot, Beno\^{\i}t and Vign\'{e}ras, Pierre},
@@ -6307,7 +6371,6 @@ file = {:home/ezyang/Dropbox/Mendeley/Chaumette et al. - Implementing a High Per
 title = {{Implementing a High Performance Object Transfer Mechanism over JikesRVM}},
 year = {2004}
 }
-
 @article{Chilimbi1999,
 annote = {This is the ccmorph paper.},
 author = {Chilimbi, TM and Hill, MD and Larus, JR},
@@ -6317,8 +6380,7 @@ title = {{Cache-conscious structure layout}},
 url = {http://dl.acm.org/citation.cfm?id=301633},
 year = {1999}
 }
-
-@inproceedings{Chilimbi1999a,
+@misc{Chilimbi1999a,
 abstract = {Processor and memory technology trends show a continual increase in the cost of accessing main memory. Machine designers have tried to mitigate the effect of this trend through a variety of techniques that attempt to reduce or tolerate memory latency. These techniques, unfortunately, have only been partially successful for pointer- manipulating programs. Recent research has demonstrated that these programs can benefit greatly from the complementary approach of reorganizing pointer data structures to improve cache locality. This paper describes how a generational garbage collector can be used to achieve a cache-conscious data layout, in which objects with high temporal affinity are placed next to each other, so they are likely to reside in the same cache block. The paper demonstrates the feasibility of collecting low overhead, real-time profiling information about data access patterns for object-oriented languages, and describes a new copying algorithm that utilizes this information to produce a cache-conscious object layout. Preliminary results indicate that this technique reduces cache miss rates by 21-42$\backslash$\%, and improves program performance by 14-37$\backslash$\%.},
 author = {Chilimbi, Trishul M. and Larus, James R.},
 booktitle = {ACM SIGPLAN Notices},
@@ -6331,7 +6393,6 @@ title = {{Using generational garbage collection to implement cache-conscious dat
 volume = {34},
 year = {1999}
 }
-
 @inproceedings{Courtrai2000,
 author = {Courtrai, Luc and Maheo, Yves and Raimbault, Frederic},
 booktitle = {Myrinet User Group Conference (MUG)},
@@ -6443,6 +6504,24 @@ year = {1992}
 }
 
 
+@inproceedings{Hallenberg2002,
+author = {Hallenberg, Niels and Elsman, Martin and Tofte, Mads},
+booktitle = {PLDI},
+doi = {10.1145/543552.512547},
+file = {:home/ezyang/Dropbox/Mendeley/Hallenberg, Elsman, Tofte - Combining region inference and garbage collection.pdf:pdf},
+isbn = {1581134630},
+issn = {03621340},
+keywords = {garbage collection,region inference,standard ml},
+mendeley-groups = {Regions/Linearity,Resource Limits},
+month = may,
+number = {5},
+pages = {141},
+title = {{Combining region inference and garbage collection}},
+url = {http://portal.acm.org/citation.cfm?doid=543552.512547},
+volume = {37},
+year = {2002}
+}
+
 
 @article{Hunt2007,
 author = {Hunt, Galen C. and Larus, James R.},
@@ -6454,10 +6533,11 @@ url = {http://dl.acm.org/citation.cfm?id=1243418.1243424},
 year = {2007}
 }
 
-@misc{MicrosoftCorporation2014,
+
+@techreport{MicrosoftCorporation2014,
 author = {{Microsoft Corporation}},
+file = {:home/ezyang/Dropbox/Mendeley/Microsoft Corporation - Word (. doc) Binary File Format.pdf:pdf},
 title = {{Word (. doc) Binary File Format}},
-howpublished = {\url{https://msdn.microsoft.com/en-us/library/office/cc313153(v=office.12).aspx}},
 year = {2014}
 }
 
@@ -6477,7 +6557,7 @@ year = {1995}
 author = {{Microsoft Corporation}},
 booktitle = {Microsoft Developer Network},
 title = {{Bitmap Storage}},
-howpublished = {\url{https://msdn.microsoft.com/en-us/library/dd183391.aspx}},
+url = {https://msdn.microsoft.com/en-us/library/dd183391.aspx},
 year = {2015}
 }
 
@@ -6485,17 +6565,16 @@ year = {2015}
 @misc{Varda2015,
 author = {Varda, Kenton},
 title = {{Cap'n Proto}},
-howpublished = {\url{https://capnproto.org/}},
+url = {https://capnproto.org/},
 year = {2015}
 }
 
 
-@book{Shekita1996,
+@article{Shekita1996,
 abstract = {This paper describes Cricket, a new database storage system that is intended to be used as a platform for design environments and persistent programming languages. Cricket uses the memory management primitives of the Mach operating system to provide the abstraction of a shared, transactional single-level store that can be directly accessed by user applications. In this paper, we present the design and motivation for Cricket. We also present some initial performance results which show that, for its intended applications, Cricket can provide better performance than a general-purpose database storage system.},
 author = {Shekita, Eugene and Zwilling, Michael},
 file = {:home/ezyang/Dropbox/Mendeley/Shekita, Zwilling - Cricket A Mapped, Persistent Object Store.pdf:pdf},
 title = {{Cricket: A Mapped, Persistent Object Store}},
-publisher={Center for Parallel Optimization, Computer Sciences Department, University of Wisconsin},
 year = {1996}
 }
 
@@ -6528,8 +6607,8 @@ year = {2002}
 
 @article{Loogen:2005:PFP:1067405.1067409,
  author = {Loogen, Rita and Ortega-mall{\'e}n, Yolanda and Pe\~{n}a-mar\'{\i}, Ricardo},
- title = {Parallel Functional Programming in {E}den},
- journal = {Journal of Functional Programming},
+ title = {Parallel Functional Programming in Eden},
+ journal = {J. Funct. Program.},
  issue_date = {May 2005},
  volume = {15},
  number = {3},
@@ -6545,35 +6624,6 @@ year = {2002}
  address = {New York, NY, USA},
 }
 
-
-@article{Breitinger1998,
-abstract = {The explicitly parallel programming language Eden adds a coordination level to the lazy functional language Haskell. This paper describes how a compiler and runtime system for Eden can incrementally be built on the basis of a compiler and runtime system for the computation language. The modifications needed in the compiler are restricted to specific orthogonal extensions. We show that Eden's design for distributed memory systems proves beneficial for the construction of a lean parallel runtime system. 1 Introduction Due to the side effect freedom of the reduction semantics of functional languages it is possible to evaluate independent subexpressions in arbitrary order or in parallel. This implicit parallelism is semantically transparent and allows the automatic parallelization of functional programs. In available parallel functional systems like the Glasgow parallel Haskell (GpH) system [17] or the Nijmegen CLEAN system [19] the programmer is asked to place annotations in programs.},
-annote = {RTS paper for Eden},
-author = {Breitinger, Silvia and Klusik, Ulrike and Loogen, Rita},
-file = {:home/ezyang/Dropbox/Mendeley/Breitinger, Klusik, Loogen - From (sequential) Haskell to (parallel) Eden An Implementation Point of View.pdf:pdf},
-isbn = {3-540-61626-8},
-journal = {Symposium on Programming Language Implementation and Logic Programming - PLILP},
-pages = {318--334},
-title = {{From (sequential) Haskell to (parallel) Eden: An Implementation Point of View}},
-year = {1998}
-}
-
-
-@article{Epstein2012,
-abstract = {We present Cloud Haskell, a domain-specific language for developing programs for a distributed computing environment. Implemented as a shallow embedding in Haskell, it provides a message-passing communication model, inspired by Erlang, without introducing incompatibility wit Haskell's established shared-memory concurrency. A key contribution is a method for serializing function closures for transmission across the network. Cloud Haskell has been implemented; we present example code and some preliminary performance measurements.},
-author = {Epstein, Jeff and Black, Andrew P. and Peyton-Jones, Simon},
-doi = {10.1145/2096148.2034690},
-file = {:home/ezyang/Dropbox/Mendeley/Epstein, Black, Peyton-Jones - Towards Haskell in the cloud.pdf:pdf},
-isbn = {9781450308601},
-issn = {03621340},
-journal = {ACM SIGPLAN Notices},
-keywords = {erlang,haskell,message-passing},
-number = {Section 4},
-pages = {118},
-title = {{Towards Haskell in the cloud}},
-volume = {46},
-year = {2012}
-}
 
 @inproceedings{McKelvey:2013:DPS:2487788.2488174,
     author = {McKelvey, Karissa and Menczer, Filippo},
@@ -6591,414 +6641,501 @@ year = {2012}
     Url = {http://arxiv.org/abs/1212.4565},
     Year = 2013
 }
-@INPROCEEDINGS{Launchbury93anatural,
-    author = {John Launchbury},
-    title = {A Natural Semantics for Lazy Evaluation},
-    booktitle={Proceedings of the 20th ACM SIGPLAN-SIGACT symposium on Principles of programming languages},
-    year = {1993},
-    pages = {144--154},
-    publisher = {ACM Press}
+
+
+@InProceedings{gecode,
+   Author =    "Christian Schulte and Guido Tack",
+   Title =     "Views and Iterators for Generic Constraint Implementations",
+   Booktitle = "Recent Advances in Constraints (2005)",
+   Year =      2006,
+   Publisher = "Springer-Verlag",
+   Series =    "Lecture Notes in Artificial Intelligence",
+   Volume =    "3978",
+   Pages =     "118--132",
+   URL =       "http://www.gecode.org/paper.html?id=SchulteTack:Advances:2006"
 }
 
-@ARTICLE{Jones92implementinglazy,
-    author = {Simon L. Peyton Jones},
-    title = {Implementing lazy functional languages on stock hardware: the {Spineless Tagless G-machine}},
-    journal = {Journal of Functional Programming},
-    year = {1992},
-    volume = {2},
-    pages = {127--202}
-}
-
-
-@inproceedings{Marlow:2008:PGG:1375634.1375637,
- author = {Marlow, Simon and Harris, Tim and James, Roshan P. and Peyton Jones, Simon},
- title = {Parallel generational-copying garbage collection with a block-structured heap},
- booktitle = {Proceedings of the 7th international symposium on Memory management},
- series = {ISMM '08},
- year = {2008},
- isbn = {978-1-60558-134-7},
- location = {Tucson, AZ, USA},
- pages = {11--20},
+@inproceedings{elimination-trees,
+ author = {Shavit, Nir and Touitou, Dan},
+ title = {Elimination Trees and the Construction of Pools and Stacks: Preliminary Version},
+ booktitle = {Proceedings of the Seventh Annual ACM Symposium on Parallel Algorithms and Architectures},
+ series = {SPAA '95},
+ year = {1995},
+ isbn = {0-89791-717-0},
+ location = {Santa Barbara, California, USA},
+ pages = {54--63},
  numpages = {10},
- acmid = {1375637},
+ url = {http://doi.acm.org/10.1145/215399.215419},
+ doi = {10.1145/215399.215419},
+ acmid = {215419},
  publisher = {ACM},
  address = {New York, NY, USA},
- keywords = {parallel garbage collection},
 }
 
-@INPROCEEDINGS{Coutts07streamfusion,
-    author = {Duncan Coutts and Roman Leshchinskiy and Don Stewart},
-    title = {Stream Fusion. From Lists to Streams to Nothing at All},
-    booktitle = {ICFP’07},
-    year = {2007},
-    publisher = {}
-}
-
-@article{Lammel:2005:SYB:1090189.1086391,
- author = {L\"{a}mmel, Ralf and Jones, Simon Peyton},
- title = {Scrap Your Boilerplate with Class: Extensible Generic Functions},
+@article{pypy,
+ author = {Bolz, Carl Friedrich and Diekmann, Lukas and Tratt, Laurence},
+ title = {Storage Strategies for Collections in Dynamically Typed Languages},
  journal = {SIGPLAN Not.},
- issue_date = {September 2005},
- volume = {40},
- number = {9},
- month = sep,
- year = {2005},
- issn = {0362-1340},
- pages = {204--215},
- numpages = {12},
- url = {http://doi.acm.org/10.1145/1090189.1086391},
- doi = {10.1145/1090189.1086391},
- acmid = {1086391},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {extensibility, generic programming, recursive dictionaries, type classes, typecase},
-}
-
-@article{Kaminsky2014,
-annote = {Used the messaging mode instead of RDMA to get better performing, because it wasn't worth it. So if you have a large tree, you could serialize, or traverse it with a hundred round trips. We have a third option: restructured, it's just an RDMA'able chunk: that's great! You're not SERIALIZING to send, but preparing it so it can be remotely accessed.},
-author = {Kaminsky, Michael and Andersen, David G},
-doi = {10.1145/2619239.2626299},
-file = {:home/ezyang/Dropbox/Mendeley/Kaminsky, Andersen - Using RDMA Efficiently for Key-Value Services.pdf:pdf},
-isbn = {9781450328364},
-journal = {Sigcomm 2014},
-keywords = {infiniband,key-value stores,rdma,roce},
-pages = {295--306},
-title = {{Using RDMA Efficiently for Key-Value Services}},
-year = {2014}
-}
-
-
-@inproceedings{disnix,
- author = {van der Burg, Sander and Dolstra, Eelco},
- title = {A Self-adaptive Deployment Framework for Service-oriented Systems},
- booktitle = {Proceedings of the 6th International Symposium on Software Engineering for Adaptive and Self-Managing Systems},
- series = {SEAMS '11},
- year = {2011},
- isbn = {978-1-4503-0575-4},
- location = {Waikiki, Honolulu, HI, USA},
- pages = {208--217},
- numpages = {10},
- url = {http://doi.acm.org/10.1145/1988008.1988039},
- doi = {10.1145/1988008.1988039},
- acmid = {1988039},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {service-oriented systems, software deployment},
-}
-
-@inproceedings{autonomous-deployment1,
-  title={A software deployment service for autonomous computing environments},
-  author={Hillenbrand, Markus and M{\"u}ller, Paul and Mihajloski, Kristian},
-  year={2004},
-  organization={International Conference on Intelligent Agents, Web Technology and Internet Commerce-IAWTIC'2004, Gold Coast, Australia}
-}
-
-
-@article{QuickCheck,
- author = {Claessen, Koen and Hughes, John},
- title = {QuickCheck: A Lightweight Tool for Random Testing of Haskell Programs},
- journal = {SIGPLAN Not.},
- issue_date = {April 2011},
- volume = {46},
- number = {4},
- month = may,
- year = {2011},
- issn = {0362-1340},
- pages = {53--64},
- numpages = {12},
- url = {http://doi.acm.org/10.1145/1988042.1988046},
- doi = {10.1145/1988042.1988046},
- acmid = {1988046},
- publisher = {ACM},
- address = {New York, NY, USA},
-}
-
-@article{dubach-rewrites-arxiv,
-  author    = {Michel Steuwer and
-               Christian Fensch and
-               Christophe Dubach},
-  title     = {Patterns and Rewrite Rules for Systematic Code Generation (From High-Level
-               Functional Patterns to High-Performance OpenCL Code)},
-  journal   = {CoRR},
-  volume    = {abs/1502.02389},
-  year      = {2015},
-  url       = {http://arxiv.org/abs/1502.02389},
-  timestamp = {Mon, 02 Mar 2015 14:17:34 +0100},
-  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/SteuwerFD15},
-  bibsource = {dblp computer science bibliography, http://dblp.org}
-}
-
-@inproceedings{dubach-icfp15,
-    author      = {Steuwer, Michel and Lindley, Sam and Dubach, Christophe},
-    title       = {Generating Performance Portable Code using Rewrite Rules: From High-level Functional Expressions to High-Performance OpenCL Code},
-    booktitle   = {ICFP: International Conference on Functional Programming},
-    year        = {2015},
-    publisher   = {ACM},
-}
-
-
-@techreport{mccarthy-amb,
- author = {McCarthy, John},
- title = {A Basis for a Mathematical Theory of Computation},
- year = {1963},
- source = {http://www-formal.stanford.edu/jmc/basis1.pdf},
- publisher = {Massachusetts Institute of Technology},
- address = {Cambridge, MA, USA},
-}
-@Comment {http://dspace.mit.edu/bitstream/handle/1721.1/6099/AIM-031.pdf?sequence=2}
-@Comment {http://www.ncstrl.org:8900/ncstrl/servlet/search?formname=detail\&id=oai%3Ancstrlh%3Amitai%3AMIT-AILab%2F%2FAIM-31}
-
-@article{microsoft:accelerator,
-author = {Tarditi, David and Puri, Sidd and Oglesby, Jose},
-title = {{Accelerator: using data parallelism to program GPUs for general-purpose uses}},
-journal = {SIGOPS Operating Systems Review},
-year = {2006},
-volume = {40},
-number = {5},
-pages = {325--335},
-annote = {A C\{\#} library of abstractions for data-parallel arrays and operations that allows programmers to combine operations for the CPU and GPU within a single application. To improve efficiency, the library uses a graph-based lazy evaluation strategy of data-parallel operations on the GPU. Evaluation is typically triggered by the explicit conversion of an array from a data-parallel to a serial representation.}
-}
-
-@inproceedings{pact-2014-partitioning,
-    author = {Kaleem, Rashid and Barik, Rajkishore and Shpeisman, Tatiana and Lewis, Brian T. and Hu, Chunling and Pingali, Keshav},
-    title = {Adaptive Heterogeneous Scheduling for Integrated GPUs},
-    booktitle = {Proceedings of the 23rd International Conference on Parallel Architectures and Compilation},
-    series = {PACT '14},
-    year = {2014},
-    pages = {151--162},
-    numpages = {12},
-    publisher = {ACM},
-}
-
-
-
-@inproceedings{sibling-rivalry,
- author = {Ansel, Jason and Pacula, Maciej and Wong, Yee Lok and Chan, Cy and Olszewski, Marek and O'Reilly, Una-May and Amarasinghe, Saman},
- title = {Siblingrivalry: Online Autotuning Through Local Competitions},
- booktitle = {Proceedings of the 2012 International Conference on Compilers, Architectures and Synthesis for Embedded Systems},
- series = {CASES '12},
- year = {2012},
- isbn = {978-1-4503-1424-4},
- location = {Tampere, Finland},
- pages = {91--100},
- numpages = {10},
- url = {http://doi.acm.org/10.1145/2380403.2380425},
- doi = {10.1145/2380403.2380425},
- acmid = {2380425},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {autotuning, evolutionary algorithm, genetic algorithm},
-}
-
-
-@inproceedings{SOSP07-upgrade-testing,
- author = {Crameri, Olivier and Knezevic, Nikola and Kostic, Dejan and Bianchini, Ricardo and Zwaenepoel, Willy},
- title = {Staged Deployment in Mirage, an Integrated Software Upgrade Testing and Distribution System},
- booktitle = {Proceedings of Twenty-first ACM SIGOPS Symposium on Operating Systems Principles},
- series = {SOSP '07},
- year = {2007},
- isbn = {978-1-59593-591-5},
- location = {Stevenson, Washington, USA},
- pages = {221--236},
- numpages = {16},
- url = {http://doi.acm.org/10.1145/1294261.1294283},
- doi = {10.1145/1294261.1294283},
- acmid = {1294283},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {clustering of machines, staged software upgrade deployment, upgrade testing},
-}
-
-@Misc{gecode,
-  author = "{Gecode Team}",
-  title = "Gecode: Generic Constraint Development Environment",
-  year = {2006},
-  note = {Available from \texttt{http://www.gecode.org}},
-}
-
-@inproceedings{Miller:2013:IPG:2509136.2509547,
- author = {Miller, Heather and Haller, Philipp and Burmako, Eugene and Odersky, Martin},
- title = {Instant Pickles: Generating Object-oriented Pickler Combinators for Fast and Extensible Serialization},
- booktitle = {Proceedings of the 2013 ACM SIGPLAN International Conference on Object Oriented Programming Systems Languages \&\#38; Applications},
- series = {OOPSLA '13},
+ issue_date = {October 2013},
+ volume = {48},
+ number = {10},
+ month = oct,
  year = {2013},
- isbn = {978-1-4503-2374-1},
- location = {Indianapolis, Indiana, USA},
- pages = {183--202},
- numpages = {20},
- url = {http://doi.acm.org/10.1145/2509136.2509547},
- doi = {10.1145/2509136.2509547},
- acmid = {2509547},
+ issn = {0362-1340},
+ pages = {167--182},
+ numpages = {16},
+ url = {http://doi.acm.org/10.1145/2544173.2509531},
+ doi = {10.1145/2544173.2509531},
+ acmid = {2509531},
  publisher = {ACM},
  address = {New York, NY, USA},
- keywords = {distributed programming, meta-programming, pickling, scala, serialization},
+ keywords = {collection types, dynamic typing, implementation, memory optimization},
+}
+
+@inproceedings{java-collection-swapper,
+ author = {Xu, Guoqing},
+ title = {CoCo: Sound and Adaptive Replacement of Java Collections},
+ booktitle = {Proceedings of the 27th European Conference on Object-Oriented Programming},
+ series = {ECOOP'13},
+ year = {2013},
+ isbn = {978-3-642-39037-1},
+ location = {Montpellier, France},
+ pages = {1--26},
+ numpages = {26},
+ url = {http://dx.doi.org/10.1007/978-3-642-39038-8_1},
+ doi = {10.1007/978-3-642-39038-8_1},
+ acmid = {2524986},
+ publisher = {Springer-Verlag},
+ address = {Berlin, Heidelberg},
+}
+
+@inproceedings{sundell-bags,
+ author = {Sundell, H{\aa}kan and Gidenstam, Anders and Papatriantafilou, Marina and Tsigas, Philippas},
+ title = {A Lock-free Algorithm for Concurrent Bags},
+ booktitle = {Proceedings of the Twenty-third Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ series = {SPAA '11},
+ year = {2011},
+ isbn = {978-1-4503-0743-7},
+ location = {San Jose, California, USA},
+ pages = {335--344},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/1989493.1989550},
+ doi = {10.1145/1989493.1989550},
+ acmid = {1989550},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {concurrent, data structure, non-blocking, shared memory},
+}
+
+@book{clrs,
+ author = {Cormen, Thomas H. and Stein, Clifford and Rivest, Ronald L. and Leiserson, Charles E.},
+ title = {Introduction to Algorithms},
+ year = {2001},
+ isbn = {0070131511},
+ edition = {2nd},
+ publisher = {McGraw-Hill Higher Education},
+}
+
+@inproceedings{hendler-stack-2004,
+ author = {Hendler, Danny and Shavit, Nir and Yerushalmi, Lena},
+ title = {A Scalable Lock-free Stack Algorithm},
+ booktitle = {Proceedings of the Sixteenth Annual ACM Symposium on Parallelism in Algorithms and Architectures},
+ series = {SPAA '04},
+ year = {2004},
+ isbn = {1-58113-840-7},
+ location = {Barcelona, Spain},
+ pages = {206--215},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/1007912.1007944},
+ doi = {10.1145/1007912.1007944},
+ acmid = {1007944},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@article{herlihy1990linearizability,
+ author = {Herlihy, Maurice P. and Wing, Jeannette M.},
+ title = {Linearizability: A Correctness Condition for Concurrent Objects},
+ journal = {ACM Trans. Program. Lang. Syst.},
+ issue_date = {July 1990},
+ volume = {12},
+ number = {3},
+ month = jul,
+ year = {1990},
+ issn = {0164-0925},
+ pages = {463--492},
+ numpages = {30},
+ url = {http://doi.acm.org/10.1145/78969.78972},
+ doi = {10.1145/78969.78972},
+ acmid = {78972},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@article{split-ordered-list,
+ author = {Shalev, Ori and Shavit, Nir},
+ title = {Split-ordered Lists: Lock-free Extensible Hash Tables},
+ journal = {J. ACM},
+ issue_date = {May 2006},
+ volume = {53},
+ number = {3},
+ month = may,
+ year = {2006},
+ issn = {0004-5411},
+ pages = {379--405},
+ numpages = {27},
+ url = {http://doi.acm.org/10.1145/1147954.1147958},
+ doi = {10.1145/1147954.1147958},
+ acmid = {1147958},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {Concurrent data structures, compare-and-swap, hash table, non-blocking synchronization},
+}
+
+@article{worker-wrapper,
+ author = {Gill, Andy and Hutton, Graham},
+ title = {The Worker/Wrapper Transformation},
+ journal = {J. Funct. Program.},
+ issue_date = {March 2009},
+ volume = {19},
+ number = {2},
+ month = mar,
+ year = {2009},
+ issn = {0956-7968},
+ pages = {227--251},
+ numpages = {25},
+ url = {http://dx.doi.org/10.1017/S0956796809007175},
+ doi = {10.1017/S0956796809007175},
+ acmid = {1520290},
+ publisher = {Cambridge University Press},
+ address = {New York, NY, USA},
+}
+
+@article{icfp09-multicore-ghc,
+ author = {Marlow, Simon and Peyton Jones, Simon and Singh, Satnam},
+ title = {Runtime Support for Multicore Haskell},
+ journal = {SIGPLAN Not.},
+ issue_date = {September 2009},
+ volume = {44},
+ number = {9},
+ month = aug,
+ year = {2009},
+ issn = {0362-1340},
+ pages = {65--78},
+ numpages = {14},
+ url = {http://doi.acm.org/10.1145/1631687.1596563},
+ doi = {10.1145/1631687.1596563},
+ acmid = {1596563},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {Haskell parallel runtime},
+}
+
+@article{fast-curry-jfp06,
+ author = {Marlow, Simon and Jones, Simon Peyton},
+ title = {Making a Fast Curry: Push/Enter vs. Eval/Apply for Higher-order Languages},
+ journal = {J. Funct. Program.},
+ issue_date = {July 2006},
+ volume = {16},
+ number = {4-5},
+ month = jul,
+ year = {2006},
+ issn = {0956-7968},
+ pages = {415--449},
+ numpages = {35},
+ url = {http://dx.doi.org/10.1017/S0956796806005995},
+ doi = {10.1017/S0956796806005995},
+ acmid = {1166018},
+ publisher = {Cambridge University Press},
+ address = {New York, NY, USA},
+}
+
+@inproceedings{concurrent-haskell-popl96,
+ author = {Peyton Jones, Simon and Gordon, Andrew and Finne, Sigbjorn},
+ title = {Concurrent Haskell},
+ booktitle = {Proceedings of the 23rd ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+ series = {POPL '96},
+ year = {1996},
+ isbn = {0-89791-769-3},
+ location = {St. Petersburg Beach, Florida, USA},
+ pages = {295--308},
+ numpages = {14},
+ url = {http://doi.acm.org/10.1145/237721.237794},
+ doi = {10.1145/237721.237794},
+ acmid = {237794},
+ publisher = {ACM},
+ address = {New York, NY, USA},
 }
 
 
-@techreport{cardelli1984functional,
-  title={The {F}unctional {A}bstract {M}achine},
-  author={Cardelli, Luca},
-  number={TR-107},
-  institution={AT\&T Bell Laboratories},
-  year = {1983}
-}
-
-@incollection{cefp-2012-marlow-tutorial,
-  title={{Parallel and concurrent programming in Haskell}},
-  author={Marlow, Simon},
-  booktitle={Central European Functional Programming School},
-  pages={339--401},
-  year={2012},
-}
-
-@inproceedings{accelerate-haskell15,
-    author    = {McDonell, Trevor L and Chakravarty, Manuel M T and Grover, Vinod and Newton, Ryan R},
-    title     = {{Type-safe Runtime Code Generation: Accelerate to LLVM}},
-    booktitle = {Haskell '15: The 8th ACM SIGPLAN Symposium on Haskell},
-    year      = {2015},
-    pages     = {201--212},
-    publisher = {ACM Press},
-    address   = {New York, New York, USA}
+@inproceedings{Arnold:Ryder:2001,
+ author = {Arnold, Matthew and Ryder, Barbara G.},
+ title = {A Framework for Reducing the Cost of Instrumented Code},
+ booktitle = {Proceedings of the ACM SIGPLAN 2001 Conference on Programming Language Design and Implementation},
+ series = {PLDI '01},
+ year = {2001},
+ isbn = {1-58113-414-2},
+ location = {Snowbird, Utah, USA},
+ pages = {168--179},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/378795.378832},
+ doi = {10.1145/378795.378832},
+ acmid = {378832},
+ publisher = {ACM},
+ address = {New York, NY, USA},
 }
 
 
-@InProceedings{ de-mesmay-bandit-based,
-  author        = {de Mesmay, Fr{\'e}d{\'e}ric and Arpad Rimmel and Yevgen Voronenko and Markus P{\"u}schel},
-  title         = {Bandit-Based Optimization on Graphs with Application to Library Performance Tuning},
-  pages         = "729--736",
-  crossref      = {icml2009}
+@inproceedings{Hollingsworth:1996,
+ author = {Hollingsworth, Jeffrey K. and Miller, Barton P.},
+ title = {An Adaptive Cost System for Parallel Program Instrumentation},
+ booktitle = {Proceedings of the Second International Euro-Par Conference on Parallel Processing - Volume I},
+ series = {Euro-Par '96},
+ year = {1996},
+ isbn = {3-540-61626-8},
+ pages = {88--97},
+ numpages = {10},
+ url = {http://dl.acm.org/citation.cfm?id=646668.700793},
+ acmid = {700793},
+ publisher = {Springer-Verlag},
+ address = {London, UK, UK},
 }
 
-@Proceedings{   icml2009,
-  editor        = {Andrea Pohoreckyj Danyluk and L{\'e}on Bottou and Michael L. Littman},
-  title         = {{ICML} 2009: Proceedings of the 26th Annual International Conference on Machine Learning},
-  booktitle     = {{ICML} 2009: Proceedings of the 26th Annual International Conference on Machine Learning},
-  address       = "{N}ew {Y}ork",
-  publisher     = "{ACM} {P}ress",
-  year          = 2009,
-  month         = "14--18 " # jun,
-  volume        = 382,
-  series        = {International Conference Proceeding Series},
-  isbn          = {978-1-60558-516-1},
-  location      = montreal
+@inproceedings{hirzel2001bursty,
+  title={Bursty tracing: A framework for low-overhead temporal profiling},
+  author={Hirzel, Martin and Chilimbi, Trishul},
+  booktitle={4th ACM Workshop on Feedback-Directed and Dynamic Optimization (FDDO-4)},
+  pages={117--126},
+  year={2001}
 }
 
-@inproceedings{brookgpu,
-    author    = {Buck, Ian and Foley, Tim and Horn, Daniel Reiter and Sugerman, Jeremy and Fatahalian, Kayvon and Houston, Mike and Hanrahan, Pat},
-    title     = {{Brook for GPUs: Stream Computing on Graphics Hardware}},
-    booktitle = {SIGGRAPH '04: ACM SIGGRAPH 2004 Papers},
-    year      = {2004},
-    pages     = {777--786},
+@article{goldstein1996lazy,
+  title={Lazy threads: Implementing a fast parallel call},
+  author={Goldstein, Seth Copen and Schauser, Klaus Erik and Culler, David E},
+  journal={Journal of Parallel and Distributed Computing},
+  volume={37},
+  number={1},
+  pages={5--20},
+  year={1996},
+  publisher={Elsevier}
 }
 
-@article{ms-accelerator,
-    author  = {Tarditi, David and Puri, Sidd and Oglesby, Jose},
-    title   = {{Accelerator: using data parallelism to program GPUs for general-purpose uses}},
-    journal = {SIGOPS Operating Systems Review},
-    year    = {2006},
-    volume  = {40},
-    number  = {5},
-    pages   = {325--335},
+@ARTICLE{gharachorloo-jpdc-1992,
+author={Kourosh Gharachorloo and Sarita V. Adve and Anoop Gupta and John L. Hennessy and Mark D. Hill},
+title={{Programming for Different Memory Consistency Models}},
+journal={Journal of Parallel and Distributed Computing},
+volume={15},
+pages={399-407},
+year={1992},
 }
 
-@inproceedings{mccool2002shader,
-    author    = {McCool, Michael D and Qin, Zheng and Popa, Tiberiu S},
-    title     = {{Shader metaprogramming}},
-    booktitle = {HWWS '02: The ACM SIGGRAPH/EUROGRAPHICS conference on Graphics hardware},
-    year      = {2002},
-    pages     = {57--68},
-    month     = sep
+@ARTICLE{lamport-toc-1979,
+author={Leslie Lamport},
+title={{How to Make a Multiprocessor Computer that Correctly Executes Multiprocess Programs}},
+journal={IEEE Transactions on Computers},
+volume={C-28},
+number={9},
+pages={241-248},
+month={September},
+year={1979},
 }
 
-@inproceedings{concord-pact14,
-    author    = {Kaleem, Rashid and Barik, Rajkishore and Shpeisman, Tatiana and Lewis, Brian T and Hu, Chunling and Pingali, Keshav},
-    title     = {{Adaptive heterogeneous scheduling for integrated GPUs}},
-    booktitle = {PACT '14: The 23rd international conference on Parallel architectures and compilation},
-    year      = {2014},
-    pages     = {151--162},
-    publisher = {ACM Press},
-    address   = {New York, New York, USA}
+@INPROCEEDINGS{manson-popl-2005,
+author={Jeremy Manson and William Pugh and Sarita Adve},
+title={{The Java Memory Model}},
+address={Long Beach, CA},
+booktitle={Conference Record of the Thirty-Second ACM Symposium on Principles of Programming Languages},
+month={January},
+year={2005},
 }
 
-@inproceedings{petabricks-asplos13,
-    author    = {Phothilimthana, Phitchaya Mangpo and Ansel, Jason and Ragan-Kelley, Jonathan and Amarasinghe, Saman},
-    title     = {{Portable performance on heterogeneous architectures}},
-    booktitle = {ASPLOS '13: The eighteenth international conference on Architectural support for programming languages and operating systems},
-    year      = {2013},
-    pages     = {431},
-    publisher = {ACM Press},
-    address   = {New York, New York, USA}
+@INPROCEEDINGS{adve-isca-1990,
+author={Sarita V. Adve and Mark D. Hill},
+title={{Weak Ordering---A New Definition}},
+address={Seattle, WA},
+booktitle={Proceedings of the Seventeenth International Symposium on Computer Architecture},
+pages={2-14},
+month={May},
+year={1990},
 }
 
-@inproceedings{ms-dandelion,
-    author    = {Rossbach, Christopher J and Yu, Yuan and Currey, Jon and Martin, Jean-Philippe and Fetterly, Dennis},
-    title     = {{Dandelion: A compiler and runtime for heterogenous sytems}},
-    booktitle = {SOSP '13: The 24th ACM Symposium on Operating Systems Principles},
-    year      = {2013},
-    pages     = {49--68}
+@INPROCEEDINGS{boehm-pldi-2008,
+author={Hans-J. Boehm and Sarita V. Adve},
+title={{Foundations of the C++ Concurrency Memory Model}},
+address={Tucson, AZ},
+booktitle={Proceedings of the SIGPLAN 2008 Conference on Programming Language Design and Implementation},
+month={June},
+year={2008},
 }
 
-@inproceedings{accelerate-agda,
-    author    = {Thiemann, Peter and Chakravarty, Manuel M T},
-    title     = {{Agda Meets Accelerate}},
-    booktitle = {IFL '12: The 24th International Symposium on Implementation and Application of Functional Languages},
-    year      = {2012},
-    month     = aug
+@article{sewell-cacm-2010,
+author = {Sewell, Peter and Sarkar, Susmit and Owens, Scott and Nardelli, Francesco Zappa and Myreen, Magnus O.},
+title = {{X86-TSO: A Rigorous and Usable Programmer's Model for x86 Multiprocessors}},
+journal = {Communications of the ACM},
+issue_date = {July 2010},
+volume = {53},
+number = {7},
+month = {July},
+year = {2010},
+pages = {89--97},
+publisher = {ACM},
+address = {New York, NY, USA},
 }
 
-@inproceedings{accelerate-multidev,
-    author    = {Svensson, Bo Joel and Vollmer, Michael and Holk, Eric and McDonell, Trevor L and Newton, Ryan R},
-    title     = {{Converting data-parallelism to task-parallelism by rewrites: purely functional programs across multiple GPUs}},
-    booktitle = {FHPC '15: The 4th ACM SIGPLAN Workshop on Functional High-Performance Computing},
-    year      = {2015},
-    pages     = {12--22},
-    publisher = {ACM Press},
-    address   = {New York, New York, USA}
+@ARTICLE{wallace-tpds-1998,
+author={Wallace, S. and Bagherzadeh, N.},
+journal={Parallel and Distributed Systems, IEEE Transactions on},
+title={{Modeled and measured instruction fetching performance for superscalar microprocessors}},
+year={1998},
+volume={9},
+number={6},
+pages={570-578},
+month={June},
 }
 
-@inproceedings{opentuner-pact14,
-    author    = {Ansel, Jason and Kamil, Shoaib and Veeramachaneni, Kalyan and Ragan-Kelley, Jonathan and Bosboom, Jeffrey and O'Reilly, Una-May and Amarasinghe, Saman},
-    title     = {{OpenTuner}},
-    booktitle = {PACT '14: The 23rd international conference on Parallel architectures and compilation},
-    year      = {2014},
-    pages     = {303--316},
-    publisher = {ACM Press},
-    address   = {New York, New York, USA}
+@ARTICLE{desnoyers-tpds-2013,
+author={Desnoyers, M. and McKenney, P.E. and Stern, A.S. and Dagenais, M.R. and Walpole, J.},
+journal={Parallel and Distributed Systems, IEEE Transactions on},
+title={{User-Level Implementations of Read-Copy Update}},
+year={2012},
+volume={23},
+number={2},
+pages={375-382},
+month={February},
 }
 
-@article{Svensson:2014fd,
-    author  = {Svensson, Bo Joel and Sheeran, Mary and Newton, Ryan},
-    title   = {{Design Exploration through Code-generating DSLs}},
-    journal = {ACM Queue},
-    year    = {2014},
-    volume  = {12},
-    number  = {4},
-    pages   = {40},
-    month   = apr
+@article{google-wide-profiling,
+  title={Google-wide profiling: A continuous profiling infrastructure for data centers},
+  author={Ren, Gang and Tune, Eric and Moseley, Tipp and Shi, Yixin and Rus, Silvius and Hundt, Robert},
+  journal={IEEE micro},
+  number={4},
+  pages={65--79},
+  year={2010},
+  publisher={IEEE}
 }
 
-
-
-@inproceedings{cilk-lcpc,
-    author    = {Zakian, Christopher and Zakian, Timothy and Kulkarni, Abhishek and Chamith, Buddhika and Newton, Ryan},
-    title     = {{Concurrent Cilk: Lazy Promotion from Tasks to Threads in C/C++}},
-    booktitle = {Proceedings of the 28th International Workshop on
-                  Languages and Compilers for Parallel Computing (LCPC)},
-    year      = {2015},
-    pages     = {106-120},
-    publisher = {},
-    address   = {}
+@inproceedings{cilkprof,
+  title={The Cilkprof Scalability Profiler},
+  author={Schardl, Tao B and Kuszmaul, Bradley C and Lee, I and Leiserson, William M and Leiserson, Charles E and others},
+  booktitle={Proceedings of the 27th ACM on Symposium on Parallelism in Algorithms and Architectures},
+  pages={89--100},
+  year={2015},
+  organization={ACM}
 }
 
-@inproceedings{lvish-ppopp,
-    author    = {Agacan, Omer and Tobin-Hochstadt, Sam and Fogg, Peter and Newton, Ryan},
-    title     = {{Parallel Type-checking with Haskell using Saturating LVars and Stream Generators}},
-    booktitle = {PPoPP'16: ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
-    year      = {2016},
-    pages     = {},
-    publisher = {ACM Press},
-    address   = {}
+@book{gregg2011dtrace,
+  title={DTrace: Dynamic Tracing in Oracle Solaris, Mac OS X, and FreeBSD},
+  author={Gregg, Brendan and Mauro, Jim},
+  year={2011},
+  publisher={Prentice Hall Professional}
 }
+
+@inproceedings{bernat2011anywhere,
+  title={Anywhere, any-time binary instrumentation},
+  author={Bernat, Andrew R and Miller, Barton P},
+  booktitle={Proceedings of the 10th ACM SIGPLAN-SIGSOFT workshop on Program analysis for software tools},
+  pages={9--16},
+  year={2011},
+  organization={ACM}
+}
+
+@incollection{mirgorodskiy2008diagnosing,
+  title={Diagnosing distributed systems with self-propelled instrumentation},
+  author={Mirgorodskiy, Alexander V and Miller, Barton P},
+  booktitle={Middleware 2008},
+  pages={82--103},
+  year={2008},
+  publisher={Springer}
+}
+
+@inproceedings{bruening2003infrastructure,
+  title={An infrastructure for adaptive dynamic optimization},
+  author={Bruening, Derek and Garnett, Timothy and Amarasinghe, Saman},
+  booktitle={Code Generation and Optimization, 2003. CGO 2003. International Symposium on},
+  pages={265--275},
+  year={2003},
+  organization={IEEE}
+}
+
+@inproceedings{weaver2013linux,
+  title={Linux perf\_event features and overhead},
+  author={Weaver, Vincent M},
+  booktitle={The 2nd International Workshop on Performance Analysis of Workload Optimized Systems, FastPath},
+  pages={80},
+  year={2013}
+}
+
+@inproceedings{prasad2005locating,
+  title={Locating system problems using dynamic instrumentation},
+  author={Prasad, Vara and Cohen, William and Eigler, FC and Hunt, Martin and Keniston, Jim and Chen, J},
+  booktitle={2005 Ottawa Linux Symposium},
+  pages={49--64},
+  year={2005},
+  organization={Citeseer}
+}
+
+@inproceedings{desnoyers2006lttng,
+  title={The LTTng tracer: A low impact performance and behavior monitor for GNU/Linux},
+  author={Desnoyers, Mathieu and Dagenais, Michel R},
+  booktitle={OLS (Ottawa Linux Symposium)},
+  volume={2006},
+  pages={209--224},
+  year={2006},
+  organization={Citeseer}
+}
+
+@techreport{ravipati2007toward,
+  title={Toward the deconstruction of Dyninst},
+  author={Ravipati, Giridhar and Bernat, Andrew R and Rosenblum, Nate and Miller, Barton P and Hollingsworth, Jeffrey K},
+  year={2007},
+  institution={Technical Report, Computer Sciences Department, University of Wisconsin, Madison (ftp://ftp. cs. wisc. edu/paradyn/papers/Ravipati07Symta bAPI. pdf)}
+}
+
+@inproceedings{keniston2007ptrace,
+  title={Ptrace, utrace, uprobes: Lightweight, dynamic tracing of user apps},
+  author={Keniston, Jim and Mavinakayanahalli, Ananth and Panchamukhi, Prasanna and Prasad, Vara},
+  booktitle={Linux Symposium},
+  pages={215},
+  year={2007}
+}
+
+@inproceedings{hotspotsafepoints,
+  title={Techniques and Applications for Guest-Language Safepoints},
+  author={Daloze, Benoit and Seaton, Chris and Bonetta, Daniele and M{\"o}ssenb{\"o}ck, Hanspeter},
+  booktitle={Proceedings of the 10th Implementation, Compilation, Optimization of Object-Oriented Languages, Programs and Systems Workshop (ICOOOLPS)},
+  year={2015}
+}
+
+@book{jvm,
+  title={The Java virtual machine specification},
+  author={Lindholm, Tim and Yellin, Frank and Bracha, Gilad and Buckley, Alex},
+  year={2014},
+  publisher={Pearson Education}
+}
+
+@article{intel-sdm-2015,
+  title={and IA-32 Architectures Software Developer’s Manual},
+  author={Intel, Intel},
+  journal={Volume 3A: System Programming Guide, Part},
+  volume={1},
+  year={64}
+}
+
+@inproceedings{jaleel2008cmp,
+  title={CMP \$ im: A Pin-based on-the-fly multi-core cache simulator},
+  author={Jaleel, Aamer and Cohn, Robert S and Luk, Chi-Keung and Jacob, Bruce},
+  booktitle={Proceedings of the Fourth Annual Workshop on Modeling, Benchmarking and Simulation (MoBS), co-located with ISCA},
+  pages={28--36},
+  year={2008}
+}
+
+@TECHREPORT{kpatch,
+  label={kpatch},
+  title={kpatch: dynamic kernel patching},
+  url={https://github.com/dynup/kpatch},
+  sortkey={kpatch},
+}
+
 
 @inproceedings{cnf-icfp15,
  author = {Yang, Edward Z. and Campagna, Giovanni and A\u{g}acan, \"{O}mer S. and El-Hassany, Ahmed and Kulkarni, Abhishek and Newton, Ryan R.},
@@ -7018,7 +7155,7 @@ annote = {A C\{\#} library of abstractions for data-parallel arrays and operatio
  keywords = {Message Passing, Regions, Serialization},
 }
 
-@inproceedings{adaptive-icfp15,
+@inproceedings{adaptive-data-icfp15,
  author = {Newton, Ryan R. and Fogg, Peter P. and Varamesh, Ali},
  title = {Adaptive Lock-free Maps: Purely-functional to Scalable},
  booktitle = {Proceedings of the 20th ACM SIGPLAN International Conference on Functional Programming},
@@ -7036,265 +7173,54 @@ annote = {A C\{\#} library of abstractions for data-parallel arrays and operatio
  keywords = {Concurrent data structures, Lock-free algorithms},
 }
 
-@inproceedings{fhpc-autotune,
- author = {Vollmer, Michael and Svensson, Bo Joel and Holk, Eric and Newton, Ryan R.},
- title = {Meta-programming and Auto-tuning in the Search for High Performance GPU Code},
- booktitle = {Proceedings of the 4th ACM SIGPLAN Workshop on Functional High-Performance Computing},
- series = {FHPC 2015},
- year = {2015},
- isbn = {978-1-4503-3807-3},
- location = {Vancouver, BC, Canada},
- pages = {1--11},
- numpages = {11},
- url = {http://doi.acm.org/10.1145/2808091.2808092},
- doi = {10.1145/2808091.2808092},
- acmid = {2808092},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {GPUs, auto-tuning, meta-programming, parallelism},
+
+@inproceedings{accelerate-haskell15,
+  author    = {McDonell, Trevor L. and Chakravarty, Manuel M. T. and Grover, Vinod and Newton, Ryan R.},
+  title     = {{Type-safe Runtime Code Generation: Accelerate to LLVM}},
+  booktitle = {Haskell Symposium},
+  year      = {2015},
+  pages     = {201--212},
+  keywords  = {Arrays, Code Generation, Data Parallelism, Dynamic Compilation, Embedded Language, GPGPU, Haskell, LLVM},
+}
+% booktitle = {Proceedings of the 8th ACM SIGPLAN Symposium on Haskell},
+% series    = {Haskell 2015},
+
+
+@inproceedings{Svensson:2015dn,
+  author    = {Svensson, Bo Joel and Vollmer, Michael and Holk, Eric and McDonell, Trevor L and Newton, Ryan R},
+  title     = {{Converting data-parallelism to task-parallelism by rewrites: purely functional programs across multiple GPUs}},
+  booktitle = {FHPC: Workshop on Functional High-Performance Computing},
+  year      = {2015},
+  pages     = {12--22},
+  publisher = {ACM},
+  address   = {New York, New York, USA}
 }
 
-@inproceedings{acc-multidev,
- author = {Svensson, Bo Joel and Vollmer, Michael and Holk, Eric and McDonell, Trevor L. and Newton, Ryan R.},
- title = {Converting Data-parallelism to Task-parallelism by Rewrites: Purely Functional Programs Across Multiple GPUs},
- booktitle = {Proceedings of the 4th ACM SIGPLAN Workshop on Functional High-Performance Computing},
- series = {FHPC 2015},
- year = {2015},
- isbn = {978-1-4503-3807-3},
- location = {Vancouver, BC, Canada},
- pages = {12--22},
- numpages = {11},
- url = {http://doi.acm.org/10.1145/2808091.2808093},
- doi = {10.1145/2808091.2808093},
- acmid = {2808093},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {Data-parallelism, GPU, Haskell, Multi-device, Scheduling},
+
+@inproceedings{cilk-lcpc,
+  title={Concurrent Cilk: Lazy Promotion from Tasks to Threads in C/C+},
+  author={Zakian, Christopher and Zakian, Timothy AK and Kulkarni, Abhishek and Chamith, Buddhika and Newton, Ryan R},
+  booktitle={Languages and Compilers for Parallel Computing: 28th International Workshop, LCPC 2015, Raleigh, NC, USA, September 9-11, 2015, Revised Selected Papers},
+  volume={9519},
+  pages={73},
+  year={2016},
+  organization={Springer}
 }
 
-@inproceedings{acc-llvm,
- author = {McDonell, Trevor L. and Chakravarty, Manuel M. T. and Grover, Vinod and Newton, Ryan R.},
- title = {Type-safe Runtime Code Generation: Accelerate to LLVM},
- booktitle = {Proceedings of the 8th ACM SIGPLAN Symposium on Haskell},
- series = {Haskell 2015},
- year = {2015},
- isbn = {978-1-4503-3808-0},
- location = {Vancouver, BC, Canada},
- pages = {201--212},
+@inproceedings{lvish-ppopp,
+ author = {Newton, Ryan R. and A\u{g}acan, \"{O}mer S. and Fogg, Peter and Tobin-Hochstadt, Sam},
+ title = {Parallel Type-checking with Haskell Using Saturating LVars and Stream Generators},
+ booktitle = {Proceedings of the 21st ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ series = {PPoPP '16},
+ year = {2016},
+ isbn = {978-1-4503-4092-2},
+ location = {Barcelona, Spain},
+ pages = {6:1--6:12},
+ articleno = {6},
  numpages = {12},
- url = {http://doi.acm.org/10.1145/2804302.2804313},
- doi = {10.1145/2804302.2804313},
- acmid = {2804313},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {Arrays, Code Generation, Data Parallelism, Dynamic Compilation, Embedded Language, GPGPU, Haskell, LLVM},
-}
-
-
-@techreport{qdsl,
-  title={Everything old is new again: Quoted domain specific languages},
-  author={Najd, Shayan and Lindley, Sam and Svenningsson, Josef and Wadler, Philip},
-  year={2015},
-  institution={Technical report, University of Edinburgh, \url{http://homepages.inf.ed.ac.uk/wadler/papers/qdsl/qdsl.pdf}},
-}
-
-@misc{facebook-flow,
- author = {{}},
- title = {Facebook flow project website},
- howpublished = {\url{https://code.facebook.com/projects/1524880081090726/}}
-}
-
-@misc{typescript-site,
- author = {{}},
- title = {TypeScript project website},
- howpublished = {\url{http://www.typescriptlang.org/}}
-}
-
-@misc{ceylon-lang,
- author = {{}},
- title = {Ceylon language website},
- howpublished = {\url{http://ceylon-lang.org/}}
-}
-
-
-@misc{erlang-dializer,
- author = {{}},
- title = {Erlang dializer type checker},
- howpublished = {\url{http://www.erlang.org/doc/man/dialyzer.html}}
-}
-
-
-@article{DSM-survey,
- author = {Nitzberg, Bill and Lo, Virginia},
- title = {Distributed Shared Memory: A Survey of Issues and Algorithms},
- journal = {Computer},
- issue_date = {August 1991},
- volume = {24},
- number = {8},
- month = aug,
- year = {1991},
- issn = {0018-9162},
- pages = {52--60},
- numpages = {9},
- url = {http://dx.doi.org/10.1109/2.84877},
- doi = {10.1109/2.84877},
- acmid = {112855},
- publisher = {IEEE Computer Society Press},
- address = {Los Alamitos, CA, USA},
-} 
-
-@inproceedings{Morris:2015,
- author = {Morris, J. Garrett},
- title = {Variations on Variants},
- booktitle = {Proceedings of the 2015 ACM SIGPLAN Symposium on Haskell},
- series = {Haskell '15},
- year = {2015},
- isbn = {978-1-4503-3808-0},
- location = {Vancouver, BC, Canada},
- pages = {71--81},
- numpages = {11},
- url = {http://doi.acm.org/10.1145/2804302.2804320},
- doi = {10.1145/2804302.2804320},
- acmid = {2804320},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {expression problem, extensible variants, row types},
-} 
-
-@article{Blume:2006,
- author = {Blume, Matthias and Acar, Umut A. and Chae, Wonseok},
- title = {Extensible Programming with First-class Cases},
- journal = {SIGPLAN Not.},
- issue_date = {September 2006},
- volume = {41},
- number = {9},
- month = sep,
- year = {2006},
- issn = {0362-1340},
- pages = {239--250},
- numpages = {12},
- url = {http://doi.acm.org/10.1145/1160074.1159836},
- doi = {10.1145/1160074.1159836},
- acmid = {1159836},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {duality, first-class cases, records, sums},
-} 
-
-@article{Swierstra:2008,
- author = {Swierstra, Wouter},
- title = {Data Types \`{a} La Carte},
- journal = {J. Funct. Program.},
- issue_date = {July 2008},
- volume = {18},
- number = {4},
- month = jul,
- year = {2008},
- issn = {0956-7968},
- pages = {423--436},
- numpages = {14},
- url = {http://dx.doi.org/10.1017/S0956796808006758},
- doi = {10.1017/S0956796808006758},
- acmid = {1394795},
- publisher = {Cambridge University Press},
- address = {New York, NY, USA},
-} 
-
-@inproceedings{Liang:1995,
- author = {Liang, Sheng and Hudak, Paul and Jones, Mark},
- title = {Monad Transformers and Modular Interpreters},
- booktitle = {Proceedings of the 22Nd ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
- series = {POPL '95},
- year = {1995},
- isbn = {0-89791-692-1},
- location = {San Francisco, California, USA},
- pages = {333--343},
- numpages = {11},
- url = {http://doi.acm.org/10.1145/199448.199528},
- doi = {10.1145/199448.199528},
- acmid = {199528},
- publisher = {ACM},
- address = {New York, NY, USA},
-}
- 
-@inproceedings{Remy:1989,
- author = {R{\'e}my, D.},
- title = {Type Checking Records and Variants in a Natural Extension of ML},
- booktitle = {Proceedings of the 16th ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
- series = {POPL '89},
- year = {1989},
- isbn = {0-89791-294-2},
- location = {Austin, Texas, USA},
- pages = {77--88},
- numpages = {12},
- url = {http://doi.acm.org/10.1145/75277.75284},
- doi = {10.1145/75277.75284},
- acmid = {75284},
+ url = {http://doi.acm.org/10.1145/2851141.2851142},
+ doi = {10.1145/2851141.2851142},
+ acmid = {2851142},
  publisher = {ACM},
  address = {New York, NY, USA},
 } 
-
-@inproceedings{Kiselyov:2004,
- author = {Kiselyov, Oleg and L\"{a}mmel, Ralf and Schupke, Keean},
- title = {Strongly Typed Heterogeneous Collections},
- booktitle = {Proceedings of the 2004 ACM SIGPLAN Workshop on Haskell},
- series = {Haskell '04},
- year = {2004},
- isbn = {1-58113-850-4},
- location = {Snowbird, Utah, USA},
- pages = {96--107},
- numpages = {12},
- url = {http://doi.acm.org/10.1145/1017472.1017488},
- doi = {10.1145/1017472.1017488},
- acmid = {1017488},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {collections, dependently typed programming, extensible records, haskell, type equality, type improvement, type-indexed rows, type-safe database access},
-} 
-
-@inproceedings{Wand:1987,
-  author = {Wand, M.},
-  title = {Complete Type Inference for Simple Objects},
-  booktitle = {Proceedings of the 3rd Annual Symposium on Logic in Computer Science},
-  series = {LICS '87},
-  year = {1987},
-  pages = {37-44},
-  address = {Ithica, New York},
-  doi = {10.1109/LICS.1988.5111}
-}
-
-@inproceedings{Keep:2013,
- author = {Keep, Andrew W. and Dybvig, R. Kent},
- title = {A Nanopass Framework for Commercial Compiler Development},
- booktitle = {Proceedings of the 18th ACM SIGPLAN International Conference on Functional Programming},
- series = {ICFP '13},
- year = {2013},
- isbn = {978-1-4503-2326-0},
- location = {Boston, Massachusetts, USA},
- pages = {343--350},
- numpages = {8},
- url = {http://doi.acm.org/10.1145/2500365.2500618},
- doi = {10.1145/2500365.2500618},
- acmid = {2500618},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {compiler, nanopass, scheme},
-} 
-
-@inproceedings{Oliveira:2015,
- author = {Oliveira, Bruno C. d. S. and Mu, Shin-Cheng and You, Shu-Hung},
- title = {Modular Reifiable Matching: A List-of-functors Approach to Two-level Types},
- booktitle = {Proceedings of the 2015 ACM SIGPLAN Symposium on Haskell},
- series = {Haskell '15},
- year = {2015},
- isbn = {978-1-4503-3808-0},
- location = {Vancouver, BC, Canada},
- pages = {82--93},
- numpages = {12},
- url = {http://doi.acm.org/10.1145/2804302.2804315},
- doi = {10.1145/2804302.2804315},
- acmid = {2804315},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {Modular Datatypes, Subtyping},
-}

@@ -22,6 +22,7 @@
 \definecolor{comment-red}{rgb}{0.8,0,0}
 \definecolor{dark-green}{rgb}{0.0,0.4,0}
 \definecolor{dark-blue}{rgb}{0.0,0.0,0.55}
+\definecolor{very-dark-green}{rgb}{0.0,0.3,0}
 
 \ifx\noeditingmarks\undefined   
    %% This means someone else should take a look:
@@ -37,7 +38,7 @@
 
    %% A very poor-man's version of ``track changes'':
    \newcommand{\new}[1]{{\color{dark-blue}{#1}}}
-
+   % \newcommand{\new}[1]{{\color{very-dark-green}{#1}}}
 
    \newcommand{\const}[1]{\textred{#1}}
    %\definecolor{mygrey}{rgb}{0.6,0.6,0.6}
