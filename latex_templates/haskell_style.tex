@@ -35,9 +35,10 @@
 \lstdefinestyle{haskell}{%
     language=Haskell,
     upquote=true,
-    deletekeywords={case,class,data,default,deriving,do,in,instance,let,of,type,where},
+    deletekeywords={case,class,data,default,deriving,do,in,instance,let,of,type,where,IO,ST,STM},
     morekeywords={[2]class,data,default,deriving,family,instance,type,where},
     morekeywords={[3]in,let,case,of,do},
+    morekeywords={[4]IORef,IO,ST,STM},
     literate=
         {\\}{{$\lambda$}}1
         {\\\\}{{\char`\\\char`\\}}1
@@ -84,10 +85,10 @@
 \lstdefinestyle{inline}{%
     style=haskell,
     basicstyle=\footnotesize\ttfamily,
-    keywordstyle=[1],
-    keywordstyle=[2],
-    keywordstyle=[3],
-    keywordstyle=[4],
+    %% keywordstyle=[1],
+    %% keywordstyle=[2],
+    %% keywordstyle=[3],
+    %% keywordstyle=[4],
     literate=
         {\\}{{$\lambda$}}1
         {\\\\}{{\char`\\\char`\\}}1
