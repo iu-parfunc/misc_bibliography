@@ -1,6 +1,9 @@
 
 \usepackage[usenames,dvipsnames]{xcolor}
 
+% [2016.10.23] Switching to margin notes for peanut gallery:
+\usepackage{todonotes}
+
 % [2016.05.26] This can just be a growing list from paper to paper:
 \newcommand{\rn}[1]{\pgwrapper{RRN}{#1}}  % Ryan Newton
 \newcommand{\tlm}[1]{\pgwrapper{TLM}{#1}} % Trevor
@@ -12,6 +15,10 @@
 \newcommand{\osa}[1]{\pgwrapper{OSA}{#1}} % Omer Agacan
 \newcommand{\mm}[1]{\pgwrapper{MM}{#1}} % Madan Musuvathi
 \newcommand{\rgs}[1]{\pgwrapper{RGS}{#1}} % Ryan Scott
+
+\newcommand{\ms}[1]{\pgwrapper{MK}{#1}} % Milind Kulkarni
+\newcommand{\ls}[1]{\pgwrapper{LS}{#1}} % Laith Sakka
+
 
 % Add co-authors here or in a downstream file.
 
@@ -46,7 +53,11 @@
    \definecolor{mygrey}{rgb}{0.7,0.7,0.7}
 
    \newcommand{\textred}[1]{{\color{comment-red}{#1}}}
-   \newcommand{\pgwrapper}[2]{\textred{(#1: #2)}}
+
+   % Old version was inline:   
+   %   \newcommand{\pgwrapper}[2]{\textred{(#1: #2)}}
+   % New version is in the margin:
+   \newcommand{\pgwrapper}[2]{\todo[size=\footnotesize]{#1: #2}}
 
    %% RRN: Dim the background for Ryan's eyes:
    %% Hack: do this ONLY on Ryan's machine.
@@ -74,7 +85,6 @@
 \fi
 
 % Just an alias because sometimes we use this:
-\newcommand{\todo}[1]{\note{#1}}
 \newcommand{\Red}[1]{\textred{#1}}
 
 % These probable should be elsewhere:
