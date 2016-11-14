@@ -11,7 +11,12 @@ LATEXMK=latexmk ${MKOPTS}
 paper: ${OUTDIR}
 	${LATEXMK} ${PAPER}.tex
 
+# If you have trouble with latexmk for any reason, you can try this:
+old:
+	pdflatex ${PAPER}.tex
+
 # Continuous building
+cont:
 continuous: ${OUTDIR}
 	${LATEXMK} -pvc ${PAPER}.tex
 
@@ -67,4 +72,4 @@ skim:
 clean: 
 	cd ${OUTDIR}; rm -f *.out *.aux *.bbl *.log *.blg *.fls *.fdb_latexmk ${PAPER}.pdf
 
-.PHONY: editingmarks ed paper plain grey white continuous skim
+.PHONY: editingmarks ed paper plain grey white continuous cont skim old
