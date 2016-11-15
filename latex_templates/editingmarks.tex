@@ -6,8 +6,6 @@
 
 % [2016.05.26] This can just be a growing list from paper to paper:
 \newcommand{\rn}[1]{\pgwrapper{RRN}{#1}}  % Ryan Newton
-% When they are their own para, todonotes annoyingly take up vertical space:
-\newcommand{\rnfloat}[1]{\pgwrapper{RRN}{#1\vspace{-4mm}}}  % Ryan Newton
 
 \newcommand{\tlm}[1]{\pgwrapper{TLM}{#1}} % Trevor
 \newcommand{\bjs}[1]{\pgwrapper{BJS}{#1}} % Bo Joel Svenson
@@ -73,6 +71,9 @@
        \pagecolor{mygrey}
    }{}
 
+  % When they are their own para, todonotes annoyingly take up vertical space:
+  \newcommand{\rnfloat}[1]{\pgwrapper{RRN}{#1}\vspace{-4mm}}  % Ryan Newton
+
 \else
 %   \newcommand{\textred}[1]{#1}
 % Keep it on so we catch stuff to fix:
@@ -86,6 +87,8 @@
    \newcommand{\new}[1]{#1}
    \newcommand{\nnew}[1]{#1}   
    \newcommand{\const}[1]{#1}
+
+   \newcommand{\rnfloat}[1]{}  % Ryan Newton
 \fi
 
 % Just an alias because sometimes we use this:
