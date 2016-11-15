@@ -18,7 +18,7 @@ old:
 # Continuous building
 cont:
 continuous: ${OUTDIR}
-	${LATEXMK} -pvc ${PAPER}.tex
+	${LATEXMK} -pvc -interaction=nonstopmode ${PAPER}.tex
 
 ${OUTDIR}:
 	mkdir -p ${OUTDIR}
