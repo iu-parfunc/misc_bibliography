@@ -1,8 +1,11 @@
 
 \usepackage[usenames,dvipsnames]{xcolor}
 
+% [2016.10.23] Switching to margin notes for peanut gallery:
+\usepackage{todonotes}
+
 % [2016.05.26] This can just be a growing list from paper to paper:
-\newcommand{\rn}[1]{\pgwrapper{RRN}{#1}}  % Ryan
+\newcommand{\rn}[1]{\pgwrapper{RRN}{#1}}  % Ryan Newton
 \newcommand{\tlm}[1]{\pgwrapper{TLM}{#1}} % Trevor
 \newcommand{\bjs}[1]{\pgwrapper{BJS}{#1}} % Bo Joel Svenson
 \newcommand{\chc}[1]{\pgwrapper{CHC}{#1}} % Chao-Hong Chen
@@ -11,6 +14,11 @@
 \newcommand{\mv}[1]{\pgwrapper{MV}{#1}} % Michael Vollmer
 \newcommand{\osa}[1]{\pgwrapper{OSA}{#1}} % Omer Agacan
 \newcommand{\mm}[1]{\pgwrapper{MM}{#1}} % Madan Musuvathi
+\newcommand{\rgs}[1]{\pgwrapper{RGS}{#1}} % Ryan Scott
+
+\newcommand{\ms}[1]{\pgwrapper{MK}{#1}} % Milind Kulkarni
+\newcommand{\ls}[1]{\pgwrapper{LS}{#1}} % Laith Sakka
+
 
 % Add co-authors here or in a downstream file.
 
@@ -20,17 +28,36 @@
 }
 
 \definecolor{comment-red}{rgb}{0.8,0,0}
+\definecolor{dark-green}{rgb}{0.0,0.4,0}
+\definecolor{dark-blue}{rgb}{0.0,0.0,0.55}
 \definecolor{very-dark-green}{rgb}{0.0,0.3,0}
+
 \ifx\noeditingmarks\undefined
-   \newcommand{\textred}[1]{{\color{comment-red}{#1}}}
+   %% This means someone else should take a look:
    \newcommand{\auditme}[1]{{\color{dark-green}{#1}}}
-   \newcommand{\pgwrapper}[2]{\textred{(#1: #2)}}
+
+   %% This meants there's a serious problem that must be fixed before
+   %% the paper goes out:
+   \newcommand{\fixme}[1]{{\color{comment-red}{#1}}}
+
+   %% This is for outlining, i.e., psuedotext that must be converted
+   %% to real text:
    \newcommand{\note}[1]{{\begin{itemize}\item \textcolor{blue}{#1} \end{itemize}}}
+
+   %% A very poor-man's version of ``track changes'':
    \newcommand{\new}[1]{{\color{very-dark-green}{#1}}}
-   \newcommand{\new2}[1]{{\color{blue}{#1}}}
+   \newcommand{\new2}[1]{{\color{dark-blue}{#1}}}
+
    \newcommand{\const}[1]{\textred{#1}}
    %\definecolor{mygrey}{rgb}{0.6,0.6,0.6}
    \definecolor{mygrey}{rgb}{0.7,0.7,0.7}
+
+   \newcommand{\textred}[1]{{\color{comment-red}{#1}}}
+
+   % Old version was inline:   
+   %   \newcommand{\pgwrapper}[2]{\textred{(#1: #2)}}
+   % New version is in the margin:
+   \newcommand{\pgwrapper}[2]{\todo[size=\footnotesize]{#1: #2}}
 
    %% RRN: Dim the background for Ryan's eyes:
    %% Hack: do this ONLY on Ryan's machine.
@@ -47,18 +74,17 @@
 % Keep it on so we catch stuff to fix:
    \newcommand{\textred}[1]{{\color{comment-red}{#1}}}
    \newcommand{\auditme}[1]{#1}
-%   \newcommand{\auditme}[1]{\textred{#1}}
+   % This is more severe and should not go away:
+   \newcommand{\fixme}[1]{\textred{#1}}
    \newcommand{\pgwrapper}[2]{}
 %   \newcommand{\note}[1]{}
    \newcommand{\note}[1]{{\begin{itemize}\item {\textcolor{blue}{#1}} \end{itemize}}}
    \newcommand{\new}[1]{#1}
    \newcommand{\new2}[1]{#1}   
-%   \newcommand{\new}[1]{\textcolor{blue}{#1}}
    \newcommand{\const}[1]{#1}
 \fi
 
 % Just an alias because sometimes we use this:
-\newcommand{\todo}[1]{\note{#1}}
 \newcommand{\Red}[1]{\textred{#1}}
 
 % These probable should be elsewhere:

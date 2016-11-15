@@ -2345,17 +2345,7 @@ author = "Kevin L Briggman and Winfried Denk"
   OPTannote = 	 {}
 }
 
-@Misc{habanero-cnc,
-  OPTkey = 	 {},
-  OPTauthor = 	 {},
-  title = 	 {{Habanero Concurrent Collections Project}},
-  organization = {Rice University},
-  OPThowpublished = {},
-  OPTmonth = 	 {},
-  year = 	 {2011},
-  note = 	 {\url{http://habanero.rice.edu/cnc.html}\ \ \ Last accessed July 18, 2011.},
-  OPTannote = 	 {}
-}
+
 
 
 
@@ -4843,6 +4833,25 @@ ISSN={ },}
   publisher={ACM}
 }
 
+@inproceedings{concurrent-revisions-oopsla,
+ author = {Burckhardt, Sebastian and Baldassin, Alexandro and Leijen, Daan},
+ title = {Concurrent Programming with Revisions and Isolation Types},
+ booktitle = {Proceedings of the ACM International Conference on Object Oriented Programming Systems Languages and Applications},
+ series = {OOPSLA '10},
+ year = {2010},
+ isbn = {978-1-4503-0203-6},
+ location = {Reno/Tahoe, Nevada, USA},
+ pages = {691--707},
+ numpages = {17},
+ url = {http://doi.acm.org/10.1145/1869459.1869515},
+ doi = {10.1145/1869459.1869515},
+ acmid = {1869515},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {concurrency, isolation, parallelism, revisions, transactions},
+} 
+
+
 
 @inproceedings{concurrent-revisions-haskell,
  author = {Leijen, Daan and Fahndrich, Manuel and Burckhardt, Sebastian},
@@ -5121,12 +5130,23 @@ ISSN={ },}
 
 
 @inproceedings{harlan-oopsla,
-  title={Region-based memory management for GPU programming languages: Enabling rich data structures on a spartan host},
-  author={Eric Holk and Ryan Newton and Jeremy Siek and Andrew Lumsdaine},
-  booktitle={To appear, OOPSLA 2014},
-  organization={ACM},
-  year={2014}
+ author = {Holk, Eric and Newton, Ryan and Siek, Jeremy and Lumsdaine, Andrew},
+ title = {Region-based Memory Management for GPU Programming Languages: Enabling Rich Data Structures on a Spartan Host},
+ booktitle = {Proceedings of the 2014 ACM International Conference on Object Oriented Programming Systems Languages \& Applications},
+ series = {OOPSLA '14},
+ year = {2014},
+ isbn = {978-1-4503-2585-1},
+ location = {Portland, Oregon, USA},
+ pages = {141--155},
+ numpages = {15},
+ url = {http://doi.acm.org/10.1145/2660193.2660244},
+ doi = {10.1145/2660193.2660244},
+ acmid = {2660244},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {algebraic data types, compilers, first class procedures, gpu, harlan, implementation, opencl, optimization, parallel programming, performance, recursion},
 }
+
 
 @incollection{cnc-space-folding,
   title={Folding of tagged single assignment values for memory-efficient parallelism},
@@ -5519,17 +5539,6 @@ doi={10.1109/ISPASS.2010.5452024},}
   organization={ACM}
 }
 
-@inproceedings{valgrind,
-  title={Valgrind: a framework for heavyweight dynamic binary instrumentation},
-  author={Nethercote, Nicholas and Seward, Julian},
-  booktitle={ACM Sigplan Notices},
-  volume={42},
-  number={6},
-  pages={89--100},
-  year={2007},
-  organization={ACM}
-}
-
 @inproceedings{gprof,
   title={Gprof: A call graph execution profiler},
   author={Graham, Susan L and Kessler, Peter B and Mckusick, Marshall K},
@@ -5595,13 +5604,14 @@ doi={10.1109/ISPASS.2010.5452024},}
   organization={ACM}
 }
 
-@inproceedings{PEBIL,
-  title={PEBIL: Efficient static binary instrumentation for linux},
-  author={Laurenzano, Michael A and Tikir, Mustafa M and Carrington, Laura and Snavely, Allan},
-  booktitle={Performance Analysis of Systems \& Software (ISPASS), 2010 IEEE International Symposium on},
-  pages={175--183},
-  year={2010},
-  organization={IEEE}
+
+@inproceedings{ksplice,
+  title={Ksplice: Automatic rebootless kernel updates},
+  author={Arnold, Jeff and Kaashoek, M Frans},
+  booktitle={Proceedings of the 4th ACM European conference on Computer systems},
+  pages={187--198},
+  year={2009},
+  organization={ACM}
 }
 
 @misc{brendan-blog,
@@ -6392,6 +6402,25 @@ pages = {37--48},
 title = {{Using generational garbage collection to implement cache-conscious data placement}},
 volume = {34},
 year = {1999}
+}
+@inproceedings{Chilimbi1999b,
+	Acmid = {301635},
+	Address = {New York, NY, USA},
+	Author = {Chilimbi, Trishul M. and Davidson, Bob and Larus, James R.},
+	Booktitle = {Proceedings of the ACM SIGPLAN 1999 conference on Programming language design and implementation},
+	Date-Added = {2011-06-20 13:01:35 -0400},
+	Date-Modified = {2011-06-20 13:01:35 -0400},
+	Doi = {http://doi.acm.org/10.1145/301618.301635},
+	Isbn = {1-58113-094-5},
+	Keywords = {cache-conscious definition, class splitting, field reorganization, structure splitting},
+	Location = {Atlanta, Georgia, United States},
+	Numpages = {12},
+	Pages = {13--24},
+	Publisher = {ACM},
+	Series = {PLDI '99},
+	Title = {Cache-conscious structure definition},
+	Url = {http://doi.acm.org/10.1145/301618.301635},
+	Year = {1999},
 }
 @inproceedings{Courtrai2000,
 author = {Courtrai, Luc and Maheo, Yves and Raimbault, Frederic},
@@ -7223,4 +7252,687 @@ month={February},
  acmid = {2851142},
  publisher = {ACM},
  address = {New York, NY, USA},
+}
+
+
+@article{lamport1979-sequential-consistency,
+  title={How to make a multiprocessor computer that correctly executes multiprocess programs},
+  author={Lamport, Leslie},
+  journal={IEEE transactions on computers},
+  volume={100},
+  number={9},
+  pages={690--691},
+  year={1979},
+  publisher={IEEE}
+}
+
+
+@inproceedings{ppopp07-theory-of-mem-models,
+ author = {Saraswat, Vijay A. and Jagadeesan, Radha and Michael, Maged and von Praun, Christoph},
+ title = {A Theory of Memory Models},
+ booktitle = {Proceedings of the 12th ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ series = {PPoPP '07},
+ year = {2007},
+ isbn = {978-1-59593-602-8},
+ location = {San Jose, California, USA},
+ pages = {161--172},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/1229428.1229469},
+ doi = {10.1145/1229428.1229469},
+ acmid = {1229469},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {memory model, sequential consistency, weak model},
+}
+
+@inproceedings{nofib,
+  title={{The nofib benchmark suite of Haskell programs}},
+  author={Will Partain},
+  booktitle={Functional Programming, Glasgow 1992},
+  series={Workshops in Computing},
+  pages={195--202},
+  publisher={Springer-Verlag},
+  year={1993}
+}
+
+@inproceedings{safe-haskell,
+ author = {Terei, David and Marlow, Simon and Peyton Jones, Simon and Mazi\`{e}res, David},
+ title = {{Safe Haskell}},
+ booktitle = {Proceedings of the 2012 Haskell Symposium},
+ series = {Haskell '12},
+ year = {2012},
+ isbn = {978-1-4503-1574-6},
+ location = {Copenhagen, Denmark},
+ pages = {137--148},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/2364506.2364524},
+ doi = {10.1145/2364506.2364524},
+ acmid = {2364524},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {haskell, security, type safety},
+}
+
+@inproceedings{js.js,
+ author = {Terrace, Jeff and Beard, Stephen R. and Katta, Naga Praveen Kumar},
+ title = {{JavaScript in JavaScript (js.js): Sandboxing third-party scripts}},
+ booktitle = {Proceedings of the 3rd USENIX Conference on Web Application Development},
+ series = {WebApps'12},
+ year = {2012},
+ location = {Boston, MA},
+ pages = {9--9},
+ numpages = {1},
+ url = {http://dl.acm.org/citation.cfm?id=2342863.2342872},
+ acmid = {2342872},
+ publisher = {USENIX Association},
+ address = {Berkeley, CA, USA},
+}
+
+@article{adve-gharachorloo-96,
+ author = {S. Adve and K. Gharachorloo},
+ title = {Shared Memory Consistency Models: a tutorial},
+ journal = {Computer},
+ volume = {29},
+ number = {12},
+ year = {1996},
+ dont_issn = {0018-9162},
+ pages = {66--76},
+ dont_doi = {http://dx.doi.org/10.1109/2.546611},
+ dont_publisher = {IEEE Computer Society Press},
+ dont_address = {Los Alamitos, CA, USA},
+ }
+
+@inproceedings{Locksmith,
+ author = {Pratikakis, Polyvios and Foster, Jeffrey S. and Hicks, Michael},
+ title = {{LOCKSMITH}: Context-sensitive Correlation Analysis for Race Detection},
+ booktitle = {Proceedings of the 2006 ACM SIGPLAN Conference on Programming Language Design and Implementation},
+ series = {PLDI '06},
+ year = {2006},
+ isbn = {1-59593-320-4},
+ location = {Ottawa, Ontario, Canada},
+ pages = {320--331},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/1133981.1134019},
+ doi = {10.1145/1133981.1134019},
+ acmid = {1134019},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {context-sensitivity, correlation, locksmith, multi-threaded programming, race detection, type inference},
+}
+
+@inproceedings{Whaley06,
+ author = {M. Naik and A. Aiken and J. Whaley},
+ title = {Effective static race detection for {J}ava},
+ booktitle = {PLDI '06: Proceedings of the 2006 ACM SIGPLAN conference on Programming language design and implementation},
+ year = {2006},
+ pages = {308--319},
+}
+
+@conference{gharachorloo1991two,   
+title={{Two techniques to enhance the performance of memory consistency models}},
+author={Gharachorloo, K. and Gupta, A. and Hennessy, J.},
+booktitle={Proceedings of the 1991 International Conference on Parallel Processing},
+series={ICPP '91}  ,   
+pages={355--364},   
+year={1991}
+}
+
+@inproceedings{flanagan09,
+author = {Flanagan, Cormac and Freund, Stephen N.},
+ title = {{FastTrack}: Efficient and Precise Dynamic Race Detection},
+ booktitle = {Proceedings of the 2009 ACM SIGPLAN Conference on Programming Language Design and Implementation},
+ series = {PLDI '09},
+ year = {2009},
+ isbn = {978-1-60558-392-1},
+ location = {Dublin, Ireland},
+ pages = {121--133},
+ numpages = {13},
+ url = {http://doi.acm.org/10.1145/1542476.1542490},
+ doi = {10.1145/1542476.1542490},
+ acmid = {1542490},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {concurrency, dynamic analysis, race conditions},
+}
+
+
+@inproceedings{Ceze07,
+  author    = {Luis Ceze and
+James Tuck and
+Pablo Montesinos and
+Josep Torrellas},
+title     = {Bulk{SC}: bulk enforcement of sequential consistency},
+booktitle = {ISCA '07},
+year      = {2007},
+pages     = {278-289},
+}
+
+
+@conference{blundell09,
+title={Invisi{F}ence: performance-transparent memory ordering in conventional multiprocessors},
+author={Blundell, C. and Martin, M.M.K. and Wenisch, T.F.},
+booktitle={ISCA '09},
+pages = {233--244},
+year={2009},
+}
+
+@conference{ranganathan97,
+author = {Ranganathan, Parthasarathy and Pai, Vijay S. and Adve, Sarita V.},
+ title = {Using Speculative Retirement and Larger Instruction Windows to Narrow the Performance Gap Between Memory Consistency Models},
+ booktitle = {Proceedings of the Ninth Annual ACM Symposium on Parallel Algorithms and Architectures},
+ series = {SPAA '97},
+ year = {1997},
+ isbn = {0-89791-890-8},
+ location = {Newport, Rhode Island, USA},
+ pages = {199--210},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/258492.258512},
+ doi = {10.1145/258492.258512},
+ acmid = {258512},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@inproceedings{Lin:2012,
+ author = {Lin, Changhui and Nagarajan, Vijay and Gupta, Rajiv and Rajaram, Bharghava},
+ title = {Efficient Sequential Consistency via Conflict Ordering},
+ booktitle = {Proceedings of the Seventeenth International Conference on Architectural Support for Programming Languages and Operating Systems},
+ series = {ASPLOS XVII},
+ year = {2012},
+ isbn = {978-1-4503-0759-8},
+ location = {London, England, UK},
+ pages = {273--286},
+ numpages = {14},
+ url = {http://doi.acm.org/10.1145/2150976.2151006},
+ doi = {10.1145/2150976.2151006},
+ acmid = {2151006},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {conflict ordering, sequential consistency},
+}
+
+@article{Singh:2012,
+ author = {Singh, Abhayendra and Narayanasamy, Satish and Marino, Daniel and Millstein, Todd and Musuvathi, Madanlal},
+ title = {End-to-end Sequential Consistency},
+ journal = {SIGARCH Comput. Archit. News},
+ issue_date = {June 2012},
+ volume = {40},
+ number = {3},
+ month = jun,
+ year = {2012},
+ issn = {0163-5964},
+ pages = {524--535},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/2366231.2337220},
+ doi = {10.1145/2366231.2337220},
+ acmid = {2337220},
+ publisher = {ACM},
+ address = {New York, NY, USA},
 } 
+
+
+@inproceedings{Duan:2013,
+ author = {Duan, Yuelu and Muzahid, Abdullah and Torrellas, Josep},
+ title = {WeeFence: Toward Making Fences Free in {TSO}},
+ booktitle = {Proceedings of the 40th Annual International Symposium on Computer Architecture},
+ series = {ISCA '13},
+ year = {2013},
+ location = {Tel-Aviv, Israel},
+ pages = {213--224},
+ publisher = {ACM},
+} 
+
+@inproceedings{Marino11,
+  author = {Marino, Daniel and Singh, Abhayendra and Millstein, Todd and Musuvathi, Madanlal and Narayanasamy, Satish},
+ title = {A Case for an {SC}-Preserving Compiler},
+ booktitle = {Proceedings of the 32Nd ACM SIGPLAN Conference on Programming Language Design and Implementation},
+ series = {PLDI '11},
+ year = {2011},
+ isbn = {978-1-4503-0663-8},
+ location = {San Jose, California, USA},
+ pages = {199--210},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/1993498.1993522},
+ doi = {10.1145/1993498.1993522},
+ acmid = {1993522},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {interference checks, memory consistency models, sc preservation, sequential consistency},
+} 
+
+@conference{kamil05,
+  title={{Making sequential consistency practical in Titanium}},
+  author={Kamil, A. and Su, J. and Yelick, K.},
+  booktitle={Proceedings of the 2005 ACM/IEEE conference on Supercomputing},
+  pages={15},
+  year={2005},
+  organization={IEEE Computer Society}
+}
+
+@inproceedings{pldi14-resource-limits,
+ author = {Yang, Edward Z. and Mazi\`{e}res, David},
+ title = {{Dynamic Space Limits for Haskell}},
+ booktitle = {Proceedings of the 35th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+ series = {PLDI '14},
+ year = {2014},
+ isbn = {978-1-4503-2784-8},
+ location = {Edinburgh, United Kingdom},
+ pages = {588--598},
+ numpages = {11},
+ url = {http://doi.acm.org/10.1145/2594291.2594341},
+ doi = {10.1145/2594291.2594341},
+ acmid = {2594341},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {Haskell, fault tolerance, profiling, resource limits},
+} 
+
+
+
+@article{shasha88,
+  title={{Efficient and Correct Execution of Parallel Programs that Share Memory}},
+  author={Shasha, D. and Snir, M.},
+  journal={{TOPLAS}},
+  volume={10},
+  number={2},
+  year={1988},
+}
+
+@conference{sura05,
+  title={{Compiler Techniques for High Performance Sequentially Consistent Java Programs}},
+  author={Sura, Z. and Fang, X. and Wong, C.L. and Midkiff, S.P. and Lee, J. and Padua, D.},
+  booktitle={PPoPP},
+  year={2005},
+}
+ 
+@inproceedings{alglave14,
+  author    = {Jade Alglave and
+               Daniel Kroening and
+               Vincent Nimal and
+               Daniel Poetzl},
+  title     = {Don't Sit on the Fence - {A} Static Analysis Approach to Automatic
+               Fence Insertion},
+  booktitle = {Computer Aided Verification - 26th International Conference, {CAV}
+               2014},
+  pages     = {508--524},
+  year      = {2014},
+  url       = {http://dx.doi.org/10.1007/978-3-319-08867-9_33},
+  doi       = {10.1007/978-3-319-08867-9_33},
+  timestamp = {Mon, 30 Jun 2014 11:31:20 +0200},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/conf/cav/AlglaveKNP14},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@inproceedings{stm-monad,
+ author = {Harris, Tim and Marlow, Simon and Peyton-Jones, Simon and Herlihy, Maurice},
+ title = {Composable Memory Transactions},
+ booktitle = {Proceedings of the Tenth ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ series = {PPoPP '05},
+ year = {2005},
+ isbn = {1-59593-080-9},
+ location = {Chicago, IL, USA},
+ pages = {48--60},
+ numpages = {13},
+ url = {http://doi.acm.org/10.1145/1065944.1065952},
+ doi = {10.1145/1065944.1065952},
+ acmid = {1065952},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {locks, non-blocking algorithms, transactions},
+}
+
+@article{AdveBoehmCacm10,
+ author = {Adve, Sarita V. and Boehm, Hans-J.},
+ title = {Memory Models: A Case for Rethinking Parallel Languages and Hardware},
+ journal = {Commun. ACM},
+ issue_date = {August 2010},
+ volume = {53},
+ number = {8},
+ month = aug,
+ year = {2010},
+ issn = {0001-0782},
+ pages = {90--101},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/1787234.1787255},
+ doi = {10.1145/1787234.1787255},
+ acmid = {1787255},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@inproceedings{boudol-2009,
+ author = {Boudol, G{\'e}rard and Petri, Gustavo},
+ title = {Relaxed Memory Models: An Operational Approach},
+ booktitle = {Proceedings of the 36th Annual ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+ series = {POPL '09},
+ year = {2009},
+ isbn = {978-1-60558-379-2},
+ location = {Savannah, GA, USA},
+ pages = {392--403},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/1480881.1480930},
+ doi = {10.1145/1480881.1480930},
+ acmid = {1480930},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {memory models, operational semantics},
+} 
+
+@article{popl09-x86-tso,
+ author = {Sarkar, Susmit and Sewell, Peter and Nardelli, Francesco Zappa and Owens, Scott and Ridge, Tom and Braibant, Thomas and Myreen, Magnus O. and Alglave, Jade},
+ title = {The Semantics of x86-CC Multiprocessor Machine Code},
+ journal = {SIGPLAN Not.},
+ issue_date = {January 2009},
+ volume = {44},
+ number = {1},
+ month = jan,
+ year = {2009},
+ issn = {0362-1340},
+ pages = {379--391},
+ numpages = {13},
+ url = {http://doi.acm.org/10.1145/1594834.1480929},
+ doi = {10.1145/1594834.1480929},
+ acmid = {1480929},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {relaxed memory models, semantics},
+} 
+
+@misc{criterion-package,
+    title={{criterion: a Haskell microbenchmarking library}},
+    howpublished={\url{http://www.serpentine.com/criterion/}}
+} 
+
+@inproceedings{Lucassen-1988,
+ author = {Lucassen, J. M. and Gifford, D. K.},
+ title = {Polymorphic Effect Systems},
+ booktitle = {Proceedings of the 15th ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+ series = {POPL '88},
+ year = {1988},
+ isbn = {0-89791-252-7},
+ location = {San Diego, California, USA},
+ pages = {47--57},
+ numpages = {11},
+ url = {http://doi.acm.org/10.1145/73560.73564},
+ doi = {10.1145/73560.73564},
+ acmid = {73564},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@inproceedings{permission-types,
+ author = {Naden, Karl and Bocchino, Robert and Aldrich, Jonathan and Bierhoff, Kevin},
+ title = {A Type System for Borrowing Permissions},
+ booktitle = {Proceedings of the 39th Annual ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+ series = {POPL '12},
+ year = {2012},
+ isbn = {978-1-4503-1083-3},
+ location = {Philadelphia, PA, USA},
+ pages = {557--570},
+ numpages = {14},
+ url = {http://doi.acm.org/10.1145/2103656.2103722},
+ doi = {10.1145/2103656.2103722},
+ acmid = {2103722},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {borrowing, immutability, permissions, types, uniqueness},
+}
+
+@INPROCEEDINGS{session-types,
+    author = {Kaku Takeuchi and Kohei Honda and Makoto Kubo},
+    title = {An Interaction-based Language and its Typing System},
+    booktitle = {In PARLE’94, volume 817 of LNCS},
+    year = {1994},
+    pages = {398--413},
+    publisher = {Springer-Verlag}
+}
+
+@article{cohen-1993,
+    title={Operating system protection through program evolution},
+    author={Cohen, Frederick B},
+    journal={Computers \& Security},
+    volume={12},
+    number={6},
+    pages={565--584},
+    year={1993},
+    publisher={Elsevier}
+}
+
+
+@inproceedings{probst2002register,
+    title={Register liveness analysis for optimizing dynamic binary translation},
+    author={Probst, Mark and Krall, Andreas and Scholz, Bernhard},
+    booktitle={Reverse Engineering, 2002. Proceedings. Ninth Working Conference on},
+    pages={35--44},
+    year={2002},
+    organization={IEEE}
+}
+
+@article{bruening2008building,
+    title={Building dynamic instrumentation tools with dynamorio},
+    author={Bruening, Derek and Zhao, Qin and Kleckner, Reid},
+    year={2008}
+}
+
+@inproceedings{laurenzano2010pebil,
+    title={Pebil: Efficient static binary instrumentation for linux},
+    author={Laurenzano, Michael A and Tikir, Mustafa M and Carrington, Laura and Snavely, Allan},
+    booktitle={Performance Analysis of Systems \& Software (ISPASS), 2010 IEEE International Symposium on},
+    pages={175--183},
+    year={2010},
+    organization={IEEE}
+}
+
+
+@article{pldi16-crossmod,
+ author = {Chamith, Buddhika and Svensson, Bo Joel and Dalessandro, Luke and Newton, Ryan R.},
+ title = {Living on the Edge: Rapid-toggling Probes with Cross-modification on x86},
+ journal = {SIGPLAN Not.},
+ issue_date = {June 2016},
+ volume = {51},
+ number = {6},
+ month = jun,
+ year = {2016},
+ issn = {0362-1340},
+ pages = {16--26},
+ numpages = {11},
+ url = {http://doi.acm.org/10.1145/2980983.2908084},
+ doi = {10.1145/2980983.2908084},
+ acmid = {2908084},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {application profiling, dynamic instrumentation},
+} 
+
+
+@article{kprobes,
+  title={Kernel korner: kprobes-a kernel debugger},
+  author={Krishnakumar, R},
+  journal={Linux Journal},
+  volume={2005},
+  number={133},
+  pages={11},
+  year={2005},
+  publisher={Belltown Media}
+}
+
+@misc{systemtap,
+    author = {Frank C. EIgler and Vara Prasad and Will Cohen and Hien Nguyen and Martin Hunt and Jim Keniston and Brad Chen},
+    title = {Architecture of systemtap: a Linux trace/probe tool },
+    year = {2005}
+}
+
+
+@article{xray-whitepaper,
+  title={XRay: A Function Call Tracing System},
+  author={Berris, Dean Michael and Veitch, Alistair and Heintze, Nevin and Anderson, Eric and Wang, Ning},
+  year={2016},
+  url={http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45287.pdf}
+}
+
+@inproceedings{overlapping-obfuscation1,
+  title={Instructions-Based Detection of Sophisticated Obfuscation and Packing},
+  author={Saleh, Moustafa and Ratazzi, E Paul and Xu, Shouhuai},
+  booktitle={2014 IEEE Military Communications Conference},
+  pages={1--6},
+  year={2014},
+  organization={IEEE}
+}
+
+@INPROCEEDINGS{overlapping-obfuscation2, 
+author={X. Xie and F. Liu and B. Lu and F. Xiang}, 
+booktitle={Computational Intelligence and Security (CIS), 2014 Tenth International Conference on}, 
+title={Mixed Obfuscation of Overlapping Instruction and Self-Modify Code Based on Hyper-Chaotic Opaque Predicates}, 
+year={2014}, 
+pages={524-528}, 
+keywords={program control structures;safety-critical software;software engineering;code obfuscation;control flow graph;control transfer instructions;hyper-chaotic opaque predicates;program control flow analyze;reverse analysis;self-modify code;Chaos;Flow graphs;Resistance;Resists;Software;Watermarking;code obfuscation;hyper-chaotic opaque predicate;overlapping instruction;self-modify code}, 
+doi={10.1109/CIS.2014.45}, 
+month={Nov},}
+
+@inproceedings{overlapping-obfuscation3,
+  title={CoDisasm: medium scale concatic disassembly of self-modifying binaries with overlapping instructions},
+  author={Bonfante, Guillaume and Fernandez, Jose and Marion, Jean-Yves and Rouxel, Benjamin and Sabatier, Fabrice and Thierry, Aur{\'e}lien},
+  booktitle={Proceedings of the 22nd ACM SIGSAC Conference on Computer and Communications Security},
+  pages={745--756},
+  year={2015},
+  organization={ACM}
+}
+
+
+
+
+@inproceedings{SafeProgramming02,
+ author = {C. Boyapati and R. Lee and M. Rinard},
+ title = {Ownership Types for Safe Programming: Preventing Data Races and Deadlocks},
+ booktitle = {OOPSLA '02},
+ pages = {211--230},
+ year = {2002}
+}
+
+@inproceedings{BoyapatiRinard01,
+ author = {Chandrasekhar Boyapati and Martin Rinard},
+ title = {A parameterized type system for race-free {J}ava programs},
+ booktitle = {OOPSLA '01},
+ year = {2001},
+ pages = {56--69},
+ location = {Tampa Bay, FL, USA}
+}
+
+@inproceedings{JavaRace00,
+ author = {C. Flanagan and S. N. Freund},
+ title = {Type-based race detection for {J}ava},
+ booktitle = {PLDI '00},
+ year = {2000},
+ pages = {219--232},
+}
+
+@article{Gordon:2012,
+ author = {Gordon, Colin S. and Parkinson, Matthew J. and Parsons, Jared and Bromfield, Aleks and Duffy, Joe},
+ title = {Uniqueness and Reference Immutability for Safe Parallelism},
+ journal = {SIGPLAN Not.},
+ issue_date = {October 2012},
+ volume = {47},
+ number = {10},
+ month = oct,
+ year = {2012},
+ issn = {0362-1340},
+ pages = {21--40},
+ numpages = {20},
+ url = {http://doi.acm.org/10.1145/2398857.2384619},
+ doi = {10.1145/2398857.2384619},
+ acmid = {2384619},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {concurrency, reference immutability, type systems, views},
+} 
+
+@inproceedings{Truong1998,
+	Acmid = {825680},
+	Address = {Washington, DC, USA},
+	Author = {Truong, D. N. and Bodin, F. and Seznec, A.},
+	Booktitle = {Proceedings of the 1998 International Conference on Parallel Architectures and Compilation Techniques},
+	Isbn = {0-8186-8591-3},
+	Pages = {322--},
+	Publisher = {IEEE Computer Society},
+	Series = {PACT '98},
+	Title = {Improving Cache Behavior of Dynamically Allocated Data Structures},
+	Url = {http://portal.acm.org/citation.cfm?id=522344.825680},
+	Year = {1998},
+}
+
+
+ 
+@inproceedings{repa-icfp10,
+ author = {Keller, Gabriele and Chakravarty, Manuel M.T. and Leshchinskiy, Roman and Peyton Jones, Simon and Lippmeier, Ben},
+ title = {Regular, Shape-polymorphic, Parallel Arrays in Haskell},
+ booktitle = {Proceedings of the 15th ACM SIGPLAN International Conference on Functional Programming},
+ series = {ICFP '10},
+ year = {2010},
+ isbn = {978-1-60558-794-3},
+ location = {Baltimore, Maryland, USA},
+ pages = {261--272},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/1863543.1863582},
+ doi = {10.1145/1863543.1863582},
+ acmid = {1863582},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {arrays, data parallelism, haskell},
+}
+
+
+@inproceedings {broom-tr,
+author = {Ionel Gog and Jana Giceva and Malte Schwarzkopf and Kapil Vaswani and Dimitrios Vytiniotis and Ganesan Ramalingam and Manuel Costa and Derek G. Murray and Steven Hand and Michael Isard},
+title = {Broom: Sweeping Out Garbage Collection from Big Data Systems},
+booktitle = {15th Workshop on Hot Topics in Operating Systems (HotOS XV)},
+year = {2015},
+month = May,
+address = {Kartause Ittingen, Switzerland},
+url = {https://www.usenix.org/conference/hotos15/workshop-program/presentation/gog},
+publisher = {USENIX Association},
+}
+
+@ARTICLE{synchronous-overview, 
+author={A. Benveniste and P. Caspi and S. A. Edwards and N. Halbwachs and P. Le Guernic and R. de Simone}, 
+journal={Proceedings of the IEEE}, 
+title={The synchronous languages 12 years later}, 
+year={2003}, 
+volume={91}, 
+number={1}, 
+pages={64-83}, 
+keywords={distributed programming;embedded systems;high level languages;Esterel;Lustre;Signal;concurrency;embedded applications;formal methods;modeling;real-time systems;specifying;synchronous languages;Acoustical engineering;Centralized control;Commercialization;Concurrent computing;Control systems;Costs;Design engineering;Design methodology;Natural languages;Synchronization}, 
+doi={10.1109/JPROC.2002.805826}, 
+ISSN={0018-9219}, 
+month={Jan},}
+
+
+
+@unpublished{superaccumulation,
+  TITLE = {{Full-Speed Deterministic Bit-Accurate Parallel Floating-Point Summation on Multi- and Many-Core Architectures}},
+  AUTHOR = {Collange, Sylvain and Defour, David and Graillat, Stef and Iakymchuk, Roman},
+  URL = {https://hal.archives-ouvertes.fr/hal-00949355},
+  NOTE = {working paper or preprint},
+  YEAR = {2014},
+  MONTH = Feb,
+  KEYWORDS = {multi- and many-core architectures ; accuracy ; long accumulator ; multi-precision ; Parallel floating-point summation ; reproducibility},
+  PDF = {https://hal.archives-ouvertes.fr/hal-00949355/file/superaccumulator.pdf},
+  HAL_ID = {hal-00949355},
+  HAL_VERSION = {v2},
+}
+
+@Inbook{habanero-java-permissions,
+author="Westbrook, Edwin
+and Zhao, Jisheng
+and Budimli{\'{c}}, Zoran
+and Sarkar, Vivek",
+editor="Noble, James",
+title="Practical Permissions for Race-Free Parallelism",
+bookTitle="ECOOP 2012 -- Object-Oriented Programming: 26th European Conference, Beijing, China, June 11-16, 2012. Proceedings",
+year="2012",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="614--639",
+isbn="978-3-642-31057-7",
+doi="10.1007/978-3-642-31057-7_27",
+url="http://dx.doi.org/10.1007/978-3-642-31057-7_27"
+}
