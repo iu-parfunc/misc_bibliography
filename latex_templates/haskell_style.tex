@@ -1,7 +1,12 @@
 
 \usepackage{upquote}
 \usepackage{listings}
-\usepackage[usenames,dvipsnames]{xcolor}
+% This is used in the acmart.cls, leading to problems with option clash:
+% \usepackage[usenames,dvipsnames]{xcolor}
+% \usepackage[dvipsnames]{xcolor}
+\usepackage[]{xcolor}
+% [2017.01.16] Work around option clash:
+\definecolor{MidnightBlue}{rgb}{0.1, 0.1, 0.44}
 
 \definecolor{darkgreen}{rgb}{0,0.5,0}
 \definecolor{darkred}{rgb}{0.5,0,0}
