@@ -1,4 +1,117 @@
 
+
+@Comment My publications, reverso chronological
+@Comment ================================================================================
+
+@Comment Submitted papers
+@Comment ----------------------------------------
+
+@misc{gibbon-working-draft,
+ @Comment title={Gibbon: a compiler for tree-traversals.},
+ title={Compiling Tree Transforms to Operate on Packed Representations},
+ author={Michael Vollmer and Sarah Spall and Buddhika Chamith and Laith
+           Sakka and Milind Kulkarni and  Sam Tobin-Hochstadt and Ryan R. Newton},
+ series = {ECOOP '17},
+  location = {Barcelona, Spain},
+ publisher = {ACM},  
+ howpublished ={In submission to ECOOP'17, draft at: \url{http://www.cs.indiana.edu/~rrnewton/papers/gibbon_working_draft.pdf}}
+}
+
+@misc{lh-prover-draft,
+ title={Refinement Reflection: Parallel Legacy Languages as Theorem Provers},
+ author={Niki Vazou and Vikraman Choudhury and Ryan G. Scott and Ranjit Jhala and Ryan R. Newton},
+  series = {PLDI '17},
+ location = {Barcelona, Spain},
+  year = {2017},
+   publisher = {ACM},
+ howpublished ={In submission to PLDI'17, draft at: \url{http://www.cs.indiana.edu/~rrnewton/papers/refinement_reflection_draft.pdf}}
+}
+
+@misc{liteprof-draft,
+ title={Instruction Punning: Lightweight Instrumentation for x86-64},
+ author={{Buddhika Chamith} and {Bo Joel Svensson} and Luke Dalessandro and Ryan R. Newton.},
+  series = {PLDI '17},
+ location = {Barcelona, Spain},
+ year = {2017},
+  publisher = {ACM},
+ howpublished ={In submission to PLDI'17, draft at: \url{http://www.cs.indiana.edu/~rrnewton/papers/liteinst_draft.pdf}}
+}
+
+@misc{adaptive2-draft,
+ title={Adaptive Lock-Free Data Structures: A General Method for Concurrent Implementation Swapping},
+ author={{Chao-Hong Chen} and {Vikraman Choudhury} and Ryan R. Newton},
+ series = {PLDI '17},
+ location = {Barcelona, Spain},
+ year = {2017},
+ publisher = {ACM}, 
+ howpublished ={In submission to PLDI'17, draft at: \url{http://www.cs.indiana.edu/~rrnewton/papers/adaptive2_draft.pdf}}
+}
+
+
+
+
+@Comment Published/Accepted papers
+@Comment ----------------------------------------
+
+@Comment |2017|
+@Comment ------
+
+
+@inproceedings{sc-haskell-draft,
+ title = {SC-Haskell: Sequential Consistency in Languages that Minimize Mutable Shared Heap},
+ author = {Michael Vollmer and Ryan G. Scott and Madan Musuvathi and Ryan R. Newton},
+ booktitle = {To appear in the proceedings of the 22st ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ series = {PPoPP '17},
+ year = {2017},
+ location = {Austin, TX},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@Comment |2016|
+@Comment ------
+
+
+@Comment |2011|
+@Comment ------
+
+
+@inproceedings{monad-par,
+ author = {Marlow, Simon and Newton, Ryan R. and Peyton Jones, Simon},
+ title = {A monad for deterministic parallelism},
+ booktitle = {Proceedings of the 4th ACM symposium on {H}askell},
+ series = {Haskell '11},
+ year = {2011},
+ pages = {71--82},
+ publisher = {ACM},
+}
+ isbn = {978-1-4503-0860-1},
+ location = {Tokyo, Japan},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/2034675.2034685},
+ doi = {http://doi.acm.org/10.1145/2034675.2034685},
+ acmid = {2034685},
+ address = {New York, NY, USA},
+ keywords = {haskell, parallel},
+
+
+@Comment |2009|
+@Comment ------
+
+@phdthesis{ryan-thesis,
+ author = {Ryan Rhodes Newton},
+ title = {Language Design for Distributed Stream Processing},
+ year = {2009},
+ school = {MIT},
+ OPTpublisher = {MIT},
+ url = {\url{http://dspace.mit.edu/handle/1721.1/46795}},
+}
+
+
+
+@Comment Other publications:
+@Comment ================================================================================
+
 @inproceedings{Atkey:Unembedding,
         author          = {Robert Atkey and
                                 Sam Lindley and
@@ -406,14 +519,7 @@ address = {New York, NY, USA}
  address = {Princeton, NJ, USA},
 }
 
-@phdthesis{ryan-thesis,
- author = {Ryan Rhodes Newton},
- title = {Language Design for Distributed Stream Processing},
- year = {2009},
- school = {MIT},
- OPTpublisher = {MIT},
- url = {\url{http://dspace.mit.edu/handle/1721.1/46795}},
-}
+
 
 
 @inproceedings{IndirectionTheory,
@@ -519,23 +625,6 @@ address = {New York, NY, USA}
  address = {Berkeley, CA, USA},
 }
 
-@inproceedings{monad-par,
- author = {Marlow, Simon and Newton, Ryan R. and Peyton Jones, Simon},
- title = {A monad for deterministic parallelism},
- booktitle = {Proceedings of the 4th ACM symposium on {H}askell},
- series = {Haskell '11},
- year = {2011},
- pages = {71--82},
- publisher = {ACM},
-}
- isbn = {978-1-4503-0860-1},
- location = {Tokyo, Japan},
- numpages = {12},
- url = {http://doi.acm.org/10.1145/2034675.2034685},
- doi = {http://doi.acm.org/10.1145/2034675.2034685},
- acmid = {2034685},
- address = {New York, NY, USA},
- keywords = {haskell, parallel},
 
 @article{FelleisenHiebEvalCtxts,
  author = {Felleisen, Matthias and Hieb, Robert},
@@ -8179,16 +8268,6 @@ url="http://dx.doi.org/10.1007/978-3-642-31057-7_27"
  keywords = {concurrent data structure, hash trie, nonblocking, snapshot},
 }
 
-@inproceedings{sc-haskell-draft,
- title = {SC-Haskell: Sequential Consistency in Languages that Minimize Mutable Shared Heap},
- author = {Michael Vollmer and Ryan G. Scott and Madan Musuvathi and Ryan R. Newton},
- booktitle = {To appear in the proceedings of the 22st ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
- series = {PPoPP '17},
- year = {2017},
- location = {Austin, TX},
- publisher = {ACM},
- address = {New York, NY, USA},
-}
 
 
 @inproceedings{lazy-lists-Harris:2001,
@@ -8234,29 +8313,6 @@ url="http://dx.doi.org/10.1007/978-3-642-31057-7_27"
   publisher={MIT Press}
 }
 
-@misc{lh-prover-draft,
- title={Refinement Reflection: Parallel Legacy Languages as Theorem Provers},
- author={Niki Vazou and Vikraman Choudhury and Ryan G. Scott and Ranjit Jhala and Ryan R. Newton},
- howpublished ={In submission to PLDI'17, draft at: \url{http://www.cs.indiana.edu/~rrnewton/papers/refinement_reflection_draft.pdf}}
-}
-
-@misc{liteprof-draft,
- title={Instruction Punning: Lightweight Instrumentation for x86-64},
- author={{Buddhika Chamith} and {Bo Joel Svensson} and Luke Dalessandro and Ryan R. Newton.},
- howpublished ={In submission to PLDI'17, draft at: \url{http://www.cs.indiana.edu/~rrnewton/papers/liteinst_draft.pdf}}
-}
-
-@misc{adaptive2-draft,
- title={Adaptive Lock-Free Data Structures: A General Method for Concurrent Implementation Swapping},
- author={{Chao-Hong Chen} and {Vikraman Choudhury} and Ryan R. Newton},
- howpublished ={In submission to PLDI'17, draft at: \url{http://www.cs.indiana.edu/~rrnewton/papers/adaptive2_draft.pdf}}
-}
-
-@misc{gibbon-working-draft,
- title={Gibbon: a compiler for tree-traversals.},
- author={Ryan R. Newton},
- howpublished ={Working Draft: \url{http://www.cs.indiana.edu/~rrnewton/papers/gibbon_working_draft.pdf}}
-}
 
 
 @inproceedings{acc-multidev,
