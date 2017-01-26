@@ -48,14 +48,11 @@
 }
 
 
-
-
 @Comment Published/Accepted papers
 @Comment ----------------------------------------
 
 @Comment |2017|
 @Comment ------
-
 
 @inproceedings{sc-haskell-draft,
  title = {SC-Haskell: Sequential Consistency in Languages that Minimize Mutable Shared Heap},
@@ -70,6 +67,82 @@
 
 @Comment |2016|
 @Comment ------
+
+@inproceedings{ghostbuster,
+ author = {McDonell, Trevor L. and Zakian, Timothy A. K. and Cimini, Matteo and Newton, Ryan R.},
+ title = {Ghostbuster: A Tool for Simplifying and Converting GADTs},
+ booktitle = {Proceedings of the 21st ACM SIGPLAN International Conference on Functional Programming},
+ series = {ICFP 2016},
+ year = {2016},
+ isbn = {978-1-4503-4219-3},
+ location = {Nara, Japan},
+ pages = {338--350},
+ numpages = {13},
+ url = {http://doi.acm.org/10.1145/2951913.2951914},
+ doi = {10.1145/2951913.2951914},
+ acmid = {2951914},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {Datatypes, GADTs, Haskell},
+}
+
+@inproceedings{pldi16-crossmod,
+  author    = {Buddhika Chamith and
+               Bo Joel Svensson and
+               Luke Dalessandro and
+               Ryan R. Newton},
+  title     = {Living on the Edge: Rapid-Toggling Probes with Cross-Modification
+               on x86},
+  booktitle = {Proceedings of the 37th {ACM} {SIGPLAN} Conference on Programming
+               Language Design and Implementation, {PLDI} 2016, Santa Barbara, CA,
+               USA, June 13-17, 2016},
+  pages     = {16--26},
+  year      = {2016},
+  url       =  {http://www.cs.indiana.edu/~rrnewton/papers/pldi16-crossmod.pdf},
+  doi       = {10.1145/2908080.2908084},
+  timestamp = {Mon, 06 Jun 2016 12:07:41 +0200},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/conf/pldi/ChamithSDN16},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@Comment url       = {http://doi.acm.org/10.1145/2908080.2908084},
+
+
+
+@inproceedings{lvish-ppopp,
+ author = {Newton, Ryan R. and A\u{g}acan, \"{O}mer S. and Fogg, Peter and Tobin-Hochstadt, Sam},
+ title = {Parallel Type-checking with Haskell Using Saturating LVars and Stream Generators},
+ booktitle = {Proceedings of the 21st ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ series = {PPoPP '16},
+ year = {2016},
+ isbn = {978-1-4503-4092-2},
+ location = {Barcelona, Spain},
+ pages = {6:1--6:12},
+ articleno = {6},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/2851141.2851142},
+ doi = {10.1145/2851141.2851142},
+ acmid = {2851142},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@article{obsidian-jfp16,
+  author    = {Bo Joel Svensson and
+               Ryan R. Newton and
+               Mary Sheeran},
+  title     = {A language for hierarchical data parallel design-space exploration
+               on GPUs},
+  journal   = {J. Funct. Program.},
+  volume    = {26},
+  pages     = {e6},
+  year      = {2016},
+  url       = {http://dx.doi.org/10.1017/S0956796816000046},
+  doi       = {10.1017/S0956796816000046},
+  timestamp = {Thu, 22 Sep 2016 01:00:00 +0200},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/jfp/SvenssonNS16},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
 
 
 @Comment |2011|
@@ -7320,23 +7393,6 @@ month={February},
   organization={Springer}
 }
 
-@inproceedings{lvish-ppopp,
- author = {Newton, Ryan R. and A\u{g}acan, \"{O}mer S. and Fogg, Peter and Tobin-Hochstadt, Sam},
- title = {Parallel Type-checking with Haskell Using Saturating LVars and Stream Generators},
- booktitle = {Proceedings of the 21st ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
- series = {PPoPP '16},
- year = {2016},
- isbn = {978-1-4503-4092-2},
- location = {Barcelona, Spain},
- pages = {6:1--6:12},
- articleno = {6},
- numpages = {12},
- url = {http://doi.acm.org/10.1145/2851141.2851142},
- doi = {10.1145/2851141.2851142},
- acmid = {2851142},
- publisher = {ACM},
- address = {New York, NY, USA},
-}
 
 
 @article{lamport1979-sequential-consistency,
@@ -7808,25 +7864,7 @@ author = {Ranganathan, Parthasarathy and Pai, Vijay S. and Adve, Sarita V.},
 }
 
 
-@article{pldi16-crossmod,
- author = {Chamith, Buddhika and Svensson, Bo Joel and Dalessandro, Luke and Newton, Ryan R.},
- title = {Living on the Edge: Rapid-toggling Probes with Cross-modification on x86},
- journal = {SIGPLAN Not.},
- issue_date = {June 2016},
- volume = {51},
- number = {6},
- month = jun,
- year = {2016},
- issn = {0362-1340},
- pages = {16--26},
- numpages = {11},
- url = {http://doi.acm.org/10.1145/2980983.2908084},
- doi = {10.1145/2980983.2908084},
- acmid = {2908084},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {application profiling, dynamic instrumentation},
-}
+
 
 
 @article{kprobes,
@@ -8359,23 +8397,6 @@ url="http://dx.doi.org/10.1007/978-3-642-31057-7_27"
   institution={Technical report, University of Edinburgh, \url{http://homepages.inf.ed.ac.uk/wadler/papers/qdsl/qdsl.pdf}},
 }
 
-@inproceedings{ghostbuster,
- author = {McDonell, Trevor L. and Zakian, Timothy A. K. and Cimini, Matteo and Newton, Ryan R.},
- title = {Ghostbuster: A Tool for Simplifying and Converting GADTs},
- booktitle = {Proceedings of the 21st ACM SIGPLAN International Conference on Functional Programming},
- series = {ICFP 2016},
- year = {2016},
- isbn = {978-1-4503-4219-3},
- location = {Nara, Japan},
- pages = {338--350},
- numpages = {13},
- url = {http://doi.acm.org/10.1145/2951913.2951914},
- doi = {10.1145/2951913.2951914},
- acmid = {2951914},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {Datatypes, GADTs, Haskell},
-} 
 
 
 @inproceedings {nsdi15-cloud-bottleneck,
