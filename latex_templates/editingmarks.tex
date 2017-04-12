@@ -63,10 +63,10 @@
    \newcommand{\textred}[1]{{\color{comment-red}{#1}}}
 
    % Old version was inline:   
-   % \newcommand{\pgwrapper}[2]{\textred{(#1: #2)}}
+   \newcommand{\pgwrapper}[2]{\textred{(#1: #2)}}
    % New version is in the margin:
-   \setlength{\marginparwidth}{1.9cm}
-   \newcommand{\pgwrapper}[2]{\todo[size=\footnotesize]{#1: #2}}
+   %% \setlength{\marginparwidth}{1.9cm}
+   %% \newcommand{\pgwrapper}[2]{\todo[size=\footnotesize]{#1: #2}}
 
    %% RRN: Dim the background for Ryan's eyes:
    %% Hack: do this ONLY on Ryan's machine.
