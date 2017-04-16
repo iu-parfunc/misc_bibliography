@@ -34,8 +34,9 @@
 %   basewidth={0.5em,0.45em},           % default {0.6,0.45}
 %    escapechar={\%},
     escapechar={\@},
-    mathescape=true,
-    texcl=true                          % tex comment lines
+%    mathescape=true,
+    texcl=true,                          % tex comment lines
+    showstringspaces=false
 }
 
 \lstloadlanguages{Haskell}
@@ -125,7 +126,7 @@
 \lstset{style=haskell}
 
 % \newcommand{\inl}[1]{\lstinline[style=inline];#1;}
-\newcommand{\il}[1]{\lstinline[style=inline];#1;}
+\newcommand{\il}[1]{\lstinline[style=inline,mathescape=true];#1;}
 
 \newcommand{\makeatcode}{\lstMakeShortInline[style=inline]@}
 \newcommand{\makeatchar}{\lstDeleteShortInline@}
