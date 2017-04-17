@@ -1,6 +1,6 @@
 
 
-@Comment My publications, reverso chronological
+@Comment First, our group's publications, reverse chronological
 @Comment ================================================================================
 
 @Comment Submitted papers
@@ -13,7 +13,7 @@
            Sakka and Milind Kulkarni and  Sam Tobin-Hochstadt and Ryan R. Newton},
  series = {ECOOP '17},
   location = {Barcelona, Spain},
- publisher = {ACM},  
+ publisher = {ACM},
  howpublished ={In submission to ECOOP'17, draft at: \url{http://www.cs.indiana.edu/~rrnewton/papers/gibbon_working_draft.pdf}}
 }
 
@@ -43,7 +43,7 @@
  series = {PLDI '17},
  location = {Barcelona, Spain},
  year = {2017},
- publisher = {ACM}, 
+ publisher = {ACM},
  howpublished ={In submission to PLDI'17, draft at: \url{http://www.cs.indiana.edu/~rrnewton/papers/adaptive2_draft.pdf}}
 }
 
@@ -94,7 +94,7 @@
   title     = {Living on the Edge: Rapid-Toggling Probes with Cross-Modification
                on x86},
   booktitle = {Proceedings of the 37th {ACM} {SIGPLAN} Conference on Programming
-               Language Design and Implementation, {PLDI} 2016, Santa Barbara, CA,
+               Language Design and Implementation (PLDI), Santa Barbara, CA,
                USA, June 13-17, 2016},
   pages     = {16--26},
   year      = {2016},
@@ -5655,26 +5655,18 @@ ISSN={ },}
 }
 
 
-@article{valgrind,
- author = {Nethercote, Nicholas and Seward, Julian},
- title = {Valgrind: A Framework for Heavyweight Dynamic Binary Instrumentation},
- journal = {SIGPLAN Not.},
- issue_date = {June 2007},
- volume = {42},
- number = {6},
- month = jun,
- year = {2007},
- issn = {0362-1340},
- pages = {89--100},
- numpages = {12},
- url = {http://doi.acm.org/10.1145/1273442.1250746},
- doi = {10.1145/1273442.1250746},
- acmid = {1250746},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {Memcheck, Valgrind, dynamic binary analysis, dynamic binary instrumentation, shadow values},
+@inproceedings{valgrind,
+  title={Valgrind: a framework for heavyweight dynamic binary instrumentation},
+  author={Nethercote, Nicholas and Seward, Julian},
+  booktitle={Proceedings of the 28th{ACM} {SIGPLAN} Conference on Programming
+             Language Design and Implementation (PLDI), San Diego, CA,
+             USA, June 10-13, 2007},
+  volume={42},
+  number={6},
+  pages={89--100},
+  year={2007},
+  organization={ACM}
 }
-
 
 
 @INPROCEEDINGS{PEBIL,
@@ -7848,10 +7840,13 @@ author = {Ranganathan, Parthasarathy and Pai, Vijay S. and Adve, Sarita V.},
     organization={IEEE}
 }
 
-@article{bruening2008building,
-    title={Building dynamic instrumentation tools with dynamorio},
-    author={Bruening, Derek and Zhao, Qin and Kleckner, Reid},
-    year={2008}
+@inproceedings{bruening2003infrastructure,
+  title={An infrastructure for adaptive dynamic optimization},
+  author={Bruening, Derek and Garnett, Timothy and Amarasinghe, Saman},
+  booktitle={Code Generation and Optimization, 2003. CGO 2003. International Symposium on},
+  pages={265--275},
+  year={2003},
+  organization={IEEE}
 }
 
 @inproceedings{laurenzano2010pebil,
@@ -7878,19 +7873,22 @@ author = {Ranganathan, Parthasarathy and Pai, Vijay S. and Adve, Sarita V.},
   publisher={Belltown Media}
 }
 
-@misc{systemtap,
-    author = {Frank C. EIgler and Vara Prasad and Will Cohen and Hien Nguyen and Martin Hunt and Jim Keniston and Brad Chen},
-    title = {Architecture of systemtap: a Linux trace/probe tool },
-    year = {2005}
+@article{systemtap,
+  title={Architecture of systemtap: a Linux trace/probe tool},
+  author={Eigler, Frank C and Prasad, Vara and Cohen, Will and Nguyen, Hien and Hunt, Martin and Keniston, Jim and Chen, Brad},
+  year={2005},
+  publisher={Citeseer}
 }
 
 
-@article{xray-whitepaper,
+@misc{xray-whitepaper,
   title={XRay: A Function Call Tracing System},
-  author={Berris, Dean Michael and Veitch, Alistair and Heintze, Nevin and Anderson, Eric and Wang, Ning},
+  author={Veitch, Alistair and Berris, Dean Michael and Anderson, Eric and Heintze, Nevin and Wang, Ning},
+  howpublished = {\url{https://storage.googleapis.com/xray-downloads/whitepaper/XRayAFunctionCallTracingSystem.pdf}},
   year={2016},
-  url={http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45287.pdf}
+  note = {Accessed: 2017-04-13}
 }
+
 
 @inproceedings{overlapping-obfuscation1,
   title={Instructions-Based Detection of Sophisticated Obfuscation and Packing},
@@ -8321,7 +8319,7 @@ url="http://dx.doi.org/10.1007/978-3-642-31057-7_27"
  acmid = {676105},
  publisher = {Springer-Verlag},
  address = {London, UK, UK},
-} 
+}
 
 
 @inproceedings{st2015optimization,
@@ -8369,7 +8367,7 @@ url="http://dx.doi.org/10.1007/978-3-642-31057-7_27"
  publisher = {ACM},
  address = {New York, NY, USA},
  keywords = {Data-parallelism, GPU, Haskell, Multi-device, Scheduling},
-} 
+}
 
 @inproceedings{fhpc-autotune,
  author = {Vollmer, Michael and Svensson, Bo Joel and Holk, Eric and Newton, Ryan R.},
@@ -8430,7 +8428,7 @@ publisher = {USENIX Association},
  acmid = {2844112},
  publisher = {ACM},
  address = {New York, NY, USA},
-} 
+}
 
 @inproceedings{acar-sac-overview,
  author = {Acar, Umut A.},
@@ -8448,7 +8446,7 @@ publisher = {USENIX Association},
  publisher = {ACM},
  address = {New York, NY, USA},
  keywords = {asymptotic complexity, change propagation, compilers, continuations, dependence graphs, incremental modification, language design, performance, self-adjusting computation},
-} 
+}
 
 @inproceedings{gray2000n,
   title={N-Body'problems in statistical learning},
@@ -8603,6 +8601,79 @@ publisher = {USENIX Association},
  address = {New York, NY, USA},
  keywords = {Web programming languages, pure functional programming, whole-program optimization},
 } 
+
+
+
+@article{ipfs,
+  author    = {Juan Benet},
+  title     = {{IPFS} - Content Addressed, Versioned, {P2P} File System},
+  journal   = {CoRR},
+  volume    = {abs/1407.3561},
+  year      = {2014},
+  url       = {http://arxiv.org/abs/1407.3561},
+  timestamp = {Fri, 01 Aug 2014 13:50:01 +0200},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/Benet14},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@url{mozilla-rr,
+  author = "Mozilla",
+  title = "rr: lightweight recording \& deterministic debugging",
+  year = "2015",
+  url = "http://rr-project.org/",
+  note = "[Online; accessed 16-April-2017]"
+}
+
+@inproceedings{sibylfs,
+ author = {Ridge, Tom and Sheets, David and Tuerk, Thomas and Giugliano, Andrea and Madhavapeddy, Anil and Sewell, Peter},
+ title = {SibylFS: Formal Specification and Oracle-based Testing for POSIX and Real-world File Systems},
+ booktitle = {Proceedings of the 25th Symposium on Operating Systems Principles},
+ series = {SOSP '15},
+ year = {2015},
+ isbn = {978-1-4503-3834-9},
+ location = {Monterey, California},
+ pages = {38--53},
+ numpages = {16},
+ url = {http://doi.acm.org/10.1145/2815400.2815411},
+ doi = {10.1145/2815400.2815411},
+ acmid = {2815411},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@inproceedings{fractional-permissions,
+ author = {Boyland, John},
+ title = {Checking Interference with Fractional Permissions},
+ booktitle = {Proceedings of the 10th International Conference on Static Analysis},
+ series = {SAS'03},
+ year = {2003},
+ isbn = {3-540-40325-6},
+ location = {San Diego, CA, USA},
+ pages = {55--72},
+ numpages = {18},
+ url = {http://dl.acm.org/citation.cfm?id=1760267.1760273},
+ acmid = {1760273},
+ publisher = {Springer-Verlag},
+ address = {Berlin, Heidelberg},
+}
+
+@inproceedings{cilk-5,
+ author = {Frigo, Matteo and Leiserson, Charles E. and Randall, Keith H.},
+ title = {The Implementation of the Cilk-5 Multithreaded Language},
+ booktitle = {Proceedings of the ACM SIGPLAN 1998 Conference on Programming Language Design and Implementation},
+ series = {PLDI '98},
+ year = {1998},
+ isbn = {0-89791-987-4},
+ location = {Montreal, Quebec, Canada},
+ pages = {212--223},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/277650.277725},
+ doi = {10.1145/277650.277725},
+ acmid = {277725},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {critical path, multithreading, parallel computing, programming language, runtime system, work},
+}
 
 @article{mothur,
   title={Introducing mothur: open-source, platform-independent, community-supported software for describing and comparing microbial communities},
