@@ -29,22 +29,21 @@
 }
 
 
-@misc{detflow-draft,
- title={A Monad for Deterministic Parallel Shell Scripting},
- author={{Ryan G. Scott} and {Omar Navarro-Leija} and {Joseph Devietti} and Ryan R. Newton},
- series = {OOPSLA '17},
- location = {Vancouver, Canada},
- year = {2017},
- publisher = {ACM},
- howpublished ={In submission to OOPSLA'17}
-}
-
-
 @Comment Published/Accepted papers
 @Comment ----------------------------------------
 
 @Comment |2018|
 @Comment ------
+
+@misc{popl18-linear-haskell,
+  title={Linear Haskell: Practical Linearity in a Higher-order Polymorphic Language},
+  author={Jean-Philippe Bernardy and  Mathieu Boespflug and Ryan R. Newton and Simon Peyton Jones and Arnaud Spiwack}
+  series = {POPL '18},
+  location = {Los Angeles},
+  year = {2018},
+  publisher = {ACM},
+  url = {http://www.cs.indiana.edu/~rrnewton/papers/retrofitting_linear_types_draft.pdf},
+}
 
 @misc{popl18-lh-prover,
  title={Refinement Reflection: Complete Verification with SMT},
@@ -57,6 +56,27 @@
 
 @Comment |2017|
 @Comment ------
+
+@article{oopsla17-detflow,
+ author = {Scott, Ryan G. and Navarro Leija, Omar S. and Devietti, Joseph and Newton, Ryan R.},
+ title = {Monadic Composition for Deterministic, Parallel Batch Processing},
+ journal = {Proc. ACM Program. Lang.},
+ issue_date = {October 2017},
+ volume = {1},
+ number = {OOPSLA},
+ month = oct,
+ year = {2017},
+ issn = {2475-1421},
+ pages = {73:1--73:26},
+ articleno = {73},
+ numpages = {26},
+ url = {http://doi.acm.org/10.1145/3133897},
+ doi = {10.1145/3133897},
+ acmid = {3133897},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {Haskell, concurrency, deterministic parallelism},
+}
 
 @article{pldi17-liteprof,
  author = {Chamith, Buddhika and Svensson, Bo Joel and Dalessandro, Luke and Newton, Ryan R.},
@@ -78,28 +98,45 @@
  keywords = {application profiling, dynamic instrumentation},
 } 
 
-
-@Comment title={Gibbon: a compiler for tree-traversals.},
-@misc{gibbon-working-draft,
- title={Compiling Tree Transforms to Operate on Packed Representations},
- author={Michael Vollmer and Sarah Spall and Buddhika Chamith and Laith
-           Sakka and Milind Kulkarni and  Sam Tobin-Hochstadt and Ryan R. Newton},
- series = {ECOOP '17},
-  location = {Barcelona, Spain},
- publisher = {ACM},
- howpublished ={To appear at ECOOP'17, draft at: \url{http://www.cs.indiana.edu/~rrnewton/papers/gibbon_working_draft.pdf}}
+@InProceedings{ecoop17-gibbon,
+  author =	{Michael Vollmer and Sarah Spall and Buddhika Chamith and Laith Sakka and Chaitanya Koparkar and Milind Kulkarni and Sam Tobin-Hochstadt and Ryan R. Newton},
+  title =	{{Compiling Tree Transforms to Operate on Packed Representations}},
+  booktitle =	{31st European Conference on Object-Oriented Programming (ECOOP 2017)},
+  pages =	{26:1--26:29},
+  series =	{Leibniz International Proceedings in Informatics (LIPIcs)},
+  ISBN =	{978-3-95977-035-4},
+  ISSN =	{1868-8969},
+  year =	{2017},
+  volume =	{74},
+  editor =	{Peter M{\"u}ller},
+  publisher =	{Schloss Dagstuhl--Leibniz-Zentrum fuer Informatik},
+  address =	{Dagstuhl, Germany},
+  URL =		{http://drops.dagstuhl.de/opus/volltexte/2017/7273},
+  URN =		{urn:nbn:de:0030-drops-72737},
+  doi =		{10.4230/LIPIcs.ECOOP.2017.26},
+  annote =	{Keywords: compiler optimization, program transformation, tree traversal}
 }
 
-@inproceedings{sc-haskell-draft,
- title = {SC-Haskell: Sequential Consistency in Languages that Minimize Mutable Shared Heap},
- author = {Michael Vollmer and Ryan G. Scott and Madan Musuvathi and Ryan R. Newton},
- booktitle = {To appear in the proceedings of the 22st ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
- series = {PPoPP '17},
+@article{ppopp17-sc-haskell,
+ author = {Vollmer, Michael and Scott, Ryan G. and Musuvathi, Madanlal and Newton, Ryan R.},
+ title = {SC-Haskell: Sequential Consistency in Languages That Minimize Mutable Shared Heap},
+ journal = {SIGPLAN Not.},
+ issue_date = {August 2017},
+ volume = {52},
+ number = {8},
+ month = jan,
  year = {2017},
- location = {Austin, TX},
+ issn = {0362-1340},
+ pages = {283--298},
+ numpages = {16},
+ url = {http://doi.acm.org/10.1145/3155284.3018746},
+ doi = {10.1145/3155284.3018746},
+ acmid = {3018746},
  publisher = {ACM},
  address = {New York, NY, USA},
-}
+ keywords = {functional programming, memory models, sequential consistency},
+} 
+
 
 @Comment |2016|
 @Comment ------
@@ -180,6 +217,19 @@
   bibsource = {dblp computer science bibliography, http://dblp.org}
 }
 
+
+@Comment |2015|
+@Comment ------
+
+
+@Comment |2014|
+@Comment ------
+
+@Comment |2013|
+@Comment ------
+
+@Comment |2012|
+@Comment ------
 
 @Comment |2011|
 @Comment ------
@@ -9148,3 +9198,23 @@ isbn = {},
  address = {New York, NY, USA},
  keywords = {benchmark, functional programming, generic programming, haskell, optimization},
 }
+
+@article{oopsla11-oracle-scheduling,
+ author = {Acar, Umut A. and Chargu{\'e}raud, Arthur and Rainey, Mike},
+ title = {Oracle Scheduling: Controlling Granularity in Implicitly Parallel Languages},
+ journal = {SIGPLAN Not.},
+ issue_date = {October 2011},
+ volume = {46},
+ number = {10},
+ month = oct,
+ year = {2011},
+ issn = {0362-1340},
+ pages = {499--518},
+ numpages = {20},
+ url = {http://doi.acm.org/10.1145/2076021.2048106},
+ doi = {10.1145/2076021.2048106},
+ acmid = {2048106},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {granularity control, scheduling, work stealing},
+} 
