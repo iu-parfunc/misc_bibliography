@@ -69,7 +69,25 @@ endif
 skim:
 	open -a skim ${OUTDIR}/${PAPER}.pdf
 
-clean: 
+# Export a source tarball for camera-ready version
+# ============================================================
+
+# Most common formats that we use
+SOURCES ?= "*.tex" "*.bib" "*.bst" "*.cls" "*.eps"
+# Pass in extra sources to be archived (properly escaped)
+SOURCES_EXTRA ?=
+
+sources: sources-zip
+
+sources-zip:
+	git ls-files --recurse-submodules $(SOURCES) $(SOURCES_EXTRA) | xargs zip sources.zip
+
+sources-targz:
+	git ls-files --recurse-submodules $(SOURCES) $(SOURCES_EXTRA) | xargs tar acvf sources.tar.gz
+
+# ============================================================
+
+clean:
 	cd ${OUTDIR}; rm -f *.out *.aux *.bbl *.log *.blg *.fls *.fdb_latexmk ${PAPER}.pdf
 
-.PHONY: editingmarks ed paper plain grey white continuous cont skim old
+.PHONY: editingmarks ed paper plain grey white continuous cont skim old sources sources-zip sources-targz
